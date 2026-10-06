@@ -1,50 +1,33 @@
-# LEXICADE — pendências e verificações humanas
+# LEXICADE 2 — limites e ações restantes
 
-O código dos 16 jogos, telas, integração Supabase e ferramentas foi entregue. Estas limitações fazem parte da entrega; não considerar este documento uma lista de funções silenciosamente aprovadas para produção. Evidências locais estão em `VALIDACAO.md`.
+A revisão atual entrega uma sala 3D com quatro jogos. Os outros jogos e as metas extensas da primeira especificação ficaram como histórico e compatibilidade de dados; não fazem parte da experiência principal. Evidências em [VALIDACAO.md](VALIDACAO.md).
 
-## Banco, conta e publicação
+## Supabase e publicação
 
-- O projeto remoto do usuário não foi consultado nem alterado. Ele continua dependendo da aplicação de `001_schema.sql`, `002_rpcs.sql`, `003_queries.sql` e `seed.sql`, nessa ordem, pelo proprietário. Depois executar os testes SQL transacionais.
-- URL e publishable key recebidas estão apenas em `src/core/config.js`. Não faltam esses dados. O banco foi validado em PostgreSQL local com Auth mínimo simulado; isso não verifica confirmação de e-mail, entrega SMTP, redirects, tokens reais ou configurações da plataforma.
-- Testar cadastro, confirmação, entrada, link mágico, recuperação, importação, pontuação, compra, exportação e exclusão no Supabase real. Google está implementado, porém desligado até configurar o provedor e validar o fluxo.
-- O repositório remoto estava vazio no início. O proprietário autorizou a entrega do código pelo GitHub em `gigio-jpeg/LEXICADE`, branch `main`. Nenhum deploy do site ou publicação do ambiente foi feito. O ZIP do GitHub não contém `.git`; para guardar versões, clonar o repositório conforme o guia.
-- `lexicade.example` é o domínio inicial dos metadados. Usar `node tests/configure-domain.mjs https://SEU-DOMINIO` antes de publicar. URLs Auth de produção também dependem do endereço escolhido.
+O Supabase remoto não foi consultado nem alterado. URL e chave publicável recebidas já estão no cliente, exclusivamente em `src/core/config.js`. No banco vazio, o proprietário aplica `supabase/INSTALAR-TUDO.sql`; no banco da versão anterior, apenas `004_arcade_focus.sql`. SQL e testes de segurança/economia passaram em PostgreSQL local, inclusive a instalação completa em outra instância vazia.
 
-## Quantidades de conteúdo
+Ainda precisa ser testado no serviço real: cadastro, confirmação de e-mail, entrada, recuperação, sincronização de partidas, importação de progresso, compra, exportação e exclusão. Os testes locais simulam a superfície mínima de Auth e não comprovam SMTP, tokens ou redirects hospedados. Google está desligado até configurar o provedor.
 
-Contagens verificadas automaticamente em `data/content-counts.json`. As metas são por idioma. Letras são normalizadas para jogo, preservando acentos onde necessário.
+A entrega ao GitHub foi autorizada. Publicação do site e do ambiente são ações separadas. Antes de publicar, configurar o domínio com `node tests/configure-domain.mjs https://SEU-DOMINIO` e os redirects de autenticação, conforme [DEPLOY.md](DEPLOY.md). Não há implantação pública feita por esta tarefa.
 
-| Conteúdo | Meta | Português | Inglês | Espanhol |
-|---|---:|---:|---:|---:|
-| Palavras comuns | 2.000 | 2.000 | 2.000 | 2.000 |
-| Frases | 150 | 150 | 150 | 150 |
-| Textos curtos | 30 | 30 | 30 | 30 |
-| Respostas Decifra, 5 letras | 1.500 | 33 | 34 | 29 |
-| Válidas Decifra, 5 letras | 10.000 | 5.069 | 6.476 | 4.859 |
-| Palavras com dicas de cruzadinha | 500 | 126 | 127 | 126 |
-| Grupos de rimas | 300 | 10 | 10 | 10 |
-| Conjuntos de Intrusa | 200 | 200 | 200 | 200 |
-| Pares de Ortografia | 400 | 400 | 400 | 400 |
+## Conteúdo dos quatro jogos
 
-As metas de respostas, válidas, dicas e rimas **não foram atingidas**. A especificação permite registrar déficits; não foram inventadas palavras para completar números. O conjunto pequeno de respostas provoca repetição nos diários. Ampliar com fontes licenciadas e revisão linguística; refletir mudanças nos JSON, seed SQL e cache. As 180 grades (60 por idioma, 30 destinadas ao diário) são conexas e validadas, mas reutilizam o conjunto limitado de dicas.
+Frase Rush usa **30 frases originais completas por idioma**, feitas para esta revisão, e uma rodada direta de 60 segundos. Não usa os textos gerados por modelos da versão anterior. Decifra usa respostas curadas de cinco letras: 33 em português, 34 em inglês e 29 em espanhol. O conjunto pequeno pode repetir palavras. Listas de palpites válidos têm respectivamente 5.069, 6.476 e 4.859 entradas. Anagrama e LexiMaze usam o vocabulário curado existente.
 
-As frases/textos foram compostos com modelos originais; os exercícios de Ortografia incluem variantes de inversão de letras. Quantidade não equivale a diversidade editorial ou explicações individualizadas. Rimas e respostas são listas autorais curtas. A revisão de português, inglês e espanhol continua necessária: retirar flexões pouco naturais, nomes próprios e termos inadequados; melhorar dicas, rimas, exercícios e traduções. O filtro automático de termos sensíveis não substitui avaliação humana de adequação etária.
+Revisão linguística humana dos três idiomas e ampliação das respostas do Decifra continuam recomendadas. As contagens e avisos de `npm run validate` também incluem dados legados (cruzadinhas/rimas/outros jogos); seus antigos déficits não são requisitos desta revisão.
 
-## Privacidade, idade e identidade
+## Dispositivos e gráficos
 
-- Termos/privacidade são rascunhos visíveis como tal. Antes do lançamento, definir responsável, contato, prazos de retenção, finalidade, jurisdição e canal de direitos; obter revisão jurídica. Não inventar dados de um controlador.
-- Cadastro bloqueia menores de 13 e exige declaração adicional de autorização dos 13 aos 17. Isso não verifica a identidade do responsável; revisar o mecanismo e a legislação aplicável antes de abrir contas ao público.
-- Arte, sons e implementação dos jogos são originais. Conferir disponibilidade do nome LEXICADE e domínio antes de lançamento comercial. Conteúdo externo CC BY-SA e licenças de bibliotecas/fontes estão em `LICENCAS.md`.
-- O servidor valida métricas, limites, duração, tentativas diárias, economia e taxa. Jogos estáticos ainda permitem adulterar o cliente. Não prometer ranking invulnerável; considerar monitoramento adicional para competição com prêmios.
+A sala usa geometria WebGL real, sombras, reflexos e efeitos luminosos; jogos DOM/Canvas são posicionados no monitor do gabinete pelo CSS3DRenderer. Sem WebGL, há uma alternativa simplificada e jogável. Não é uma reprodução visual equivalente ao 3D.
 
-## Validações ainda necessárias
+Testado em Chromium Linux com renderização de software e larguras de 320 a 3.840 px. Não foram medidos 60 FPS em uma GPU física, Lighthouse ou consumo em celulares de entrada. Windows real, Safari, Firefox, aparelhos com toque, leitor de tela e instalação PWA ainda precisam de avaliação. Os controles de toque existem; simulação de largura não substitui teste físico.
 
-- Windows real: as utilidades usam apenas APIs Node compatíveis com Windows e não exigem bash. Não foram executadas em uma máquina Windows; o usuário confirmará Node/PowerShell, caminhos, extração, firewall e navegador.
-- Navegadores/dispositivos: testes funcionais em Chromium Linux. Safari, Firefox, Edge real, instalação PWA no Windows, toque em aparelho físico e leitores de tela não foram avaliados integralmente.
-- Desempenho: laço de tempo fixo e carregamento por jogo implementados; 60 FPS em aparelhos de entrada e notas Lighthouse não foram medidos. Não há relatório que permita declarar essas metas cumpridas.
-- Acessibilidade: foco, controles com rótulos, atalhos, modo daltônico e redução de movimento implementados. Contraste de todos os estados, leitor de tela e jogabilidade Canvas sem visão requerem auditoria humana.
-- Cache: primeiro carregamento precisa baixar os arquivos. Offline não oferece login, ranking, sincronização ou compra da conta. Após uma atualização, fechar as abas antigas para ativar a nova versão e repetir o teste offline.
+Primeiro acesso precisa baixar os recursos. Offline permite os quatro jogos e progresso visitante; conta, ranking e sincronização precisam de internet. Feche as abas antigas após atualizar para ativar o novo service worker.
 
-## Instalação depois da entrega
+## Conta e revisão pública
 
-Primeiro baixar/extrair o ZIP pelo GitHub (**Code → Download ZIP**). Para rodar, instalar Node.js LTS; VS Code é recomendado para editar, Git/GitHub Desktop para publicar. Acompanhar `GUIA-INICIANTE.md` uma etapa por vez. Nenhuma instalação no computador do usuário foi feita por esta tarefa.
+Termos e privacidade continuam rascunhos. Definir responsável, contato, retenção e condições antes de abrir contas ao público. O cadastro bloqueia menores de 13 e pede declaração adicional de 13–17; não verifica identidade do responsável. Revisar esse fluxo juridicamente. Arte e som são originais; licenças externas estão em [LICENCAS.md](LICENCAS.md).
+
+O servidor valida pontuações, duração, métricas, taxa e economia; um cliente estático pode ser adulterado. Ranking com prêmios exige monitoramento adicional. Foco, rótulos, redução de movimento e controles foram implementados; contraste de todos os estados e jogabilidade sem visão precisam de auditoria humana.
+
+Você já confirmou Node 25.1.0, npm 10.8.3 e Git 2.46.0 no Windows. Não precisa baixá-los novamente. A atualização e as etapas do banco estão em [GUIA-INICIANTE.md](GUIA-INICIANTE.md).

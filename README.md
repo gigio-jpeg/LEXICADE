@@ -1,20 +1,61 @@
-# LEXICADE
+# LEXICADE — fliperama 3D
 
-Um fliperama de palavras com 16 jogos, português/inglês/espanhol, cinco temas básicos, progresso visitante, contas Supabase, rankings, conquistas e loja de cosméticos. HTML, CSS e JavaScript puros: **não há build de aplicação**.
+Uma sala de arcade em **3D real, renderizada com WebGL**. Escolha uma máquina, veja a câmera se aproximar e jogue dentro da tela do gabinete. Gabinetes, iluminação, reflexos, letreiros e interfaces são originais.
 
-Comece pelo [GUIA-INICIANTE](docs/GUIA-INICIANTE.md) se usa Windows. Você pode jogar sem configurar o banco. O código está entregue; a aplicação do SQL, o teste de e-mail/OAuth no seu projeto e a publicação precisam ser feitos pelo proprietário, conforme a especificação.
+![Sala 3D do LEXICADE](docs/images/sala-3d.png)
 
-## Rodar
+[Ver o jogo dentro da máquina](docs/images/frase-rush.png) · [Ver no celular](docs/images/sala-mobile.png)
 
-Instale Node.js LTS (22 ou superior; recomendado LTS 24), extraia o pacote e abra o PowerShell na pasta com `package.json`:
+A revisão 2 substitui o catálogo e os menus da primeira versão por **quatro máquinas**:
+
+| Máquina | Partida |
+|---|---|
+| **Frase Rush** | Digite frases durante 60 segundos. O relógio começa na primeira digitação; a próxima frase aparece automaticamente. |
+| **Decifra** | Descubra uma palavra de cinco letras em seis tentativas. |
+| **LexiMaze** | Colete letras em ordem, escape das sombras e avance pelos labirintos. |
+| **Anagrama** | Desembaralhe palavras e acumule pontos em 60 segundos. |
+
+Sem escolha de duração, conteúdo, sobrevivência ou dificuldade antes de começar. Navegue com as setas da sala, os botões ou clique na própria máquina. Login, progresso e ajustes ficam em painéis sobre o ambiente 3D. O visitante joga e salva progresso localmente.
+
+## Rodar no Windows
+
+Node.js 22 ou superior, navegador atualizado e aceleração gráfica recomendada. **Não precisa de `npm install` nem de build.** Three.js e Supabase estão incluídos localmente com licenças.
+
+Na pasta que contém `package.json`:
 
 ```powershell
 npm start
 ```
 
-Abra `http://localhost:5173` no seu computador. Ctrl+C para parar. Não precisa de `npm install` para rodar, gerar conteúdo, empacotar ou executar os testes de lógica; o cliente Supabase está copiado em `vendor/` com versão fixada e licenças. Para outra porta: `npm start -- --port 5174`.
+Abra o endereço mostrado no PowerShell; o padrão é `http://localhost:5173`. Ctrl+C encerra o servidor. Se PowerShell bloquear `npm.ps1`, use `npm.cmd start`. Para outra porta: `npm start -- --port 5174`.
 
-## Testes e ferramentas
+Já baixou a primeira versão? Pare o servidor anterior e baixe o ZIP atualizado do GitHub em uma pasta nova. O ZIP não contém `.git`; não execute `git pull` nessa cópia. Veja [GUIA-INICIANTE](docs/GUIA-INICIANTE.md).
+
+## Supabase
+
+URL e publishable key recebidas já estão **somente em `src/core/config.js`**. A chave pública não permite administrar o banco. O site integra contas e salvamento por RPC; tabelas são instaladas pelo proprietário:
+
+- **Projeto vazio:** executar `supabase/INSTALAR-TUDO.sql` uma vez no SQL Editor. Instalação completa em uma transação.
+- **Primeira versão já instalada:** executar apenas `supabase/migrations/004_arcade_focus.sql`; preserva contas, pontuações e itens.
+- Configurar e-mail, Site URL e redirects; testar uma conta real conforme [SETUP-SUPABASE](docs/SETUP-SUPABASE.md).
+
+Google continua opcional e desligado. Não usar secret key/service_role no navegador. O agente não acessou ou alterou o banco remoto.
+
+## Estrutura
+
+- `src/arcade/`: sala, câmera, gabinetes, iluminação, texturas, painéis e execução dos quatro jogos.
+- `src/arcade/games/`: partidas diretas de frases e anagramas.
+- `src/ui/controllers/`: Decifra e labirinto, reutilizados na tela do gabinete.
+- `src/core/`: autenticação, API, idioma, armazenamento e pontuação.
+- `src/styles/room.css` e `screen.css`: sala e tela da máquina.
+- `data/games.json`: somente as quatro máquinas ativas; `data/arcade/phrases.json`: 30 frases originais por idioma.
+- `vendor/three/`: Three.js 0.180.0 e módulos necessários; `vendor/supabase-2.57.4.js`: cliente Supabase.
+- `supabase/`: migrações, instalação única, seed e testes.
+- `docs/`: guia, plano, validação, publicação, licenças e pendências.
+
+Os módulos/dados dos jogos anteriores permanecem por compatibilidade e histórico; não integram o catálogo. Seus endereços antigos retornam à sala. As IDs existentes dos quatro jogos foram mantidas para preservar recordes.
+
+## Testes e utilidades
 
 ```powershell
 npm test
@@ -25,61 +66,27 @@ npm run validate
 ```
 
 ```powershell
-npm run crosswords
+node tests/update-cache.mjs
 ```
 
 ```powershell
-node tests/update-cache.mjs
+node tests/generate-sql.mjs
 ```
 
 ```powershell
 npm run package
 ```
 
-Os testes Node exercitam regras de jogos, acentos, pontuação, geradores, desafios determinísticos, conteúdo e módulos/páginas. SQL e fluxo de navegador estão detalhados em [VALIDACAO](docs/VALIDACAO.md). Para os testes PostgreSQL locais opcionais, veja [supabase/tests/README.md](supabase/tests/README.md).
-
-## Contas e banco
-
-Siga [SETUP-SUPABASE](docs/SETUP-SUPABASE.md). Execute `001_schema.sql`, `002_rpcs.sql`, `003_queries.sql`, depois `seed.sql`, pelo seu painel. URL e publishable key recebidas já estão apenas em `src/core/config.js`. `.env.example` é referência com exemplos; o navegador não lê `.env`.
-
-O visitante joga e guarda progresso localmente. Quem entra usa RPCs: escrita direta em pontuações/XP/moedas é bloqueada. A importação tem teto e recordes importados ficam privados, fora do ranking. Login Google fica desligado até configurar o provedor; link mágico funciona para contas já cadastradas. Rascunhos legais, consentimento de menores e conteúdo precisam de revisão humana antes do lançamento público.
+Testes PostgreSQL opcionais: [supabase/tests/README.md](supabase/tests/README.md). Evidências da revisão 2, incluindo câmera, celular, partidas e offline: [VALIDACAO](docs/VALIDACAO.md). Metas de conteúdo do documento original não são os requisitos da nova experiência; limitações relevantes estão em [PENDENCIAS](docs/PENDENCIAS.md).
 
 ## Publicar
 
-Recomendação: **Cloudflare Pages**, integração GitHub, branch `main`, framework `None`, comando da hospedagem `exit 0`, diretório de saída `.`. O comando `exit 0` é um campo do painel Cloudflare, não um script do projeto nem uma instrução PowerShell. Veja [DEPLOY](docs/DEPLOY.md).
+Cloudflare Pages: branch `main`, framework `None`, comando da hospedagem `exit 0`, saída `.`. Nenhum build de aplicação. Antes de lançar, configurar domínio, Auth e revisar termos/conteúdo. [DEPLOY](docs/DEPLOY.md) explica o processo.
 
-Depois de escolher o endereço real, gere os metadados:
+## Alterar ou ampliar
 
-```powershell
-node tests/configure-domain.mjs https://SEU-NOME.pages.dev
-```
+Cada máquina é descrita em `data/games.json`; posição/câmera em `src/arcade/navigation.js`, modelo em `cabinet.js` e ambiente em `environment.js`. Ajuste um destes módulos por vez e confirme a interação na tela da máquina. Um novo jogo precisa de controlador, regras testáveis, métricas/limites SQL, traduções e cache; não adicionar dezenas de ajustes à entrada.
 
-O sitemap inicial usa `lexicade.example`; substitua antes de publicar. Atualize as URLs de confirmação/recuperação no Supabase. Netlify, Vercel e GitHub Pages podem servir os mesmos arquivos; para uma subpasta como GitHub Pages, informe a URL completa com a subpasta ao script. O servidor Node é apenas para desenvolvimento.
+Idiomas: traduções completas em `data/i18n/`, conteúdo em `data/words/` e frases em `data/arcade/phrases.json`. Interface `pt-BR` corresponde a `pt` no conteúdo/banco. Novos idiomas exigem atualizar configuração e constraints SQL.
 
-## Estrutura
-
-| Pasta | Uso |
-|---|---|
-| `src/core/` | Configuração, autenticação, API, dados locais, idiomas, áudio, entrada e regras compartilhadas |
-| `src/games/` | Lógica pura de cada jogo |
-| `src/ui/controllers/` | Interface de cada jogo e desenho original Canvas |
-| `src/ui/pages/` | Contas, perfil, loja, ranking, desafios, ajustes e privacidade |
-| `src/styles/` | Tokens, temas e componentes |
-| `games/`, `pages/` | Documentos HTML finos |
-| `data/` | Catálogo, idiomas, palavras, grades, conquistas e loja |
-| `supabase/` | Migrações, seed e testes de segurança |
-| `tests/` | Testes Node e utilidades compatíveis com Windows |
-| `docs/` | Plano, guia, banco, publicação, licenças e pendências |
-| `vendor/` | Supabase JS 2.57.4 e licenças de suas dependências |
-
-## Novo jogo ou idioma
-
-Novo jogo: escreva funções puras em `src/games/<id>.js`, um controlador pequeno em `src/ui/controllers/<id>.js` e um HTML baseado em `games/typerush/index.html`. Cadastre caminho, nome, categoria e ícone em `data/games.json`. O controlador expõe `start`, `update`, `render`, `mode` e `destroy` quando necessário; usa o contexto do casco e encerra com `finish`. Adicione limites e validação de métricas no SQL, traduções, testes e atualize o cache. Não reutilize marcas ou personagens de terceiros.
-
-Novo idioma: adicione JSON completo em `data/i18n/`, pastas em `data/words/` e `data/crosswords/`, traduza os catálogos, registre o idioma em `config.js` e atualize as validações/constraints SQL. O idioma de interface `pt-BR` corresponde a `pt` nas pastas e no banco. Rode testes de completude, conteúdo e geradores.
-
-## Limites reais
-
-Há 2.000 palavras comuns, 150 frases, 30 textos, 200 grupos de Intrusa, 400 exercícios de Ortografia e 60 grades de cruzadinha por idioma. As respostas cuidadosamente selecionadas do Decifra, os grupos de rimas e as dicas autorais ainda ficam abaixo das metas da especificação. Consulte as contagens e revisões em [PENDENCIAS](docs/PENDENCIAS.md). Não há garantia de invulnerabilidade a trapaças em jogos estáticos: o servidor valida plausibilidade e limita envios, mantendo o Decifra diário secreto.
-
-As fontes externas, licenças e adaptações estão em [LICENCAS](docs/LICENCAS.md). O envio do projeto para `gigio-jpeg/LEXICADE`, branch `main`, foi autorizado pelo proprietário. Para baixar, use **Code → Download ZIP** no GitHub. O envio do código não publica o site.
+Fontes e licenças: [LICENCAS](docs/LICENCAS.md). O salvamento no GitHub não publica o site.

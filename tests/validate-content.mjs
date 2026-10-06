@@ -90,7 +90,11 @@ export async function validateContent() {
     achievements.length,
   );
   const games = await read("data/games.json");
-  assert.equal(games.length, 16);
+  assert.equal(games.length, 4);
+  assert.deepEqual(
+    games.map((g) => g.id),
+    ["typerush", "decifra", "wordman", "anagrama"],
+  );
   for (const g of games) {
     await readFile(new URL("../" + g.path, import.meta.url));
     for (const lang of ["pt-BR", "en", "es"])

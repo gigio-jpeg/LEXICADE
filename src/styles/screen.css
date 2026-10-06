@@ -1,0 +1,525 @@
+.screen-game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 28px;
+  gap: 12px;
+  color: #dceee7;
+  position: relative;
+  --screen-color: #65f5c4;
+}
+.screen-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid #25463e;
+  padding-bottom: 12px;
+  flex: 0 0 auto;
+}
+.screen-hud small {
+  display: block;
+  color: var(--screen-color);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+.screen-hud strong {
+  color: #ddf4e6;
+  font-size: 25px;
+  font-weight: 500;
+}
+.screen-hud > div:nth-child(2) {
+  margin-left: auto;
+}
+.screen-pause-button {
+  border: 1px solid #467c6333;
+  color: #9accb2;
+  background: #14211d;
+  min-height: 34px;
+  min-width: 35px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.screen-game-area {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+.screen-controls {
+  flex: 0 0 auto;
+}
+.screen-input-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.screen-input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #4978615c;
+  background: #0a1c19;
+  color: #d9f5e4;
+  font: 22px var(--mono);
+  border-radius: 5px;
+  padding: 14px;
+  min-height: 52px;
+}
+.screen-input:focus {
+  outline: 1px solid var(--screen-color);
+  outline-offset: 1px;
+  box-shadow: 0 0 25px #69e1b911;
+}
+.screen-submit {
+  border: 1px solid #4978615c;
+  background: #152c25;
+  color: var(--screen-color);
+  width: 52px;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.screen-notice {
+  font-size: 12px;
+  min-height: 17px;
+  margin: 0;
+  text-align: center;
+  color: #a6c4b5;
+  flex-shrink: 0;
+}
+.screen-instruction {
+  font: 12px var(--mono);
+  color: #8ead9f;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+.phrase-target {
+  font: 28px/1.55 var(--mono);
+  color: #718f82;
+  width: 100%;
+  overflow-wrap: anywhere;
+  padding: 14px 0;
+  white-space: pre-wrap;
+  text-align: left;
+}
+.phrase-target .right {
+  color: #ddf5e6;
+}
+.phrase-target .wrong {
+  color: #ff997f;
+  background: #8c403c33;
+}
+.phrase-target .cursor {
+  color: #d7f5e4;
+  border-bottom: 2px solid var(--screen-color);
+  background: #39745933;
+}
+.phrase-stats {
+  font: 12px var(--mono);
+  color: #8aada0;
+  text-align: center;
+  line-height: 1.6;
+}
+.screen-game-typerush .screen-submit {
+  display: none;
+}
+.anagram-tiles {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+.anagram-tiles span {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 65px;
+  border: 1px solid color-mix(in srgb, var(--screen-color) 50%, transparent);
+  background: #202133;
+  color: var(--screen-color);
+  font: 35px var(--mono);
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #0004;
+}
+.screen-hint {
+  font-size: 12px;
+  color: #88a699;
+  text-align: center;
+  margin: 0;
+}
+.screen-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.screen-result-label {
+  font: 12px var(--pixel);
+  letter-spacing: 0.1em;
+  color: var(--screen-color);
+  margin: 0;
+}
+.screen-result-score {
+  font: 80px var(--pixel);
+  color: #e5f3e9;
+  line-height: 1.15;
+  text-shadow: 0 0 40px #a9ffcb22;
+}
+.screen-result p {
+  font-size: 14px;
+  color: #a4c2b2;
+  margin: 0;
+}
+.screen-result-reward {
+  color: var(--screen-color) !important;
+}
+.screen-start {
+  border: 1px solid
+    color-mix(in srgb, var(--screen-color, #65f5c4) 50%, transparent);
+  border-radius: 5px;
+  background: var(--screen-color, #65f5c4);
+  color: #0b1b18;
+  padding: 14px 22px;
+  min-height: 44px;
+  font: 14px var(--mono);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.screen-save {
+  font-size: 11px !important;
+  color: #6b8f7e !important;
+  max-width: 85%;
+  line-height: 1.5;
+}
+.screen-loading {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #8cac9e;
+  font: 14px var(--mono);
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+.screen-pause {
+  position: absolute;
+  inset: 0;
+  background: #041010e6;
+  backdrop-filter: blur(8px);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.screen-pause p {
+  font: 22px var(--mono);
+  color: #e0f3e5;
+  margin: 0;
+}
+.screen-game-decifra .screen-game-area {
+  gap: 10px;
+}
+.room-screen .letter-board {
+  gap: 5px;
+  width: auto;
+}
+.room-screen .board-row {
+  gap: 5px;
+}
+.room-screen .letter {
+  width: 43px;
+  height: 43px;
+  font: 23px var(--mono);
+  border: 1px solid #2d5547;
+  border-radius: 3px;
+  color: #e3f6e9;
+  background: #15231e;
+}
+.room-screen .letter.correct {
+  background: var(--screen-color);
+  color: #0e2318;
+}
+.room-screen .letter.present {
+  background: #ba9d42;
+  color: #172218;
+}
+.room-screen .letter.absent {
+  background: #24332c;
+  border-color: #3d5044;
+  color: #8a9e8c;
+}
+.room-screen .keyboard {
+  margin: 0;
+  max-width: 100%;
+  gap: 4px;
+}
+.room-screen .keyboard-row {
+  gap: 4px;
+}
+.room-screen .keyboard button {
+  background: #1e342b;
+  color: #b8d1bf;
+  border: 1px solid #3a5c47;
+  min-width: 34px;
+  padding: 7px 9px;
+  min-height: 32px;
+  height: 34px;
+  font: 13px var(--mono);
+  border-radius: 3px;
+}
+.room-screen .keyboard button.correct {
+  background: #719d55;
+  color: #071e14;
+}
+.room-screen .keyboard button.present {
+  background: #9b843a;
+  color: #071e14;
+}
+.room-screen .keyboard button.absent {
+  background: #0c1812;
+  color: #4d6959;
+}
+.room-screen .keyboard button.wide {
+  min-width: 55px;
+}
+.screen-game-decifra .screen-input {
+  padding: 9px 14px;
+  min-height: 42px;
+  font-size: 20px;
+}
+.screen-canvas {
+  max-height: 100%;
+  width: auto !important;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+  touch-action: none;
+  border: 1px solid #263b42;
+  border-radius: 6px;
+  background: #0c1020;
+}
+.screen-game-wordman .screen-game-area {
+  overflow: hidden;
+}
+.screen-dpad {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.screen-dpad button {
+  height: 34px;
+  min-width: 48px;
+  border-radius: 4px;
+  background: #17232c;
+  border: 1px solid #48565c;
+  color: #bedac9;
+  font-size: 18px;
+}
+.room-screen button:focus-visible {
+  outline: 2px solid var(--screen-color);
+  outline-offset: 2px;
+}
+@media (max-width: 700px) {
+  .screen-game {
+    padding: 12px 16px;
+    gap: 7px;
+  }
+  .screen-hud {
+    padding-bottom: 6px;
+    gap: 7px;
+  }
+  .screen-hud small {
+    font-size: 9px;
+    margin-bottom: 2px;
+  }
+  .screen-hud strong {
+    font-size: 20px;
+  }
+  .screen-pause-button {
+    min-height: 28px;
+    min-width: 30px;
+    font-size: 14px;
+  }
+  .screen-game-area {
+    gap: 7px;
+  }
+  .screen-input {
+    font-size: 22px;
+    padding: 10px 12px;
+    min-height: 42px;
+  }
+  .screen-submit {
+    width: 43px;
+    font-size: 20px;
+  }
+  .screen-instruction,
+  .screen-hint {
+    font-size: 11px;
+  }
+  .phrase-target {
+    font-size: 23px;
+    line-height: 1.5;
+    padding: 8px 0;
+  }
+  .phrase-stats {
+    font-size: 10px;
+  }
+  .screen-notice {
+    font-size: 10px;
+    min-height: 12px;
+  }
+  .room-screen .letter {
+    width: 32px;
+    height: 32px;
+    font-size: 19px;
+  }
+  .room-screen .letter-board,
+  .room-screen .board-row {
+    gap: 4px;
+  }
+  .room-screen .keyboard {
+    gap: 3px;
+  }
+  .room-screen .keyboard-row {
+    gap: 3px;
+  }
+  .room-screen .keyboard button {
+    min-width: 26px;
+    height: 25px;
+    min-height: 25px;
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+  .room-screen .keyboard button.wide {
+    min-width: 45px;
+  }
+  .screen-game-decifra .screen-game-area {
+    gap: 6px;
+  }
+  .screen-game-decifra .screen-input {
+    font-size: 19px;
+    min-height: 34px;
+    padding: 6px 10px;
+  }
+  .screen-dpad button {
+    height: 28px;
+    min-width: 44px;
+    font-size: 16px;
+  }
+  .screen-dpad {
+    gap: 6px;
+  }
+  .anagram-tiles {
+    gap: 5px;
+    padding: 12px 0;
+  }
+  .anagram-tiles span {
+    width: 40px;
+    height: 49px;
+    font-size: 28px;
+  }
+  .screen-result {
+    gap: 12px;
+  }
+  .screen-result-score {
+    font-size: 58px;
+  }
+  .screen-result p {
+    font-size: 12px;
+  }
+  .screen-result-label {
+    font-size: 10px !important;
+  }
+  .screen-start {
+    font-size: 12px;
+    padding: 11px 17px;
+    min-height: 38px;
+  }
+  .screen-save {
+    font-size: 9px !important;
+  }
+}
+html[data-colorblind="true"] .room-screen .letter.correct::after {
+  content: "✓";
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  font-size: 8px;
+}
+html[data-colorblind="true"] .room-screen .letter.present::after {
+  content: "•";
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  font-size: 12px;
+}
+html[data-colorblind="true"] .room-screen .letter {
+  position: relative;
+}
+
+/* The embedded CRT has its own dimensions; do not inherit the old page layout. */
+.room-screen .letter-board {
+  margin: 0;
+}
+.room-screen .keyboard {
+  width: 420px;
+  max-width: 100%;
+}
+.room-screen .keyboard-row {
+  flex-wrap: nowrap;
+}
+.room-screen .keyboard button {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.room-screen .keyboard-row:last-child {
+  display: none;
+}
+.room-screen .letter {
+  width: 40px;
+  height: 40px;
+  min-width: 0;
+}
+.screen-game-decifra .screen-notice:empty {
+  display: none;
+}
+@media (max-width: 700px) {
+  .room-screen .letter {
+    width: 31px;
+    height: 31px;
+  }
+  .room-screen .board-row,
+  .room-screen .letter-board {
+    gap: 3px;
+  }
+  .room-screen .keyboard {
+    width: 410px;
+  }
+  .room-screen .keyboard button {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 24px;
+    min-height: 24px;
+  }
+  .room-screen .keyboard-row {
+    flex-wrap: nowrap;
+  }
+  .screen-game-decifra .screen-controls {
+    margin-top: 2px;
+  }
+  .screen-game-decifra .screen-hud strong {
+    font-size: 19px;
+  }
+}

@@ -1,44 +1,35 @@
-# LEXICADE — evidências de validação
+# LEXICADE 2 — evidências de validação
 
-Validação executada em 6 de outubro de 2026 na máquina da nuvem, Node.js 24.19.0, Chromium Linux e PostgreSQL local PGlite 0.3.14. Nenhum comando foi executado contra o Supabase remoto do usuário. As limitações e metas editoriais incompletas estão em `PENDENCIAS.md`.
+Revisão testada em 6 de outubro de 2026, na nuvem: Node.js 24.19.0, Chromium Linux e PGlite. Nenhum teste acessou o Supabase remoto do proprietário. Limites em [PENDENCIAS.md](PENDENCIAS.md).
 
-## Testes Node sem dependências
+## Node
 
-`npm test`: **20 testes aprovados**, zero falhas. Exercitam pistas do Decifra com letras repetidas, modo difícil, acentos/pontuação, dia/fuso e determinismo, XP/níveis/moedas, cruzadinha conexa, caça-palavras, BFS da Escada, anagramas, Forca, Snake, limpeza/gravidade de letras, oito labirintos/quatro IAs, efeitos de Chuva, física de Flappy, ortografia/rimas, idempotência dos diários visitantes, conteúdo/i18n e integridade dos módulos/HTML.
+`npm test`: **23 testes aprovados, zero falhas ou testes pulados**. Inclui navegação circular nas quatro máquinas, enquadramento de câmera, 30 frases novas completas por idioma, integridade de módulos/imports/HTML/CSP, catálogo de quatro jogos e traduções. Também mantém testes das regras puras da versão anterior: pistas com letras repetidas, acentos, datas/fusos, economia, labirintos, anagramas e algoritmos legados.
 
-`npm run validate`: verifica esquema, normalização, duplicatas, chaves dos três idiomas, respostas presentes nas palavras válidas, catálogos e **180 grades de cruzadinha**. Emite avisos explícitos para as metas abaixo do mínimo; esses avisos não são falhas escondidas ou aprovação editorial.
-
-`npm run crosswords`: gerador reproduzível de 60 grades por idioma; pelo menos 30 para os diários. Grades verificadas quanto a interseções, adjacências e conexão.
+`npm run validate` verifica conteúdo e 180 grades legadas. Avisos editoriais históricos continuam explícitos, sem ocultar déficits como aprovação.
 
 ## PostgreSQL local
 
-Aplicadas do zero as três migrações e o seed em PGlite. O harness cria apenas a superfície mínima de Auth (`auth.users`, `auth.uid()` e papéis); executa o mesmo SQL entregue, sem conectar ao projeto do usuário.
+O harness `supabase/tests/run-local.mjs` instala as migrações 001–004 e o seed, verifica os quatro limiares de conquistas e executa `security.sql` e `economy.sql`. Em uma segunda instância vazia, aplica **o arquivo entregue `INSTALAR-TUDO.sql`** e repete os testes. Ambas as instalações e todas as assertions terminaram com `PASS`.
 
-- `security.sql`: dois usuários fictícios e rollback; escrita direta bloqueada, dados privados isolados, funções auxiliares privadas, score impossível/taxa rejeitados, pistas com repetição, segredo diário preservado até fim e limite de tentativas.
-- `economy.sql`: teto e importação única, recordes importados fora do ranking, compra repetida sem cobrança dupla, equipar só itens próprios, exportação, exclusão em cascata e comparação de XP/nível JS com SQL.
-- Ambas as suítes terminaram com `PASS`. Instruções de reprodução em `supabase/tests/README.md`.
+Verificados bloqueio de escrita direta, isolamento de dados, RPCs privadas, limites de score/taxa, tentativas/pistas, segredo diário legado, importação idempotente com teto, recordes privados, compras sem cobrança duplicada, itens próprios, exportação, exclusão e equivalência de XP/níveis entre JS e SQL. Auth é uma simulação mínima local. Não valida e-mail, OAuth, configuração hospedada ou uma sessão real. Reprodução: [supabase/tests/README.md](../supabase/tests/README.md).
 
-Isso valida SQL/PostgreSQL local. Não prova funcionamento do serviço Auth, e-mail, OAuth, configuração RLS/URLs da plataforma publicada nem integração com uma sessão real; repetir os testes no projeto conforme `SETUP-SUPABASE.md`.
+## Navegador com sala 3D
 
-## Navegador e servidor
+Playwright externo ao checkout executou Chromium com WebGL e renderizador de software. A sala abriu sem fallback ou erros JavaScript. Todas as quatro máquinas iniciaram seus jogos no monitor; Frase Rush respondeu à frase completa, Decifra registrou um palpite, LexiMaze respondeu à direção e Anagrama exibiu suas letras. Pausa, retomada, saída, troca de máquina e visão geral funcionaram. Nenhum seletor de modo/duração apareceu no monitor.
 
-Servidor iniciado com `npm start`, arquivos servidos com MIME de ES Modules e jogos carregados via HTTP. Foram realizados testes externos de Playwright na nuvem; Playwright não é dependência para o usuário rodar o site.
+Foram verificadas larguras **320, 390, 768, 1.440 e 3.840 px**, sem overflow horizontal. No celular, as linhas do teclado do Decifra não quebraram e o conteúdo coube no monitor. Escape saiu do jogo mesmo com o campo de texto em foco. Inglês, espanhol e português mantiveram a máquina selecionada. Perfil e login abriram em painel sobre a sala, inclusive usando uma URL antiga. Zero erros JavaScript e zero requisições ao Supabase nos testes visitantes.
 
-- Os **16 jogos** carregaram e chegaram a resultados por interação ou esgotamento de tempo/vidas. TypeRush, Cruzadinha, Escada, Caça-Palavras e jogos de reflexo tiveram partidas com acertos e pontuação; jogos Canvas também tiveram ciclo de início/atualização/fim verificado.
-- TypeRush: partida de 25 palavras, resultado e reinício em sobrevivência; Decifra: infinito, dueto e quarteto; cruzadinha: preenchimento das dez respostas; Forca: fim de rodada; anagrama: três respostas; Intrusa/Ortografia: fim; rimas: repetição rejeitada; Tetris: queda rápida e fim. Gravação visitante e páginas auxiliares exercitadas. Verificada a página 404 em caminho profundo e corrigida a preservação de quadros resolvidos/compartilhamento no Decifra de múltiplos quadros.
-- **100 verificações de layout**: home, 16 jogos e oito páginas, nas larguras 320, 768, 1440 e 3840 px; nenhuma largura horizontal excedente detectada. Isso não substitui revisão visual de cada estado autenticado.
-- Home nos **três idiomas e cinco temas**; catálogo com 16 cartões em todos. Revisão visual por capturas desktop/mobile.
-- **Offline dos 16 jogos**: aguardar instalação do service worker, cortar rede, abrir cada página e iniciar; dados e módulos disponíveis, aviso offline presente e nenhum erro JavaScript. Sem cache de respostas Supabase ou segredos do diário de conta.
-- As verificações funcionais de visitante bloquearam destinos Supabase; não dependeram de uma consulta remota para passar.
+## Rodadas completas
 
-## Não executado / sem aprovação de lançamento
+Um teste separado montou o mesmo `game-runner` e CSS do monitor, sem renderizar a sala durante o relógio acelerado. Exercitou Frase Rush com frase completa, espaços, pausa e término aos 60 s; seis tentativas e resultado do Decifra; três acertos e término do Anagrama; movimento e encerramento do LexiMaze. Os quatro resultados foram persistidos como visitante: quatro partidas e quatro jogos, sem erros JavaScript. Isso verifica os ciclos completos dos jogos; a interação com a sala foi verificada separadamente acima.
 
-Cadastro com e-mail real, recuperação/Google, todas as operações em conta real, SMTP, redirects de produção, deploy, domínio, Windows real, Safari/Firefox/leitor de tela, medição de 60 FPS e Lighthouse. Nenhum desses itens é apresentado como aprovado. Os textos legais e o conteúdo ainda dependem de revisão humana.
+## Offline e fallback
 
-## Repetir antes de publicar
+Depois de instalar o service worker e conferir os 373 recursos em cache, o navegador foi colocado offline. A sala reabriu em WebGL e os quatro jogos iniciaram no monitor. Sem erros JavaScript. Em outro contexto, WebGL foi deliberadamente indisponibilizado; os gabinetes simplificados apareceram e Frase Rush iniciou e saiu corretamente. Primeiro acesso online é necessário; login e RPCs não fazem parte do modo offline.
 
-1. `npm test` e `npm run validate`.
-2. Servir o site, concluir uma partida visitante, recarregar e confirmar progresso.
-3. Aplicar SQL pelo painel, executar os testes transacionais e testar uma conta de teste de ponta a ponta.
-4. Definir domínio/metadados e URLs Auth; auditar conteúdo, termos e acessibilidade.
-5. Publicar, testar caminhos/conta e instalar/cachear todos os jogos para repetir offline.
+## Evidência visual e limites
+
+Capturas reais da aplicação acompanham `docs/images/`. O 3D é modelado/renderizado pelo site, sem imagens de máquinas usadas para simular volume. A jogabilidade permanece DOM/Canvas para entrada de texto e controles, projetada sobre a tela da máquina 3D.
+
+Não foi medido desempenho em GPU física ou aparelho de entrada; não declarar meta de FPS cumprida. Testes Linux não comprovam execução em Windows, toque físico, Safari ou leitor de tela. A aprovação do banco hospedado e autenticação depende das ações do proprietário.

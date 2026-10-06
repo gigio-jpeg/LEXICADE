@@ -2,14 +2,14 @@
   {
     "id": "typerush",
     "name": {
-      "pt-BR": "TypeRush",
-      "en": "TypeRush",
-      "es": "TypeRush"
+      "pt-BR": "Frase Rush",
+      "en": "Phrase Rush",
+      "es": "Frase Rush"
     },
     "description": {
-      "pt-BR": "Seu teclado. Seu ritmo. Seu recorde.",
-      "en": "Your keyboard. Your rhythm. Your record.",
-      "es": "Tu teclado. Tu ritmo. Tu récord."
+      "pt-BR": "Uma frase. Seu teclado. Sessenta segundos.",
+      "en": "One sentence. Your keyboard. Sixty seconds.",
+      "es": "Una frase. Tu teclado. Sesenta segundos."
     },
     "category": "typing",
     "icon": "Aa",
@@ -36,9 +36,9 @@
   {
     "id": "wordman",
     "name": {
-      "pt-BR": "Word-Man",
-      "en": "Word-Man",
-      "es": "Word-Man"
+      "pt-BR": "LexiMaze",
+      "en": "LexiMaze",
+      "es": "LexiMaze"
     },
     "description": {
       "pt-BR": "Encontre letras. Fuja das sombras.",
@@ -49,57 +49,6 @@
     "icon": "◕",
     "color": "pink",
     "path": "games/wordman/index.html"
-  },
-  {
-    "id": "cruzadinha",
-    "name": {
-      "pt-BR": "Cruzadinha Express",
-      "en": "Crossword Express",
-      "es": "Crucigrama Exprés"
-    },
-    "description": {
-      "pt-BR": "Conecte ideias, uma palavra de cada vez.",
-      "en": "Connect ideas, one word at a time.",
-      "es": "Conecta ideas, una palabra a la vez."
-    },
-    "category": "crossword",
-    "icon": "▦",
-    "color": "green",
-    "path": "games/cruzadinha/index.html"
-  },
-  {
-    "id": "chuva",
-    "name": {
-      "pt-BR": "Chuva de Palavras",
-      "en": "Word Rain",
-      "es": "Lluvia de Palabras"
-    },
-    "description": {
-      "pt-BR": "Digite antes que as palavras caiam.",
-      "en": "Type before the words fall.",
-      "es": "Escribe antes de que caigan las palabras."
-    },
-    "category": "typing",
-    "icon": "↓",
-    "color": "cyan",
-    "path": "games/chuva/index.html"
-  },
-  {
-    "id": "space-letters",
-    "name": {
-      "pt-BR": "Space Letters",
-      "en": "Space Letters",
-      "es": "Space Letters"
-    },
-    "description": {
-      "pt-BR": "Defenda seu universo com palavras.",
-      "en": "Defend your universe with words.",
-      "es": "Defiende tu universo con palabras."
-    },
-    "category": "arcade",
-    "icon": "↟",
-    "color": "purple",
-    "path": "games/space-letters/index.html"
   },
   {
     "id": "anagrama",
@@ -117,158 +66,5 @@
     "icon": "⇄",
     "color": "yellow",
     "path": "games/anagrama/index.html"
-  },
-  {
-    "id": "caca-palavras",
-    "name": {
-      "pt-BR": "Caça-Palavras",
-      "en": "Word Search",
-      "es": "Sopa de Letras"
-    },
-    "description": {
-      "pt-BR": "A próxima palavra está escondida aqui.",
-      "en": "The next word is hiding here.",
-      "es": "La siguiente palabra se esconde aquí."
-    },
-    "category": "logic",
-    "icon": "⌕",
-    "color": "green",
-    "path": "games/caca-palavras/index.html"
-  },
-  {
-    "id": "forca",
-    "name": {
-      "pt-BR": "Forca Arcade",
-      "en": "Letter Rescue",
-      "es": "Rescate de Letras"
-    },
-    "description": {
-      "pt-BR": "Cada letra pode salvar a rodada.",
-      "en": "Each letter can save the round.",
-      "es": "Cada letra puede salvar la ronda."
-    },
-    "category": "logic",
-    "icon": "?",
-    "color": "pink",
-    "path": "games/forca/index.html"
-  },
-  {
-    "id": "escada",
-    "name": {
-      "pt-BR": "Escada de Palavras",
-      "en": "Word Ladder",
-      "es": "Escalera de Palabras"
-    },
-    "description": {
-      "pt-BR": "Mude uma letra. Abra um novo caminho.",
-      "en": "Change a letter. Open a new path.",
-      "es": "Cambia una letra. Abre otro camino."
-    },
-    "category": "logic",
-    "icon": "↗",
-    "color": "cyan",
-    "path": "games/escada/index.html"
-  },
-  {
-    "id": "snake",
-    "name": {
-      "pt-BR": "Letra Snake",
-      "en": "Letter Snake",
-      "es": "Serpiente de Letras"
-    },
-    "description": {
-      "pt-BR": "Siga a palavra. Aumente a sequência.",
-      "en": "Follow the word. Grow the streak.",
-      "es": "Sigue la palabra. Haz crecer la racha."
-    },
-    "category": "arcade",
-    "icon": "∿",
-    "color": "green",
-    "path": "games/snake/index.html"
-  },
-  {
-    "id": "tetris-letras",
-    "name": {
-      "pt-BR": "Letra Tetris",
-      "en": "Letter Stack",
-      "es": "Bloques de Letras"
-    },
-    "description": {
-      "pt-BR": "Encaixe letras. Faça palavras acontecerem.",
-      "en": "Place letters. Make words happen.",
-      "es": "Encaja letras. Forma palabras."
-    },
-    "category": "arcade",
-    "icon": "▥",
-    "color": "purple",
-    "path": "games/tetris-letras/index.html"
-  },
-  {
-    "id": "flappy",
-    "name": {
-      "pt-BR": "Flappy Palavra",
-      "en": "Word Flight",
-      "es": "Vuelo de Palabras"
-    },
-    "description": {
-      "pt-BR": "Um toque. Um portal. A letra certa.",
-      "en": "One tap. One portal. The right letter.",
-      "es": "Un toque. Un portal. La letra correcta."
-    },
-    "category": "arcade",
-    "icon": "↝",
-    "color": "yellow",
-    "path": "games/flappy/index.html"
-  },
-  {
-    "id": "intrusa",
-    "name": {
-      "pt-BR": "Palavra Intrusa",
-      "en": "Odd Word Out",
-      "es": "Palabra Intrusa"
-    },
-    "description": {
-      "pt-BR": "Uma palavra não pertence ao grupo.",
-      "en": "One word does not belong.",
-      "es": "Una palabra no pertenece al grupo."
-    },
-    "category": "reflex",
-    "icon": "◇",
-    "color": "pink",
-    "path": "games/intrusa/index.html"
-  },
-  {
-    "id": "ortografia",
-    "name": {
-      "pt-BR": "Ortografia Rápida",
-      "en": "Spelling Sprint",
-      "es": "Ortografía Rápida"
-    },
-    "description": {
-      "pt-BR": "Seu olhar é mais rápido que o erro?",
-      "en": "Is your eye faster than the mistake?",
-      "es": "¿Tu mirada es más rápida que el error?"
-    },
-    "category": "reflex",
-    "icon": "✓",
-    "color": "cyan",
-    "path": "games/ortografia/index.html"
-  },
-  {
-    "id": "rimas",
-    "name": {
-      "pt-BR": "Combo de Rimas",
-      "en": "Rhyme Combo",
-      "es": "Combo de Rimas"
-    },
-    "description": {
-      "pt-BR": "Encontre seu ritmo. Emende as rimas.",
-      "en": "Find your rhythm. Chain your rhymes.",
-      "es": "Encuentra tu ritmo. Encadena rimas."
-    },
-    "category": "reflex",
-    "icon": "≈",
-    "color": "purple",
-    "path": "games/rimas/index.html"
   }
 ]

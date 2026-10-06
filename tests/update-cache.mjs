@@ -20,7 +20,7 @@ async function walk(folder) {
     else if (!file.endsWith(".md")) files.push(file);
   }
 }
-for (const folder of ["src/", "pages/", "games/", "data/"]) await walk(folder);
+for (const folder of ["src/", "pages/", "games/", "data/", "vendor/three/"]) await walk(folder);
 await writeFile(
   new URL("data/offline-files.json", root),
   JSON.stringify([...new Set(files)].sort(), null, 2) + "\n",

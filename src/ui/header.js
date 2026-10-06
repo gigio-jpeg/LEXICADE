@@ -31,7 +31,7 @@ export function header(active = "") {
     { class: "main-nav", "aria-label": t("nav.play") },
     ...[
       ["play", ""],
-      ["daily", "pages/diario.html"],
+
       ["ranking", "pages/ranking.html"],
     ].map(([key, route]) =>
       el(

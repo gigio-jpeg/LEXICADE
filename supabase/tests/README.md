@@ -17,3 +17,7 @@ Para verificar **seu Supabase real**, após aplicar migrações e seed, você po
 Cobertura: privilégios/RLS, privacidade de perfis, isolamento entre usuários, escrita direta bloqueada, score impossível, rate limit, pistas com repetidas, limite de seis tentativas, segredo diário até o fim, importação com teto/sem ranking, compras idempotentes, equipar somente itens próprios, exportar dados e exclusão em cascata.
 
 O mock não reproduz envio de e-mail, OAuth, políticas da infraestrutura ou toda a estrutura de `auth.users`. Teste essas partes no serviço real antes de publicar.
+
+## Revisão 2
+
+O harness também aplica `004_arcade_focus.sql` e valida limiares de 1, 2, 3 e 4 jogos nas conquistas. Em outra instância vazia, instala `INSTALAR-TUDO.sql` e repete as suítes de segurança/economia. O bundle é gerado por `node tests/generate-sql.mjs`. Não reaplique o instalador completo em um banco da versão anterior; aplique só 004.

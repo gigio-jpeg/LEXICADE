@@ -398,16 +398,16 @@
   {
     "id": "games-3",
     "kind": "games",
-    "target": 3,
+    "target": 1,
     "name": {
-      "pt-BR": "3 jogos diferentes",
-      "en": "3 different games",
-      "es": "3 juegos distintos"
+      "pt-BR": "1 máquinas",
+      "en": "1 machines",
+      "es": "1 máquinas"
     },
     "description": {
-      "pt-BR": "Alcance 3 jogos diferentes.",
-      "en": "Reach 3 different games.",
-      "es": "Alcanza 3 juegos distintos."
+      "pt-BR": "Jogue em 1 máquinas diferentes.",
+      "en": "Play on 1 different machines.",
+      "es": "Juega en 1 máquinas diferentes."
     },
     "icon": "✦",
     "xp": 20,
@@ -416,16 +416,16 @@
   {
     "id": "games-6",
     "kind": "games",
-    "target": 6,
+    "target": 2,
     "name": {
-      "pt-BR": "6 jogos diferentes",
-      "en": "6 different games",
-      "es": "6 juegos distintos"
+      "pt-BR": "2 máquinas",
+      "en": "2 machines",
+      "es": "2 máquinas"
     },
     "description": {
-      "pt-BR": "Alcance 6 jogos diferentes.",
-      "en": "Reach 6 different games.",
-      "es": "Alcanza 6 juegos distintos."
+      "pt-BR": "Jogue em 2 máquinas diferentes.",
+      "en": "Play on 2 different machines.",
+      "es": "Juega en 2 máquinas diferentes."
     },
     "icon": "✦",
     "xp": 20,
@@ -434,16 +434,16 @@
   {
     "id": "games-10",
     "kind": "games",
-    "target": 10,
+    "target": 3,
     "name": {
-      "pt-BR": "10 jogos diferentes",
-      "en": "10 different games",
-      "es": "10 juegos distintos"
+      "pt-BR": "3 máquinas",
+      "en": "3 machines",
+      "es": "3 máquinas"
     },
     "description": {
-      "pt-BR": "Alcance 10 jogos diferentes.",
-      "en": "Reach 10 different games.",
-      "es": "Alcanza 10 juegos distintos."
+      "pt-BR": "Jogue em 3 máquinas diferentes.",
+      "en": "Play on 3 different machines.",
+      "es": "Juega en 3 máquinas diferentes."
     },
     "icon": "✦",
     "xp": 21,
@@ -452,16 +452,16 @@
   {
     "id": "games-16",
     "kind": "games",
-    "target": 16,
+    "target": 4,
     "name": {
-      "pt-BR": "16 jogos diferentes",
-      "en": "16 different games",
-      "es": "16 juegos distintos"
+      "pt-BR": "4 máquinas",
+      "en": "4 machines",
+      "es": "4 máquinas"
     },
     "description": {
-      "pt-BR": "Alcance 16 jogos diferentes.",
-      "en": "Reach 16 different games.",
-      "es": "Alcanza 16 juegos distintos."
+      "pt-BR": "Jogue em 4 máquinas diferentes.",
+      "en": "Play on 4 different machines.",
+      "es": "Juega en 4 máquinas diferentes."
     },
     "icon": "✦",
     "xp": 21,

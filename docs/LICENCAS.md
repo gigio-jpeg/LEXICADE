@@ -16,6 +16,12 @@ Listas candidatas podem conter grafias informais, nomes próprios ou termos inad
 
 Revisão humana necessária: acentuação, pronúncia de rimas, ambiguidade de categorias/dicas e ensino de ortografia. Não preencher metas inventando palavras ou copiando listas sem licença.
 
+## Motor 3D
+
+**Three.js 0.180.0**, licença **MIT**, obtido do pacote oficial `three` do npm. Módulos e addons necessários estão em `vendor/three/`; licença integral em `vendor/three/LICENSE.txt`. Imports dos addons foram ajustados para arquivos locais. Não há CDN necessária durante o uso.
+
+Geometrias dos gabinetes, sala, arte lateral, letreiros e texturas são produzidos pelo código autoral desta revisão. Não foram usados modelos 3D externos nem artes de fliperamas comerciais. As 30 frases por idioma de `data/arcade/phrases.json` foram escritas especificamente para Frase Rush; as frases antigas geradas por modelos ficam apenas como dados legados.
+
 ## Fonte tipográfica
 
 **Silkscreen**, Jason Kottke / colaboradores, obtida do [repositório oficial Google Fonts](https://github.com/google/fonts/tree/main/ofl/silkscreen), **SIL Open Font License 1.1**. Fonte sem alterações em `assets/fonts/Silkscreen-Regular.ttf`; texto completo da licença em `Silkscreen-OFL.txt`. Demais pilhas tipográficas usam fontes já instaladas no sistema, sem distribuir arquivos dessas fontes.

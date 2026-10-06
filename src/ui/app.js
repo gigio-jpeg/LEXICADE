@@ -9,6 +9,37 @@ let cleanup,
   revision = 0;
 let offlineFallback = false;
 const main = document.getElementById("main");
+const initialRoute = document.body.dataset.page;
+const embeddedRoutes = [
+  "game",
+  "daily",
+  "login",
+  "reset",
+  "onboard",
+  "profile",
+  "ranking",
+  "settings",
+  "about",
+  "shop",
+  "achievements",
+];
+const forwarding = embeddedRoutes.includes(initialRoute);
+if (forwarding) {
+  const old = new URL(location.href),
+    url = new URL(path());
+  old.searchParams.forEach((value, key) => url.searchParams.set(key, value));
+  url.hash = old.hash;
+  if (initialRoute === "game") {
+    const id = document.body.dataset.game;
+    if (["typerush", "decifra", "wordman", "anagrama"].includes(id)) {
+      url.searchParams.set("machine", id);
+      url.searchParams.set("play", "1");
+    }
+  } else if (initialRoute !== "daily")
+    url.searchParams.set("panel", initialRoute);
+  location.replace(url.href);
+}
+
 async function render() {
   const current = ++revision;
   cleanup?.();
@@ -22,7 +53,7 @@ async function render() {
   main.replaceChildren(el("p", { class: "empty" }, t("common.loading")));
   try {
     let dispose;
-    if (route === "home") await home(main);
+    if (route === "home") dispose = await home(main);
     else if (route === "game")
       dispose = await (
         await import("./game.js")
@@ -96,40 +127,42 @@ window.addEventListener("unhandledrejection", () =>
   toast(t("common.error"), true),
 );
 window.addEventListener("pagehide", () => cleanup?.());
-await loadLanguage();
-try {
-  await initAuth(
-    ["login", "reset", "onboard"].includes(document.body.dataset.page),
-  );
-} catch {
-  toast(t("auth.failure"), true);
-}
-if (session())
+if (!forwarding) {
+  await loadLanguage();
   try {
-    const profile = await ownProfile();
-    if (
-      profile?.onboarding_required &&
-      document.body.dataset.page !== "onboard"
-    ) {
-      location.replace(path("pages/escolher-nome.html"));
-    }
+    await initAuth(
+      ["login", "reset", "onboard"].includes(document.body.dataset.page),
+    );
   } catch {
-    toast(t("common.error"), true);
+    toast(t("auth.failure"), true);
   }
-document.title = document.title.replaceAll("LEXICADE", config.name);
-connectivity();
-await render();
-const structured = el("script", { type: "application/ld+json" });
-structured.textContent = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: config.name,
-  url: path(),
-  inLanguage: ["pt-BR", "en", "es"],
-  description: t("about.story"),
-});
-document.head.append(structured);
-if ("serviceWorker" in navigator)
-  navigator.serviceWorker
-    .register(path("sw.js"), { scope: new URL(path()).pathname })
-    .catch(() => {});
+  if (session())
+    try {
+      const profile = await ownProfile();
+      if (
+        profile?.onboarding_required &&
+        new URL(location.href).searchParams.get("panel") !== "onboard"
+      ) {
+        location.replace(path("?panel=onboard"));
+      }
+    } catch {
+      toast(t("common.error"), true);
+    }
+  document.title = document.title.replaceAll("LEXICADE", config.name);
+  connectivity();
+  await render();
+  const structured = el("script", { type: "application/ld+json" });
+  structured.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: config.name,
+    url: path(),
+    inLanguage: ["pt-BR", "en", "es"],
+    description: t("about.story"),
+  });
+  document.head.append(structured);
+  if ("serviceWorker" in navigator)
+    navigator.serviceWorker
+      .register(path("sw.js"), { scope: new URL(path()).pathname })
+      .catch(() => {});
+}

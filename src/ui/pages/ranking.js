@@ -57,7 +57,7 @@ export async function rankingPage(main) {
       "div",
       { class: "game-options" },
       field(t("nav.play"), game),
-      field(t("game.mode"), mode),
+
       field(t("ranking.period"), period),
       field(t("nav.language"), language),
       field(t("ranking.country"), country),
@@ -66,6 +66,7 @@ export async function rankingPage(main) {
     pagination = el("div", { class: "actions", style: "margin-top:18px" });
   content.append(filters, results, pagination);
   async function load() {
+    mode.value = game.value === "decifra" ? "infinite" : "classic";
     const revision = ++request;
     results.replaceChildren(el("p", { class: "empty" }, t("common.loading")));
     try {

@@ -10,18 +10,22 @@ URL e publishable key recebidas já estão em `src/core/config.js`. Não coloque
 
 ## 2. Criar tabelas e funções
 
-Abra o arquivo indicado no VS Code, use Ctrl+A e Ctrl+C. No Supabase, abra **SQL Editor → New query**, cole tudo e pressione **Run**. Execute **um arquivo por vez**, nesta ordem:
+Confira primeiro se a tabela `profiles` já existe em **Table Editor**.
 
-1. `supabase/migrations/001_schema.sql`: tabelas, índices, RLS, gatilho de perfil e auxiliares privados.
-2. `supabase/migrations/002_rpcs.sql`: validação de partidas, Decifra diário, compras, importação, perfil e exclusão.
-3. `supabase/migrations/003_queries.sql`: perfil público seguro, ranking, estatísticas, desafios e exportação.
-4. `supabase/seed.sql`: limites dos jogos, catálogo de conquistas/loja e vocabulário do servidor.
+- **Banco vazio:** aplique somente `supabase/INSTALAR-TUDO.sql`. Ele reúne as três migrações iniciais, o seed e a migração 004 em uma única transação.
+- **Banco da versão anterior já instalado:** aplique somente `supabase/migrations/004_arcade_focus.sql`. Ela ajusta as conquistas aos quatro jogos, preservando contas, histórico e saldo. Não reaplique a instalação completa.
 
-“Success. No rows returned” é normal para criação de estruturas. Se um arquivo falhar, pare e informe o nome do arquivo e o erro; não envie senhas ou dados pessoais. Cada migração usa uma transação. Se o editor informar que a transação está abortada, execute `rollback;` antes de investigar. Não repita uma migração já aplicada: as tabelas/funções são criadas uma vez. O seed admite reaplicação dos catálogos.
+No PowerShell aberto na pasta do projeto, para copiar a instalação do banco vazio com acentos corretos:
 
-Depois confira no **Table Editor** se `profiles`, `scores` e os demais objetos apareceram. O usuário do painel é administrador: ver dados ali não demonstra o que um jogador pode ler. Nunca desligue RLS para tentar resolver uma falha do site.
+```powershell
+Get-Content -Raw -Encoding UTF8 .\supabase\INSTALAR-TUDO.sql | Set-Clipboard
+```
 
-As respostas diárias são sorteadas **dentro do servidor**, na primeira tentativa daquele dia/idioma. Não é necessário agendar um job ou preencher manualmente palavras todos os dias. `daily_words`, listas privadas, tentativas, limites e preços não têm acesso direto de clientes. O visitante usa uma escolha local determinística e inspecionável, informada na interface.
+Para o banco já instalado, substitua o caminho por `.\supabase\migrations\004_arcade_focus.sql`. No painel, abra **SQL Editor → New query**, cole com Ctrl+V e pressione **Run**. “Success. No rows returned” é normal. Se falhar, pare e informe o erro, sem senhas. Execute `rollback;` se o editor informar que a transação está abortada, antes de investigar.
+
+Confira `profiles`, `scores` e os demais objetos no Table Editor. Não desligue RLS. A chave publicável permite usar a API conforme as políticas; não permite instalar estruturas administrativas. Por isso entreguei o SQL e não alterei seu banco remoto.
+
+Os arquivos separados continuam versionados para manutenção: `001_schema.sql`, `002_rpcs.sql`, `003_queries.sql`, `seed.sql` e `004_arcade_focus.sql`. `node tests/generate-sql.mjs` gera novamente o instalador. Funções e dados legados de jogos/diários permanecem por compatibilidade, sem acrescentar jogos ou opções à sala atual.
 
 ## 3. Autenticação por e-mail
 
@@ -40,13 +44,13 @@ Um e-mail local aberto em outro dispositivo não consegue acessar o servidor do 
 
 Com `npm start` rodando, abra o site, entre em **Entrar → Criar conta** e preencha nome público, e-mail, senha, faixa de idade e consentimentos. Use um nome diferente do seu nome real. Contas de menores de 13 são bloqueadas; visitantes continuam livres. A declaração de autorização para 13–17 precisa de revisão jurídica antes do uso público.
 
-Confirme o e-mail, entre e termine uma partida. Em **Table Editor → scores**, a linha deve corresponder a jogo, modo, idioma, pontuação e data. No perfil, confira XP, moedas e recorde. Teste sair e entrar de novo. Recuperação de senha usa uma página dedicada; teste com uma conta de teste antes de publicar.
+Confirme o e-mail, entre e termine uma partida. Em **Table Editor → scores**, a linha deve corresponder a jogo, modo, idioma, pontuação e data. No perfil, confira XP, moedas e recorde. Teste sair e entrar de novo. Recuperação de senha usa uma painel dentro da sala, acessível pelo caminho de recuperação; teste com uma conta de teste antes de publicar.
 
 A aplicação oferece importar progresso visitante. XP máximo importado: 1.000; moedas: 250; até 100 recordes, com limites por jogo e teto de 50.000 pontos por recorde. A importação é única por conta e os recordes importados ficam em `guest_bests`, fora dos rankings. Eles continuam visíveis no seu perfil privado.
 
 ## 5. Testes de segurança no painel
 
-Depois das migrações e seed, execute `supabase/tests/security.sql`. Ele cria dois usuários fictícios **dentro de uma transação** e desfaz tudo ao final. Demonstra bloqueios de escrita direta, isolamento, limite de taxa, pistas com letras repetidas e resposta secreta até o fim. O resultado esperado termina com `PASS`.
+Depois da instalação, execute `supabase/tests/security.sql`. Ele cria dois usuários fictícios **dentro de uma transação** e desfaz tudo ao final. Demonstra bloqueios de escrita direta, isolamento, limite de taxa, pistas com letras repetidas e resposta secreta até o fim. O resultado esperado termina com `PASS`.
 
 Depois execute `supabase/tests/economy.sql`: importação limitada/idempotente, recordes privados, compra sem duplicar cobrança, equipar apenas itens próprios, exportação e exclusão em cascata. Também desfaz tudo no final. Se um teste falhar, execute `rollback;` e investigue antes de publicar. Não altere uma assertion para esconder a falha.
 
@@ -67,11 +71,11 @@ Link mágico é oferecido para entrar em uma conta existente; não cria contas s
 
 ## 7. Regras documentadas
 
-- O dia de desafios e sequência usa o relógio do servidor e o fuso IANA do perfil, inicialmente vindo do navegador. O servidor rejeita datas arbitrárias enviadas pelo cliente. Alterações de fuso são limitadas a uma por 30 dias para dificultar duplicação de bônus. Horário de verão é tratado pelo PostgreSQL e `Intl`.
+- A sequência e as funções legadas de desafios usa o relógio do servidor e o fuso IANA do perfil, inicialmente vindo do navegador. O servidor rejeita datas arbitrárias enviadas pelo cliente. Alterações de fuso são limitadas a uma por 30 dias para dificultar duplicação de bônus. Horário de verão é tratado pelo PostgreSQL e `Intl`.
 - Rankings de dia/semana/mês usam UTC; semana começa na segunda. Essa referência única mantém a comparação entre jogadores consistente.
 - Taxa: no máximo uma partida por 5 segundos **por jogo**, com trava no perfil e verificações transacionais.
 - XP base 30; desempenho limitado a 0,5–2; recorde +10; diário +20; sequência +1% por dia até +50%; moedas 20% do XP antes de recompensas de conquistas. JS e SQL usam as mesmas fórmulas; o retorno do servidor vale para a conta.
-- As demais partidas verificam limites, métricas, duração e consistência, mas um cliente estático não é prova criptográfica de que alguém jogou honestamente. Uma implantação competitiva exige monitoramento e revisão adicional de trapaças.
+- As partidas verificam limites, métricas, duração e consistência, mas um cliente estático não é prova criptográfica de que alguém jogou honestamente. Uma implantação competitiva exige monitoramento e revisão adicional de trapaças.
 
 ## Referências
 

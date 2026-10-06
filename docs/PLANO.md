@@ -1,6 +1,6 @@
 # LEXICADE — plano de construção
 
-Especificação: `prompt-lexicade-projeto-completo.md`, enviada pelo usuário. Todos os capítulos, de 0 a 16, fazem parte do escopo. Este plano não substitui os detalhes da especificação.
+Especificação: `prompt-lexicade-projeto-completo.md`, enviada pelo usuário. Os capítulos iniciais orientaram a primeira entrega. A revisão 2, registrada ao final, segue a orientação posterior do usuário e substitui o catálogo e a interface anteriores.
 
 ## Situação desta entrega
 
@@ -196,3 +196,20 @@ Código de todas as fases entregue; aprovação integral de lançamento ainda n�
 - Testes Node e PostgreSQL local executados; testes de navegador incluindo resultados, persistência, idiomas, temas e offline. Detalhes atualizados em `VALIDACAO.md`.
 - Nenhuma consulta/escrita no Supabase remoto e nenhuma publicação do site. Após falha do link do artefato, o proprietário autorizou enviar o código ao GitHub em `gigio-jpeg/LEXICADE`, branch `main`.
 - Instruções Windows ficam para depois do pacote, conforme a orientação mais recente do usuário.
+
+## Revisão 2 — sala de fliperama 3D (orientação atual)
+
+A orientação do usuário substitui o catálogo de 16 jogos e os muitos ajustes. A experiência principal passa a ser uma sala 3D em tempo real com quatro máquinas navegáveis. O jogo acontece dentro da tela do gabinete; escolher a máquina e jogar são ações diretas.
+
+- [x] Sala WebGL original, gabinetes modelados em geometria 3D, iluminação neon, sombras, reflexos e câmera animada entre máquinas.
+- [x] Quatro jogos principais: frases rápidas, Decifra, labirinto de letras e anagramas. Regras simples, sem seleção de segundos/conteúdo/modos.
+- [x] Jogabilidade na tela da máquina, com controles acessíveis, saída/reinício, pausa e adaptação mobile.
+- [x] Manter progresso visitante, integração existente Supabase e SQL pronto. Chave pública não concede criação de tabelas; nenhuma credencial administrativa foi fornecida e não será solicitada pelo chat.
+- [x] Reduzir navegação/catálogo aos quatro jogos; preservar histórico de dados e compatibilidade dos SQL anteriores.
+- [x] Recursos gráficos locais/licenciados, sem build obrigatório; Three.js como motor 3D, sem framework de interface.
+- [x] Testar câmera/interação, jogabilidade, teclado/toque, resolução pequena, fallback sem WebGL e offline; rever visual por capturas reais.
+- [x] Atualizar README/guia/pendências, empacotar e enviar a revisão ao mesmo repositório, conforme autorização de entrega já dada.
+
+Revisões anteriores permanecem como histórico. Para esta revisão, o critério é uma experiência 3D com quatro máquinas, sem retomar os ajustes e jogos que o usuário rejeitou.
+
+Evidências da revisão 2: 23 testes Node, quatro migrações e instalação SQL completa em instâncias locais isoladas; navegação/interação real WebGL nos quatro jogos, ciclos completos dos quatro controladores, cinco larguras, três idiomas, offline e fallback sem WebGL. Limites de Auth remoto, GPU física e Windows estão em `PENDENCIAS.md`. Node/npm/Git já foram confirmados pelo usuário no Windows.

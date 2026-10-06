@@ -1,0 +1,2002 @@
+[
+  {
+    "correct": "gato",
+    "wrong": "gaot",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cachorro",
+    "wrong": "cachroro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cavalo",
+    "wrong": "cavlao",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "peixe",
+    "wrong": "pexie",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tigre",
+    "wrong": "tirge",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "leão",
+    "wrong": "leoã",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "zebra",
+    "wrong": "zerba",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "girafa",
+    "wrong": "girfaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "elefante",
+    "wrong": "elefnate",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "urso",
+    "wrong": "uros",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lobo",
+    "wrong": "loob",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "raposa",
+    "wrong": "rapsoa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "coelho",
+    "wrong": "coehlo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sapo",
+    "wrong": "saop",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cobra",
+    "wrong": "corba",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "coruja",
+    "wrong": "corjua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "águia",
+    "wrong": "ágiua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pato",
+    "wrong": "paot",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "galinha",
+    "wrong": "galniha",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "abelha",
+    "wrong": "abehla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "formiga",
+    "wrong": "forimga",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "borboleta",
+    "wrong": "borbloeta",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "golfinho",
+    "wrong": "golfniho",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "baleia",
+    "wrong": "baliea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tartaruga",
+    "wrong": "tartrauga",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "maçã",
+    "wrong": "maãç",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "banana",
+    "wrong": "bannaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "laranja",
+    "wrong": "larnaja",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "limão",
+    "wrong": "liãmo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pera",
+    "wrong": "pear",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "melão",
+    "wrong": "meãlo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "morango",
+    "wrong": "mornago",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "abacaxi",
+    "wrong": "abaacxi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cereja",
+    "wrong": "cerjea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "arroz",
+    "wrong": "arorz",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "feijão",
+    "wrong": "feiãjo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "milho",
+    "wrong": "mihlo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "batata",
+    "wrong": "battaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tomate",
+    "wrong": "tomtae",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cenoura",
+    "wrong": "cenuora",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cebola",
+    "wrong": "cebloa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "alface",
+    "wrong": "alfcae",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "queijo",
+    "wrong": "quejio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "leite",
+    "wrong": "letie",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "bolo",
+    "wrong": "bool",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sopa",
+    "wrong": "soap",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "árvore",
+    "wrong": "árvroe",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "flor",
+    "wrong": "flro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "folha",
+    "wrong": "fohla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "raiz",
+    "wrong": "razi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "semente",
+    "wrong": "semnete",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lago",
+    "wrong": "laog",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "praia",
+    "wrong": "priaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ilha",
+    "wrong": "ilah",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "montanha",
+    "wrong": "montnaha",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vale",
+    "wrong": "vael",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "areia",
+    "wrong": "ariea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vento",
+    "wrong": "vetno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "chuva",
+    "wrong": "chvua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "neve",
+    "wrong": "neev",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nuvem",
+    "wrong": "nuevm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estrela",
+    "wrong": "esterla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "planeta",
+    "wrong": "plaenta",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "floresta",
+    "wrong": "florseta",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "deserto",
+    "wrong": "desreto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "oceano",
+    "wrong": "ocenao",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mesa",
+    "wrong": "meas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cadeira",
+    "wrong": "cadiera",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cama",
+    "wrong": "caam",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "porta",
+    "wrong": "potra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "janela",
+    "wrong": "janlea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "livro",
+    "wrong": "lirvo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lápis",
+    "wrong": "láips",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "caneta",
+    "wrong": "cantea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "papel",
+    "wrong": "paepl",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "relógio",
+    "wrong": "relgóio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "chave",
+    "wrong": "chvae",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "espelho",
+    "wrong": "espleho",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "garrafa",
+    "wrong": "gararfa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "copo",
+    "wrong": "coop",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "prato",
+    "wrong": "prtao",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "colher",
+    "wrong": "colehr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "garfo",
+    "wrong": "gafro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tesoura",
+    "wrong": "tesuora",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mochila",
+    "wrong": "mocihla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sapato",
+    "wrong": "saptao",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "átomo",
+    "wrong": "átmoo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "célula",
+    "wrong": "céllua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "energia",
+    "wrong": "enegria",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "calor",
+    "wrong": "caolr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "força",
+    "wrong": "foçra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "metal",
+    "wrong": "meatl",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "oxigênio",
+    "wrong": "oxignêio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "água",
+    "wrong": "ágau",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "bola",
+    "wrong": "boal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "rede",
+    "wrong": "reed",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "natação",
+    "wrong": "natçaão",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "corrida",
+    "wrong": "corirda",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tênis",
+    "wrong": "têins",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "xadrez",
+    "wrong": "xaderz",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ciclismo",
+    "wrong": "ciclsimo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "medalha",
+    "wrong": "medlaha",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "equipe",
+    "wrong": "equpie",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "teclado",
+    "wrong": "tecaldo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tela",
+    "wrong": "teal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "código",
+    "wrong": "códgio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "arquivo",
+    "wrong": "arqiuvo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pasta",
+    "wrong": "patsa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "memória",
+    "wrong": "memróia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "robô",
+    "wrong": "roôb",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "senha",
+    "wrong": "sehna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pixel",
+    "wrong": "piexl",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "para",
+    "wrong": "paar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "está",
+    "wrong": "esát",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "isso",
+    "wrong": "isos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "como",
+    "wrong": "coom",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mais",
+    "wrong": "masi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "aqui",
+    "wrong": "aqiu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "muito",
+    "wrong": "mutio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "isto",
+    "wrong": "isot",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estou",
+    "wrong": "esotu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "fazer",
+    "wrong": "faezr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vamos",
+    "wrong": "vaoms",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "minha",
+    "wrong": "mihna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tudo",
+    "wrong": "tuod",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "porque",
+    "wrong": "poruqe",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tenho",
+    "wrong": "tehno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quando",
+    "wrong": "quadno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "agora",
+    "wrong": "agroa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estás",
+    "wrong": "esáts",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "você",
+    "wrong": "voêc",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "então",
+    "wrong": "enãto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quem",
+    "wrong": "qume",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "onde",
+    "wrong": "oned",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nada",
+    "wrong": "naad",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "coisa",
+    "wrong": "cosia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dizer",
+    "wrong": "diezr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quero",
+    "wrong": "qureo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estava",
+    "wrong": "estvaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pode",
+    "wrong": "poed",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mesmo",
+    "wrong": "memso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "eles",
+    "wrong": "else",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "todos",
+    "wrong": "toods",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "este",
+    "wrong": "eset",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "casa",
+    "wrong": "caas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "temos",
+    "wrong": "teoms",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tens",
+    "wrong": "tesn",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nunca",
+    "wrong": "nucna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estão",
+    "wrong": "esãto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "assim",
+    "wrong": "asism",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "acho",
+    "wrong": "acoh",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "falar",
+    "wrong": "faalr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ainda",
+    "wrong": "aidna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tempo",
+    "wrong": "tepmo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "também",
+    "wrong": "tamébm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sobre",
+    "wrong": "sorbe",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quer",
+    "wrong": "qure",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "favor",
+    "wrong": "faovr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "depois",
+    "wrong": "depios",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "melhor",
+    "wrong": "melohr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "talvez",
+    "wrong": "talevz",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "obrigado",
+    "wrong": "obriagdo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "noite",
+    "wrong": "notie",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sabes",
+    "wrong": "saebs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sempre",
+    "wrong": "semrpe",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estamos",
+    "wrong": "estmaos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "alguém",
+    "wrong": "algéum",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "certo",
+    "wrong": "cetro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "alguma",
+    "wrong": "algmua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vida",
+    "wrong": "viad",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "anos",
+    "wrong": "anso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dele",
+    "wrong": "deel",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vais",
+    "wrong": "vasi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tinha",
+    "wrong": "tihna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estar",
+    "wrong": "esatr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "queres",
+    "wrong": "queers",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "coisas",
+    "wrong": "coiass",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "homem",
+    "wrong": "hoemm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pessoas",
+    "wrong": "pesosas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "algo",
+    "wrong": "alog",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pelo",
+    "wrong": "peol",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ficar",
+    "wrong": "fiacr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sabe",
+    "wrong": "saeb",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "parece",
+    "wrong": "parcee",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "claro",
+    "wrong": "clrao",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dois",
+    "wrong": "dosi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "verdade",
+    "wrong": "veradde",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tipo",
+    "wrong": "tiop",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "preciso",
+    "wrong": "preicso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "antes",
+    "wrong": "anets",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "senhor",
+    "wrong": "senohr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "podes",
+    "wrong": "poeds",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "apenas",
+    "wrong": "apeans",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vocês",
+    "wrong": "voêcs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ninguém",
+    "wrong": "ninugém",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "trabalho",
+    "wrong": "trablaho",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "outra",
+    "wrong": "ourta",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "espera",
+    "wrong": "esprea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "saber",
+    "wrong": "saebr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "comigo",
+    "wrong": "comgio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dinheiro",
+    "wrong": "dinhiero",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "podemos",
+    "wrong": "podmeos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pouco",
+    "wrong": "pocuo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "essa",
+    "wrong": "esas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "esse",
+    "wrong": "eses",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "grande",
+    "wrong": "gradne",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pois",
+    "wrong": "posi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pela",
+    "wrong": "peal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "qualquer",
+    "wrong": "qualuqer",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "qual",
+    "wrong": "qula",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "desculpa",
+    "wrong": "desclupa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dela",
+    "wrong": "deal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "hoje",
+    "wrong": "hoej",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "toda",
+    "wrong": "toad",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "deve",
+    "wrong": "deev",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mulher",
+    "wrong": "mulehr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "fora",
+    "wrong": "foar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "filho",
+    "wrong": "fihlo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "seja",
+    "wrong": "seaj",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "meus",
+    "wrong": "mesu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "olha",
+    "wrong": "olah",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "daqui",
+    "wrong": "dauqi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sério",
+    "wrong": "séiro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "certeza",
+    "wrong": "ceretza",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nome",
+    "wrong": "noem",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "outro",
+    "wrong": "ourto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "todo",
+    "wrong": "tood",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tentar",
+    "wrong": "tenatr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sair",
+    "wrong": "sari",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quanto",
+    "wrong": "quatno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pensar",
+    "wrong": "penasr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "volta",
+    "wrong": "votla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "aconteceu",
+    "wrong": "aconetceu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "consigo",
+    "wrong": "conisgo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "três",
+    "wrong": "trsê",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mundo",
+    "wrong": "mudno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "menos",
+    "wrong": "meons",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "amigo",
+    "wrong": "amgio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "contigo",
+    "wrong": "conitgo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "embora",
+    "wrong": "embroa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "numa",
+    "wrong": "nuam",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "problema",
+    "wrong": "probelma",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lado",
+    "wrong": "laod",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "vezes",
+    "wrong": "veezs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "seus",
+    "wrong": "sesu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "novo",
+    "wrong": "noov",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "parte",
+    "wrong": "patre",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "todas",
+    "wrong": "toads",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "obrigada",
+    "wrong": "obriagda",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "primeiro",
+    "wrong": "primiero",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "será",
+    "wrong": "seár",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lugar",
+    "wrong": "luagr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "voltar",
+    "wrong": "volatr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pensei",
+    "wrong": "penesi",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "algum",
+    "wrong": "alugm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "achas",
+    "wrong": "acahs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dentro",
+    "wrong": "denrto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "família",
+    "wrong": "famlíia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "razão",
+    "wrong": "raãzo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "aquele",
+    "wrong": "aqulee",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dias",
+    "wrong": "disa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "anda",
+    "wrong": "anad",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "querida",
+    "wrong": "queirda",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "duas",
+    "wrong": "dusa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ideia",
+    "wrong": "idiea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "hora",
+    "wrong": "hoar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "polícia",
+    "wrong": "polcíia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "podem",
+    "wrong": "poedm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "forma",
+    "wrong": "fomra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "entre",
+    "wrong": "enrte",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "caso",
+    "wrong": "caos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "gosto",
+    "wrong": "gotso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "atrás",
+    "wrong": "atárs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "homens",
+    "wrong": "homnes",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "devia",
+    "wrong": "deiva",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "aquilo",
+    "wrong": "aqulio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "amor",
+    "wrong": "amro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pessoa",
+    "wrong": "pesosa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "podia",
+    "wrong": "poida",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "desde",
+    "wrong": "dedse",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "somos",
+    "wrong": "sooms",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cabeça",
+    "wrong": "cabçea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "horas",
+    "wrong": "hoars",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "deles",
+    "wrong": "deels",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "fica",
+    "wrong": "fiac",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ajudar",
+    "wrong": "ajuadr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tarde",
+    "wrong": "tadre",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "momento",
+    "wrong": "momneto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tenha",
+    "wrong": "tehna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pronto",
+    "wrong": "protno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "foram",
+    "wrong": "foarm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cidade",
+    "wrong": "ciddae",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "amigos",
+    "wrong": "amiogs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "encontrar",
+    "wrong": "encotnrar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "frente",
+    "wrong": "fretne",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sido",
+    "wrong": "siod",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "passar",
+    "wrong": "pasasr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "deixar",
+    "wrong": "deiaxr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nenhum",
+    "wrong": "nenuhm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "gente",
+    "wrong": "getne",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "durante",
+    "wrong": "durnate",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "seria",
+    "wrong": "seira",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "outros",
+    "wrong": "outors",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "entrar",
+    "wrong": "entarr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "chegar",
+    "wrong": "cheagr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nova",
+    "wrong": "noav",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "trabalhar",
+    "wrong": "trablahar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "quase",
+    "wrong": "qusae",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "desculpe",
+    "wrong": "desclupe",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "amanhã",
+    "wrong": "amahnã",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tanto",
+    "wrong": "tatno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "história",
+    "wrong": "histróia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "irmão",
+    "wrong": "irãmo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cima",
+    "wrong": "ciam",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "contra",
+    "wrong": "conrta",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "maneira",
+    "wrong": "maniera",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "suas",
+    "wrong": "susa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "enquanto",
+    "wrong": "enqunato",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "alguns",
+    "wrong": "algnus",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ajuda",
+    "wrong": "ajdua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "precisa",
+    "wrong": "preicsa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "morto",
+    "wrong": "motro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "primeira",
+    "wrong": "primiera",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "minhas",
+    "wrong": "minahs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "medo",
+    "wrong": "meod",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "aquela",
+    "wrong": "aqulea",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "óptimo",
+    "wrong": "óptmio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "caminho",
+    "wrong": "camniho",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "feliz",
+    "wrong": "feilz",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sinto",
+    "wrong": "sitno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "minutos",
+    "wrong": "mintuos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ouvir",
+    "wrong": "ouivr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "desta",
+    "wrong": "detsa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "tive",
+    "wrong": "tiev",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "neste",
+    "wrong": "netse",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cada",
+    "wrong": "caad",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "estes",
+    "wrong": "esets",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "acontecer",
+    "wrong": "aconetcer",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "espero",
+    "wrong": "espreo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "rapaz",
+    "wrong": "raapz",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "precisamos",
+    "wrong": "preciasmos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "causa",
+    "wrong": "casua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "feito",
+    "wrong": "fetio",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sorte",
+    "wrong": "sotre",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "lamento",
+    "wrong": "lamneto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "filha",
+    "wrong": "fihla",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "acha",
+    "wrong": "acah",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "teus",
+    "wrong": "tesu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "levar",
+    "wrong": "leavr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "conta",
+    "wrong": "cotna",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "pessoal",
+    "wrong": "pesosal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "olhos",
+    "wrong": "olohs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "senhora",
+    "wrong": "senohra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "adeus",
+    "wrong": "adues",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cara",
+    "wrong": "caar",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "disto",
+    "wrong": "ditso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "algumas",
+    "wrong": "algmuas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "juntos",
+    "wrong": "junots",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "difícil",
+    "wrong": "difcíil",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "última",
+    "wrong": "últmia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "única",
+    "wrong": "úncia",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "manhã",
+    "wrong": "mahnã",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "importante",
+    "wrong": "imporatnte",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "poder",
+    "wrong": "poedr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mãos",
+    "wrong": "mãso",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "começar",
+    "wrong": "comçear",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "faço",
+    "wrong": "faoç",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "perto",
+    "wrong": "petro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cuidado",
+    "wrong": "cuiaddo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "nossos",
+    "wrong": "nososs",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "semana",
+    "wrong": "semnaa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "mesma",
+    "wrong": "memsa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "usar",
+    "wrong": "usra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "significa",
+    "wrong": "signfiica",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "acredito",
+    "wrong": "acreidto",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "querem",
+    "wrong": "queerm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "cinco",
+    "wrong": "cicno",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "acabou",
+    "wrong": "acaobu",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "problemas",
+    "wrong": "probelmas",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "corpo",
+    "wrong": "copro",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "altura",
+    "wrong": "altrua",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "disseste",
+    "wrong": "disssete",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "chefe",
+    "wrong": "chfee",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "jogo",
+    "wrong": "joog",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "fala",
+    "wrong": "faal",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "procura",
+    "wrong": "proucra",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sabemos",
+    "wrong": "sabmeos",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "fizeste",
+    "wrong": "fizsete",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ouve",
+    "wrong": "ouev",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "realmente",
+    "wrong": "realemnte",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "havia",
+    "wrong": "haiva",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "ontem",
+    "wrong": "onetm",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "umas",
+    "wrong": "umsa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dólares",
+    "wrong": "dólraes",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "comer",
+    "wrong": "coemr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "dormir",
+    "wrong": "dorimr",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "escola",
+    "wrong": "escloa",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "logo",
+    "wrong": "loog",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "querido",
+    "wrong": "queirdo",
+    "explanation": "As duas letras centrais foram trocadas."
+  },
+  {
+    "correct": "sabem",
+    "wrong": "saebm",
+    "explanation": "As duas letras centrais foram trocadas."
+  }
+]

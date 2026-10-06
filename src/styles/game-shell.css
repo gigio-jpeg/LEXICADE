@@ -1,0 +1,557 @@
+.game-page {
+  max-width: 1050px;
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+.game-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.game-toolbar a {
+  font-size: 12px;
+  color: var(--muted);
+}
+.game-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.game-heading h1 {
+  font-size: clamp(24px, 4vw, 35px);
+  margin: 0;
+}
+.game-heading .game-glyph {
+  font-size: 30px;
+  letter-spacing: -2px;
+}
+.hud {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.hud > div {
+  text-align: center;
+  padding: 14px 8px;
+  border-right: 1px solid var(--line);
+}
+.hud > div:last-child {
+  border: 0;
+}
+.hud span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+.hud strong {
+  display: block;
+  font-family: var(--mono);
+  font-size: 24px;
+  color: var(--accent);
+  margin-top: 3px;
+}
+.game-options {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.game-options .field {
+  margin: 0;
+  min-width: 110px;
+  flex: 1;
+}
+.game-options input,
+.game-options select {
+  font-size: 12px;
+}
+.game-area {
+  min-height: 340px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: clamp(15px, 4vw, 35px);
+  position: relative;
+  overflow: hidden;
+}
+.game-area:has(canvas) {
+  padding: 0;
+}
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.game-input {
+  font-family: var(--mono);
+  font-size: 20px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  letter-spacing: 0.03em;
+}
+.input-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 22px auto 0;
+}
+.tutorial {
+  padding: 12px 16px;
+  margin: 15px 0;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.tutorial p {
+  font-size: 12px;
+  margin: 0;
+  max-width: 740px;
+}
+.game-message {
+  text-align: center;
+  font-size: 13px;
+  min-height: 25px;
+  margin: 12px 0;
+  color: var(--muted);
+}
+.big-word {
+  font-family: var(--mono);
+  font-size: clamp(28px, 6vw, 55px);
+  letter-spacing: 0.11em;
+  text-align: center;
+  color: var(--accent);
+  margin: 30px 0;
+}
+.word-target {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 15px;
+  color: var(--muted);
+  margin: 18px 0;
+}
+.typing-text {
+  font-family: var(--mono);
+  font-size: clamp(21px, 3vw, 30px);
+  line-height: 1.95;
+  max-height: 180px;
+  overflow: hidden;
+  margin: 20px 0;
+  color: var(--muted);
+  position: relative;
+}
+.typing-text .right {
+  color: var(--accent);
+}
+.typing-text .wrong {
+  background: color-mix(in srgb, var(--danger) 20%, transparent);
+  color: var(--danger);
+}
+.typing-text .cursor {
+  border-left: 2px solid var(--accent);
+  animation: pulse 1s infinite;
+}
+.typing-text[data-cursor="block"] .cursor {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.typing-text[data-cursor="underline"] .cursor {
+  border-left: 0;
+  border-bottom: 2px solid var(--accent);
+}
+.typing-stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+.pressure {
+  height: 4px;
+  background: var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.pressure span {
+  display: block;
+  height: 100%;
+  background: var(--danger);
+}
+.letter-board {
+  display: grid;
+  gap: 6px;
+  justify-content: center;
+  margin: 10px auto 25px;
+}
+.board-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.letter {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  min-width: 38px;
+  width: 48px;
+  height: 48px;
+  font-family: var(--mono);
+  font-size: 24px;
+  position: relative;
+  text-transform: uppercase;
+  background: var(--bg);
+}
+.letter.correct {
+  background: var(--success);
+  color: var(--bg);
+  border-color: transparent;
+}
+.letter.present {
+  background: var(--yellow);
+  color: var(--bg);
+  border-color: transparent;
+}
+.letter.absent {
+  background: var(--surface-raised);
+  color: var(--muted);
+}
+.multi-boards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 540px;
+  margin: auto;
+}
+.keyboard-row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.keyboard button {
+  padding: 10px 0;
+  min-width: 0;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  font-family: var(--mono);
+  font-size: 13px;
+  min-height: 44px;
+}
+.keyboard button.correct {
+  background: var(--success);
+  color: var(--bg);
+}
+.keyboard button.present {
+  background: var(--yellow);
+  color: var(--bg);
+}
+.keyboard button.absent {
+  opacity: 0.55;
+}
+.keyboard .wide {
+  flex: 1.7;
+}
+.puzzle-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.cross-grid {
+  display: grid;
+  gap: 2px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.cross-cell {
+  position: relative;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  padding: 0;
+  font-family: var(--mono);
+  font-size: clamp(9px, 1.6vw, 18px);
+  min-width: 0;
+  min-height: 0;
+}
+.cross-cell.active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--bg));
+}
+.cross-cell small {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 7px;
+  color: var(--muted);
+}
+.cross-cell.block {
+  background: transparent;
+  border-color: transparent;
+}
+.clue-list {
+  max-height: 380px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.clue {
+  font-size: 12px;
+  text-align: left;
+  padding: 9px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 7px;
+  min-height: 44px;
+}
+.clue.done {
+  text-decoration: line-through;
+  color: var(--success);
+}
+.clue.active {
+  border-color: var(--accent);
+}
+.search-grid {
+  display: grid;
+  gap: 3px;
+  max-width: 510px;
+  width: 100%;
+  margin: 0 auto;
+  touch-action: none;
+  user-select: none;
+  aspect-ratio: 1;
+}
+.search-cell {
+  min-width: 0;
+  min-height: 0;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 4px;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: clamp(11px, 2.2vw, 22px);
+  text-transform: uppercase;
+}
+.search-cell.selected {
+  background: var(--yellow);
+  color: var(--bg);
+}
+.search-cell.found {
+  background: color-mix(in srgb, var(--accent) 25%, var(--bg));
+  color: var(--accent);
+}
+.word-list {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.word-list .found {
+  text-decoration: line-through;
+  color: var(--accent);
+}
+canvas.game-canvas {
+  width: 100%;
+  height: auto;
+  touch-action: none;
+  display: block;
+  max-height: 540px;
+  object-fit: contain;
+  background: #0e1220;
+}
+.dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-template-rows: repeat(2, 44px);
+  gap: 5px;
+  justify-content: center;
+}
+.dpad button {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-raised);
+  font-size: 21px;
+}
+.dpad button:first-child {
+  grid-column: 2;
+}
+.dpad button:nth-child(2) {
+  grid-row: 2;
+}
+.dpad button:nth-child(3) {
+  grid-row: 2;
+}
+.dpad button:nth-child(4) {
+  grid-row: 2;
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 620px;
+  margin: 30px auto;
+}
+.choice {
+  font-family: var(--mono);
+  font-size: clamp(17px, 3vw, 27px);
+  min-height: 90px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 18px;
+}
+.choice:hover {
+  border-color: var(--accent);
+}
+.result {
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+  padding: 35px 0;
+}
+.result-score {
+  font-size: clamp(55px, 10vw, 85px);
+  font-family: var(--pixel);
+  color: var(--accent);
+  line-height: 1.2;
+}
+.reward-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 24px 0;
+  font-family: var(--mono);
+  color: var(--yellow);
+}
+.metric-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: left;
+  margin: 25px 0;
+}
+.metric-list div {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+.metric-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+.ladder-path {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: var(--mono);
+}
+.letter-tray {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.letter-tray button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--bg);
+  font-family: var(--mono);
+  font-size: 25px;
+}
+.hangman {
+  display: block;
+  margin: auto;
+  width: 190px;
+  height: 160px;
+}
+.focus-mode .typing-stats {
+  visibility: hidden;
+}
+@media (max-width: 650px) {
+  .puzzle-layout {
+    grid-template-columns: 1fr;
+  }
+  .clue-list {
+    max-height: 220px;
+  }
+  .letter {
+    width: clamp(30px, 8vw, 48px);
+    min-width: 0;
+  }
+  .multi-boards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .multi-boards .letter {
+    width: clamp(18px, 4.5vw, 30px);
+    height: 35px;
+    min-width: 0;
+    font-size: 16px;
+  }
+  .multi-boards .board-row {
+    gap: 3px;
+  }
+  .game-toolbar {
+    flex-wrap: wrap;
+  }
+  .game-toolbar .actions {
+    gap: 6px;
+  }
+  .hud strong {
+    font-size: 20px;
+  }
+  .game-options {
+    gap: 8px;
+  }
+  .game-options .field {
+    min-width: 100px;
+  }
+  .tutorial {
+    align-items: flex-start;
+  }
+  .game-area {
+    min-height: 290px;
+  }
+  .big-word {
+    font-size: clamp(20px, 6vw, 40px);
+    overflow-wrap: anywhere;
+  }
+  .keyboard-row {
+    flex-wrap: wrap;
+  }
+  .keyboard button {
+    flex: 1 0 44px;
+    min-width: 44px;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "pt": {
+    "common": 2000,
+    "phrases": 150,
+    "texts": 30,
+    "answers5": 33,
+    "valid5": 5069,
+    "crossword": 126,
+    "rhymes": 10,
+    "intrusa": 200,
+    "spelling": 400
+  },
+  "en": {
+    "common": 2000,
+    "phrases": 150,
+    "texts": 30,
+    "answers5": 34,
+    "valid5": 6476,
+    "crossword": 127,
+    "rhymes": 10,
+    "intrusa": 200,
+    "spelling": 400
+  },
+  "es": {
+    "common": 2000,
+    "phrases": 150,
+    "texts": 30,
+    "answers5": 29,
+    "valid5": 4859,
+    "crossword": 126,
+    "rhymes": 10,
+    "intrusa": 200,
+    "spelling": 400
+  }
+}

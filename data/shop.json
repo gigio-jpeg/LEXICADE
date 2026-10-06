@@ -1,0 +1,206 @@
+[
+  {
+    "id": "frame-orbit",
+    "type": "frame",
+    "value": "orbit",
+    "price": 100,
+    "name": {
+      "pt-BR": "Órbita",
+      "en": "Orbit",
+      "es": "Órbita"
+    },
+    "icon": "✦"
+  },
+  {
+    "id": "frame-sunset",
+    "type": "frame",
+    "value": "sunset",
+    "price": 200,
+    "name": {
+      "pt-BR": "Pôr do sol",
+      "en": "Sunset",
+      "es": "Atardecer"
+    },
+    "icon": "✦"
+  },
+  {
+    "id": "frame-prism",
+    "type": "frame",
+    "value": "prism",
+    "price": 300,
+    "name": {
+      "pt-BR": "Prisma",
+      "en": "Prism",
+      "es": "Prisma"
+    },
+    "icon": "✦"
+  },
+  {
+    "id": "avatar-spark",
+    "type": "avatar",
+    "value": "spark",
+    "price": 100,
+    "name": {
+      "pt-BR": "Faísca",
+      "en": "Spark",
+      "es": "Chispa"
+    },
+    "icon": "◈"
+  },
+  {
+    "id": "avatar-nova",
+    "type": "avatar",
+    "value": "nova",
+    "price": 200,
+    "name": {
+      "pt-BR": "Nova",
+      "en": "Nova",
+      "es": "Nova"
+    },
+    "icon": "◈"
+  },
+  {
+    "id": "avatar-leaf",
+    "type": "avatar",
+    "value": "leaf",
+    "price": 300,
+    "name": {
+      "pt-BR": "Folha",
+      "en": "Leaf",
+      "es": "Hoja"
+    },
+    "icon": "◈"
+  },
+  {
+    "id": "avatar-comet",
+    "type": "avatar",
+    "value": "comet",
+    "price": 400,
+    "name": {
+      "pt-BR": "Cometa",
+      "en": "Comet",
+      "es": "Cometa"
+    },
+    "icon": "◈"
+  },
+  {
+    "id": "cursor-block",
+    "type": "cursor",
+    "value": "block",
+    "price": 100,
+    "name": {
+      "pt-BR": "Cursor bloco",
+      "en": "Block cursor",
+      "es": "Cursor bloque"
+    },
+    "icon": "▰"
+  },
+  {
+    "id": "cursor-underline",
+    "type": "cursor",
+    "value": "underline",
+    "price": 200,
+    "name": {
+      "pt-BR": "Cursor sublinhado",
+      "en": "Underline cursor",
+      "es": "Cursor subrayado"
+    },
+    "icon": "▰"
+  },
+  {
+    "id": "cursor-line",
+    "type": "cursor",
+    "value": "line",
+    "price": 300,
+    "name": {
+      "pt-BR": "Cursor linha",
+      "en": "Line cursor",
+      "es": "Cursor línea"
+    },
+    "icon": "▰"
+  },
+  {
+    "id": "effect-stars",
+    "type": "effect",
+    "value": "stars",
+    "price": 100,
+    "name": {
+      "pt-BR": "Estrelas",
+      "en": "Stars",
+      "es": "Estrellas"
+    },
+    "icon": "✧"
+  },
+  {
+    "id": "effect-rings",
+    "type": "effect",
+    "value": "rings",
+    "price": 200,
+    "name": {
+      "pt-BR": "Anéis",
+      "en": "Rings",
+      "es": "Anillos"
+    },
+    "icon": "✧"
+  },
+  {
+    "id": "effect-sparks",
+    "type": "effect",
+    "value": "sparks",
+    "price": 300,
+    "name": {
+      "pt-BR": "Faíscas",
+      "en": "Sparks",
+      "es": "Chispas"
+    },
+    "icon": "✧"
+  },
+  {
+    "id": "music-arcade",
+    "type": "music",
+    "value": "arcade",
+    "price": 100,
+    "name": {
+      "pt-BR": "Melodia arcade",
+      "en": "Arcade melody",
+      "es": "Melodía arcade"
+    },
+    "icon": "♫"
+  },
+  {
+    "id": "music-pulse",
+    "type": "music",
+    "value": "pulse",
+    "price": 200,
+    "name": {
+      "pt-BR": "Pulso",
+      "en": "Pulse",
+      "es": "Pulso"
+    },
+    "icon": "♫"
+  },
+  {
+    "id": "theme-nebula",
+    "type": "theme",
+    "value": "nebula",
+    "price": 400,
+    "name": {
+      "pt-BR": "Nebulosa",
+      "en": "Nebula",
+      "es": "Nebulosa"
+    },
+    "icon": "◐"
+  },
+  {
+    "id": "theme-dawn",
+    "type": "theme",
+    "value": "dawn",
+    "price": 400,
+    "name": {
+      "pt-BR": "Aurora",
+      "en": "Dawn",
+      "es": "Aurora"
+    },
+    "icon": "◐"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "lexicade",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Um fliperama original de palavras em três idiomas.",
+  "scripts": {
+    "start": "node tests/server.mjs",
+    "test": "node --test",
+    "validate": "node tests/validate-content.mjs",
+    "crosswords": "node tests/generate-crosswords.mjs",
+    "package": "node tests/package.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,64 @@
+[
+  "@supabase/auth-js/LICENSE",
+  "@supabase/storage-js/LICENSE",
+  "@supabase/realtime-js/LICENSE.md",
+  "@supabase/postgrest-js/LICENSE",
+  "@supabase/node-fetch/LICENSE.md",
+  "@supabase/functions-js/LICENSE",
+  "@supabase/supabase-js/LICENSE",
+  {
+    "package": "@supabase/supabase-js",
+    "version": "2.57.4",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/auth-js",
+    "version": "2.71.1",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/functions-js",
+    "version": "2.4.6",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/realtime-js",
+    "version": "2.15.5",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/storage-js",
+    "version": "2.12.1",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/postgrest-js",
+    "version": "1.21.4",
+    "license": "MIT"
+  },
+  {
+    "package": "@supabase/node-fetch",
+    "version": "2.6.15",
+    "license": "MIT"
+  },
+  {
+    "package": "whatwg-url",
+    "version": "5.0.0",
+    "license": "MIT"
+  },
+  {
+    "package": "tr46",
+    "version": "0.0.3",
+    "license": "MIT"
+  },
+  {
+    "package": "webidl-conversions",
+    "version": "3.0.1",
+    "license": "BSD-2-Clause"
+  },
+  {
+    "package": "ws",
+    "version": "8.22.0",
+    "license": "MIT"
+  }
+]

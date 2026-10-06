@@ -1,0 +1,107 @@
+[data-theme="soft"] {
+  --bg: #16181d;
+  --surface: #202329;
+  --surface-raised: #292d34;
+  --line: #3a3e48;
+  --accent: #a5bafa;
+  --pink: #e5a8c6;
+  --yellow: #e5cb94;
+  --glow: none;
+}
+[data-theme="light"] {
+  --bg: #f5f6f9;
+  --surface: #fff;
+  --surface-raised: #e9edf3;
+  --text: #202438;
+  --muted: #536075;
+  --line: #d3d9e2;
+  --accent: #087663;
+  --pink: #a52464;
+  --yellow: #856209;
+  --purple: #6752bb;
+  --success: #18744a;
+  --danger: #ac2843;
+  --glow: none;
+  color-scheme: light;
+}
+[data-theme="phosphor"] {
+  --bg: #080f0a;
+  --surface: #101b13;
+  --surface-raised: #15251b;
+  --text: #c2ffc8;
+  --muted: #92bc99;
+  --accent: #b0ffb3;
+  --pink: #99dd9e;
+  --yellow: #cdf989;
+  --purple: #70d69f;
+  --line: #2b4c34;
+}
+[data-theme="minimal"] {
+  --bg: #111;
+  --surface: #191919;
+  --surface-raised: #242424;
+  --text: #f5f5f5;
+  --muted: #b3b3b3;
+  --line: #393939;
+  --accent: #eee;
+  --pink: #ccc;
+  --yellow: #ddd;
+  --purple: #bbb;
+  --glow: none;
+}
+[data-theme="minimal"] .hero-art,
+[data-theme="minimal"] .background-grid {
+  filter: grayscale(1);
+}
+[data-theme="nebula"] {
+  --accent: #c6a1ff;
+  --pink: #ff9ccb;
+  --bg: #120c20;
+  --surface: #1b142d;
+  --surface-raised: #291d42;
+  --line: #41315a;
+}
+[data-theme="dawn"] {
+  --accent: #ffd287;
+  --pink: #ff9baa;
+  --bg: #1c1016;
+  --surface: #2b1b23;
+  --surface-raised: #382531;
+  --line: #563c49;
+}
+[data-colorblind="true"] .letter.present::after {
+  content: "●";
+  font-size: 9px;
+  position: absolute;
+  bottom: 2px;
+}
+[data-colorblind="true"] .letter.correct::after {
+  content: "✓";
+  font-size: 10px;
+  position: absolute;
+  bottom: 2px;
+}
+[data-colorblind="true"] .letter.absent::after {
+  content: "×";
+  font-size: 10px;
+  position: absolute;
+  bottom: 2px;
+}
+[data-motion="reduced"] *,
+[data-motion="reduced"] *::before,
+[data-motion="reduced"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

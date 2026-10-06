@@ -1,0 +1,722 @@
+[
+  {
+    "id": "rounds-1",
+    "kind": "rounds",
+    "target": 1,
+    "name": {
+      "pt-BR": "1 partidas",
+      "en": "1 rounds",
+      "es": "1 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 1 partidas.",
+      "en": "Reach 1 rounds.",
+      "es": "Alcanza 1 partidas."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "rounds-5",
+    "kind": "rounds",
+    "target": 5,
+    "name": {
+      "pt-BR": "5 partidas",
+      "en": "5 rounds",
+      "es": "5 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 5 partidas.",
+      "en": "Reach 5 rounds.",
+      "es": "Alcanza 5 partidas."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "rounds-10",
+    "kind": "rounds",
+    "target": 10,
+    "name": {
+      "pt-BR": "10 partidas",
+      "en": "10 rounds",
+      "es": "10 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 10 partidas.",
+      "en": "Reach 10 rounds.",
+      "es": "Alcanza 10 partidas."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "rounds-25",
+    "kind": "rounds",
+    "target": 25,
+    "name": {
+      "pt-BR": "25 partidas",
+      "en": "25 rounds",
+      "es": "25 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 25 partidas.",
+      "en": "Reach 25 rounds.",
+      "es": "Alcanza 25 partidas."
+    },
+    "icon": "✦",
+    "xp": 22,
+    "coins": 11
+  },
+  {
+    "id": "rounds-50",
+    "kind": "rounds",
+    "target": 50,
+    "name": {
+      "pt-BR": "50 partidas",
+      "en": "50 rounds",
+      "es": "50 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 50 partidas.",
+      "en": "Reach 50 rounds.",
+      "es": "Alcanza 50 partidas."
+    },
+    "icon": "✦",
+    "xp": 25,
+    "coins": 12
+  },
+  {
+    "id": "rounds-100",
+    "kind": "rounds",
+    "target": 100,
+    "name": {
+      "pt-BR": "100 partidas",
+      "en": "100 rounds",
+      "es": "100 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 100 partidas.",
+      "en": "Reach 100 rounds.",
+      "es": "Alcanza 100 partidas."
+    },
+    "icon": "✦",
+    "xp": 30,
+    "coins": 15
+  },
+  {
+    "id": "rounds-150",
+    "kind": "rounds",
+    "target": 150,
+    "name": {
+      "pt-BR": "150 partidas",
+      "en": "150 rounds",
+      "es": "150 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 150 partidas.",
+      "en": "Reach 150 rounds.",
+      "es": "Alcanza 150 partidas."
+    },
+    "icon": "✦",
+    "xp": 35,
+    "coins": 17
+  },
+  {
+    "id": "rounds-200",
+    "kind": "rounds",
+    "target": 200,
+    "name": {
+      "pt-BR": "200 partidas",
+      "en": "200 rounds",
+      "es": "200 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 200 partidas.",
+      "en": "Reach 200 rounds.",
+      "es": "Alcanza 200 partidas."
+    },
+    "icon": "✦",
+    "xp": 40,
+    "coins": 20
+  },
+  {
+    "id": "rounds-500",
+    "kind": "rounds",
+    "target": 500,
+    "name": {
+      "pt-BR": "500 partidas",
+      "en": "500 rounds",
+      "es": "500 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 500 partidas.",
+      "en": "Reach 500 rounds.",
+      "es": "Alcanza 500 partidas."
+    },
+    "icon": "✦",
+    "xp": 70,
+    "coins": 35
+  },
+  {
+    "id": "rounds-1000",
+    "kind": "rounds",
+    "target": 1000,
+    "name": {
+      "pt-BR": "1000 partidas",
+      "en": "1000 rounds",
+      "es": "1000 partidas"
+    },
+    "description": {
+      "pt-BR": "Alcance 1000 partidas.",
+      "en": "Reach 1000 rounds.",
+      "es": "Alcanza 1000 partidas."
+    },
+    "icon": "✦",
+    "xp": 120,
+    "coins": 60
+  },
+  {
+    "id": "ppm-30",
+    "kind": "ppm",
+    "target": 30,
+    "name": {
+      "pt-BR": "30 PPM",
+      "en": "30 WPM",
+      "es": "30 PPM"
+    },
+    "description": {
+      "pt-BR": "Alcance 30 PPM.",
+      "en": "Reach 30 WPM.",
+      "es": "Alcanza 30 PPM."
+    },
+    "icon": "✦",
+    "xp": 23,
+    "coins": 11
+  },
+  {
+    "id": "ppm-50",
+    "kind": "ppm",
+    "target": 50,
+    "name": {
+      "pt-BR": "50 PPM",
+      "en": "50 WPM",
+      "es": "50 PPM"
+    },
+    "description": {
+      "pt-BR": "Alcance 50 PPM.",
+      "en": "Reach 50 WPM.",
+      "es": "Alcanza 50 PPM."
+    },
+    "icon": "✦",
+    "xp": 25,
+    "coins": 12
+  },
+  {
+    "id": "ppm-80",
+    "kind": "ppm",
+    "target": 80,
+    "name": {
+      "pt-BR": "80 PPM",
+      "en": "80 WPM",
+      "es": "80 PPM"
+    },
+    "description": {
+      "pt-BR": "Alcance 80 PPM.",
+      "en": "Reach 80 WPM.",
+      "es": "Alcanza 80 PPM."
+    },
+    "icon": "✦",
+    "xp": 28,
+    "coins": 14
+  },
+  {
+    "id": "ppm-100",
+    "kind": "ppm",
+    "target": 100,
+    "name": {
+      "pt-BR": "100 PPM",
+      "en": "100 WPM",
+      "es": "100 PPM"
+    },
+    "description": {
+      "pt-BR": "Alcance 100 PPM.",
+      "en": "Reach 100 WPM.",
+      "es": "Alcanza 100 PPM."
+    },
+    "icon": "✦",
+    "xp": 30,
+    "coins": 15
+  },
+  {
+    "id": "ppm-120",
+    "kind": "ppm",
+    "target": 120,
+    "name": {
+      "pt-BR": "120 PPM",
+      "en": "120 WPM",
+      "es": "120 PPM"
+    },
+    "description": {
+      "pt-BR": "Alcance 120 PPM.",
+      "en": "Reach 120 WPM.",
+      "es": "Alcanza 120 PPM."
+    },
+    "icon": "✦",
+    "xp": 32,
+    "coins": 16
+  },
+  {
+    "id": "score-100",
+    "kind": "score",
+    "target": 100,
+    "name": {
+      "pt-BR": "100 pontos em uma partida",
+      "en": "100 points in one round",
+      "es": "100 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 100 pontos em uma partida.",
+      "en": "Reach 100 points in one round.",
+      "es": "Alcanza 100 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 30,
+    "coins": 15
+  },
+  {
+    "id": "score-500",
+    "kind": "score",
+    "target": 500,
+    "name": {
+      "pt-BR": "500 pontos em uma partida",
+      "en": "500 points in one round",
+      "es": "500 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 500 pontos em uma partida.",
+      "en": "Reach 500 points in one round.",
+      "es": "Alcanza 500 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 70,
+    "coins": 35
+  },
+  {
+    "id": "score-1000",
+    "kind": "score",
+    "target": 1000,
+    "name": {
+      "pt-BR": "1000 pontos em uma partida",
+      "en": "1000 points in one round",
+      "es": "1000 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 1000 pontos em uma partida.",
+      "en": "Reach 1000 points in one round.",
+      "es": "Alcanza 1000 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 120,
+    "coins": 60
+  },
+  {
+    "id": "score-2500",
+    "kind": "score",
+    "target": 2500,
+    "name": {
+      "pt-BR": "2500 pontos em uma partida",
+      "en": "2500 points in one round",
+      "es": "2500 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 2500 pontos em uma partida.",
+      "en": "Reach 2500 points in one round.",
+      "es": "Alcanza 2500 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 270,
+    "coins": 135
+  },
+  {
+    "id": "score-5000",
+    "kind": "score",
+    "target": 5000,
+    "name": {
+      "pt-BR": "5000 pontos em uma partida",
+      "en": "5000 points in one round",
+      "es": "5000 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 5000 pontos em uma partida.",
+      "en": "Reach 5000 points in one round.",
+      "es": "Alcanza 5000 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 520,
+    "coins": 260
+  },
+  {
+    "id": "score-10000",
+    "kind": "score",
+    "target": 10000,
+    "name": {
+      "pt-BR": "10000 pontos em uma partida",
+      "en": "10000 points in one round",
+      "es": "10000 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 10000 pontos em uma partida.",
+      "en": "Reach 10000 points in one round.",
+      "es": "Alcanza 10000 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 1020,
+    "coins": 510
+  },
+  {
+    "id": "score-20000",
+    "kind": "score",
+    "target": 20000,
+    "name": {
+      "pt-BR": "20000 pontos em uma partida",
+      "en": "20000 points in one round",
+      "es": "20000 puntos en una partida"
+    },
+    "description": {
+      "pt-BR": "Alcance 20000 pontos em uma partida.",
+      "en": "Reach 20000 points in one round.",
+      "es": "Alcanza 20000 puntos en una partida."
+    },
+    "icon": "✦",
+    "xp": 2020,
+    "coins": 1010
+  },
+  {
+    "id": "games-3",
+    "kind": "games",
+    "target": 3,
+    "name": {
+      "pt-BR": "3 jogos diferentes",
+      "en": "3 different games",
+      "es": "3 juegos distintos"
+    },
+    "description": {
+      "pt-BR": "Alcance 3 jogos diferentes.",
+      "en": "Reach 3 different games.",
+      "es": "Alcanza 3 juegos distintos."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "games-6",
+    "kind": "games",
+    "target": 6,
+    "name": {
+      "pt-BR": "6 jogos diferentes",
+      "en": "6 different games",
+      "es": "6 juegos distintos"
+    },
+    "description": {
+      "pt-BR": "Alcance 6 jogos diferentes.",
+      "en": "Reach 6 different games.",
+      "es": "Alcanza 6 juegos distintos."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "games-10",
+    "kind": "games",
+    "target": 10,
+    "name": {
+      "pt-BR": "10 jogos diferentes",
+      "en": "10 different games",
+      "es": "10 juegos distintos"
+    },
+    "description": {
+      "pt-BR": "Alcance 10 jogos diferentes.",
+      "en": "Reach 10 different games.",
+      "es": "Alcanza 10 juegos distintos."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "games-16",
+    "kind": "games",
+    "target": 16,
+    "name": {
+      "pt-BR": "16 jogos diferentes",
+      "en": "16 different games",
+      "es": "16 juegos distintos"
+    },
+    "description": {
+      "pt-BR": "Alcance 16 jogos diferentes.",
+      "en": "Reach 16 different games.",
+      "es": "Alcanza 16 juegos distintos."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "langs-2",
+    "kind": "langs",
+    "target": 2,
+    "name": {
+      "pt-BR": "2 idiomas",
+      "en": "2 languages",
+      "es": "2 idiomas"
+    },
+    "description": {
+      "pt-BR": "Alcance 2 idiomas.",
+      "en": "Reach 2 languages.",
+      "es": "Alcanza 2 idiomas."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "langs-3",
+    "kind": "langs",
+    "target": 3,
+    "name": {
+      "pt-BR": "3 idiomas",
+      "en": "3 languages",
+      "es": "3 idiomas"
+    },
+    "description": {
+      "pt-BR": "Alcance 3 idiomas.",
+      "en": "Reach 3 languages.",
+      "es": "Alcanza 3 idiomas."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "level-2",
+    "kind": "level",
+    "target": 2,
+    "name": {
+      "pt-BR": "Nível 2",
+      "en": "Level 2",
+      "es": "Nivel 2"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 2.",
+      "en": "Reach Level 2.",
+      "es": "Alcanza Nivel 2."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "level-5",
+    "kind": "level",
+    "target": 5,
+    "name": {
+      "pt-BR": "Nível 5",
+      "en": "Level 5",
+      "es": "Nivel 5"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 5.",
+      "en": "Reach Level 5.",
+      "es": "Alcanza Nivel 5."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "level-10",
+    "kind": "level",
+    "target": 10,
+    "name": {
+      "pt-BR": "Nível 10",
+      "en": "Level 10",
+      "es": "Nivel 10"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 10.",
+      "en": "Reach Level 10.",
+      "es": "Alcanza Nivel 10."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "level-15",
+    "kind": "level",
+    "target": 15,
+    "name": {
+      "pt-BR": "Nível 15",
+      "en": "Level 15",
+      "es": "Nivel 15"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 15.",
+      "en": "Reach Level 15.",
+      "es": "Alcanza Nivel 15."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "level-25",
+    "kind": "level",
+    "target": 25,
+    "name": {
+      "pt-BR": "Nível 25",
+      "en": "Level 25",
+      "es": "Nivel 25"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 25.",
+      "en": "Reach Level 25.",
+      "es": "Alcanza Nivel 25."
+    },
+    "icon": "✦",
+    "xp": 22,
+    "coins": 11
+  },
+  {
+    "id": "level-50",
+    "kind": "level",
+    "target": 50,
+    "name": {
+      "pt-BR": "Nível 50",
+      "en": "Level 50",
+      "es": "Nivel 50"
+    },
+    "description": {
+      "pt-BR": "Alcance Nível 50.",
+      "en": "Reach Level 50.",
+      "es": "Alcanza Nivel 50."
+    },
+    "icon": "✦",
+    "xp": 25,
+    "coins": 12
+  },
+  {
+    "id": "streak-3",
+    "kind": "streak",
+    "target": 3,
+    "name": {
+      "pt-BR": "3 dias seguidos",
+      "en": "3 consecutive days",
+      "es": "3 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 3 dias seguidos.",
+      "en": "Reach 3 consecutive days.",
+      "es": "Alcanza 3 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "streak-7",
+    "kind": "streak",
+    "target": 7,
+    "name": {
+      "pt-BR": "7 dias seguidos",
+      "en": "7 consecutive days",
+      "es": "7 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 7 dias seguidos.",
+      "en": "Reach 7 consecutive days.",
+      "es": "Alcanza 7 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 20,
+    "coins": 10
+  },
+  {
+    "id": "streak-14",
+    "kind": "streak",
+    "target": 14,
+    "name": {
+      "pt-BR": "14 dias seguidos",
+      "en": "14 consecutive days",
+      "es": "14 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 14 dias seguidos.",
+      "en": "Reach 14 consecutive days.",
+      "es": "Alcanza 14 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 21,
+    "coins": 10
+  },
+  {
+    "id": "streak-30",
+    "kind": "streak",
+    "target": 30,
+    "name": {
+      "pt-BR": "30 dias seguidos",
+      "en": "30 consecutive days",
+      "es": "30 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 30 dias seguidos.",
+      "en": "Reach 30 consecutive days.",
+      "es": "Alcanza 30 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 23,
+    "coins": 11
+  },
+  {
+    "id": "streak-60",
+    "kind": "streak",
+    "target": 60,
+    "name": {
+      "pt-BR": "60 dias seguidos",
+      "en": "60 consecutive days",
+      "es": "60 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 60 dias seguidos.",
+      "en": "Reach 60 consecutive days.",
+      "es": "Alcanza 60 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 26,
+    "coins": 13
+  },
+  {
+    "id": "streak-100",
+    "kind": "streak",
+    "target": 100,
+    "name": {
+      "pt-BR": "100 dias seguidos",
+      "en": "100 consecutive days",
+      "es": "100 días seguidos"
+    },
+    "description": {
+      "pt-BR": "Alcance 100 dias seguidos.",
+      "en": "Reach 100 consecutive days.",
+      "es": "Alcanza 100 días seguidos."
+    },
+    "icon": "✦",
+    "xp": 30,
+    "coins": 15
+  }
+]

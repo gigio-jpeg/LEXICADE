@@ -1,0 +1,2002 @@
+[
+  {
+    "group": "tecnologia",
+    "words": [
+      "teclado",
+      "pantalla",
+      "código",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "pantalla",
+      "código",
+      "archivo",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "código",
+      "archivo",
+      "carpeta",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "archivo",
+      "carpeta",
+      "memoria",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "carpeta",
+      "memoria",
+      "robot",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "memoria",
+      "robot",
+      "contraseña",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "robot",
+      "contraseña",
+      "píxel",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "contraseña",
+      "píxel",
+      "red",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "píxel",
+      "red",
+      "teclado",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "red",
+      "teclado",
+      "pantalla",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "teclado",
+      "código",
+      "carpeta",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "pantalla",
+      "archivo",
+      "memoria",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "código",
+      "carpeta",
+      "robot",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "archivo",
+      "memoria",
+      "contraseña",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "carpeta",
+      "robot",
+      "píxel",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "memoria",
+      "contraseña",
+      "red",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "robot",
+      "píxel",
+      "teclado",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "contraseña",
+      "red",
+      "pantalla",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "píxel",
+      "teclado",
+      "código",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "red",
+      "pantalla",
+      "archivo",
+      "naranja"
+    ],
+    "answer": "naranja"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "teclado",
+      "archivo",
+      "robot",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "pantalla",
+      "carpeta",
+      "contraseña",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "código",
+      "memoria",
+      "píxel",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "archivo",
+      "robot",
+      "red",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "carpeta",
+      "contraseña",
+      "teclado",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "memoria",
+      "píxel",
+      "pantalla",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "robot",
+      "red",
+      "código",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "contraseña",
+      "teclado",
+      "archivo",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "píxel",
+      "pantalla",
+      "carpeta",
+      "naranja"
+    ],
+    "answer": "naranja"
+  },
+  {
+    "group": "tecnologia",
+    "words": [
+      "red",
+      "código",
+      "memoria",
+      "limón"
+    ],
+    "answer": "limón"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "pelota",
+      "gol",
+      "red",
+      "pantalla"
+    ],
+    "answer": "pantalla"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "gol",
+      "red",
+      "natación",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "red",
+      "natación",
+      "carrera",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "natación",
+      "carrera",
+      "tenis",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "carrera",
+      "tenis",
+      "ajedrez",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "tenis",
+      "ajedrez",
+      "ciclismo",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ajedrez",
+      "ciclismo",
+      "medalla",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ciclismo",
+      "medalla",
+      "equipo",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "medalla",
+      "equipo",
+      "pelota",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "equipo",
+      "pelota",
+      "gol",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "pelota",
+      "red",
+      "carrera",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "gol",
+      "natación",
+      "tenis",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "red",
+      "carrera",
+      "ajedrez",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "natación",
+      "tenis",
+      "ciclismo",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "carrera",
+      "ajedrez",
+      "medalla",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "tenis",
+      "ciclismo",
+      "equipo",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ajedrez",
+      "medalla",
+      "pelota",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ciclismo",
+      "equipo",
+      "gol",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "medalla",
+      "pelota",
+      "red",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "equipo",
+      "gol",
+      "natación",
+      "naranja"
+    ],
+    "answer": "naranja"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "pelota",
+      "natación",
+      "ajedrez",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "gol",
+      "carrera",
+      "ciclismo",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "red",
+      "tenis",
+      "medalla",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "natación",
+      "ajedrez",
+      "equipo",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "carrera",
+      "ciclismo",
+      "pelota",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "tenis",
+      "medalla",
+      "gol",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ajedrez",
+      "equipo",
+      "red",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "ciclismo",
+      "pelota",
+      "natación",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "medalla",
+      "gol",
+      "carrera",
+      "naranja"
+    ],
+    "answer": "naranja"
+  },
+  {
+    "group": "esportes",
+    "words": [
+      "equipo",
+      "red",
+      "tenis",
+      "limón"
+    ],
+    "answer": "limón"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "manzana",
+      "banana",
+      "naranja",
+      "pantalla"
+    ],
+    "answer": "pantalla"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "banana",
+      "naranja",
+      "limón",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "naranja",
+      "limón",
+      "uva",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "limón",
+      "uva",
+      "pera",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "uva",
+      "pera",
+      "melón",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pera",
+      "melón",
+      "fresa",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "melón",
+      "fresa",
+      "piña",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "fresa",
+      "piña",
+      "cereza",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "piña",
+      "cereza",
+      "arroz",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cereza",
+      "arroz",
+      "frijol",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "arroz",
+      "frijol",
+      "maíz",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "frijol",
+      "maíz",
+      "patata",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "maíz",
+      "patata",
+      "tomate",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "patata",
+      "tomate",
+      "zanahoria",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "tomate",
+      "zanahoria",
+      "cebolla",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "zanahoria",
+      "cebolla",
+      "lechuga",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cebolla",
+      "lechuga",
+      "pan",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "lechuga",
+      "pan",
+      "queso",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pan",
+      "queso",
+      "leche",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "queso",
+      "leche",
+      "miel",
+      "átomo"
+    ],
+    "answer": "átomo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "leche",
+      "miel",
+      "pastel",
+      "célula"
+    ],
+    "answer": "célula"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "miel",
+      "pastel",
+      "sopa",
+      "energía"
+    ],
+    "answer": "energía"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pastel",
+      "sopa",
+      "sal",
+      "luz"
+    ],
+    "answer": "luz"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sopa",
+      "sal",
+      "manzana",
+      "sonido"
+    ],
+    "answer": "sonido"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sal",
+      "manzana",
+      "banana",
+      "calor"
+    ],
+    "answer": "calor"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "manzana",
+      "naranja",
+      "uva",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "banana",
+      "limón",
+      "pera",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "naranja",
+      "uva",
+      "melón",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "limón",
+      "pera",
+      "fresa",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "uva",
+      "melón",
+      "piña",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pera",
+      "fresa",
+      "cereza",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "melón",
+      "piña",
+      "arroz",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "fresa",
+      "cereza",
+      "frijol",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "piña",
+      "arroz",
+      "maíz",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cereza",
+      "frijol",
+      "patata",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "arroz",
+      "maíz",
+      "tomate",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "frijol",
+      "patata",
+      "zanahoria",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "maíz",
+      "tomate",
+      "cebolla",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "patata",
+      "zanahoria",
+      "lechuga",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "tomate",
+      "cebolla",
+      "pan",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "zanahoria",
+      "lechuga",
+      "queso",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cebolla",
+      "pan",
+      "leche",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "lechuga",
+      "queso",
+      "miel",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pan",
+      "leche",
+      "pastel",
+      "átomo"
+    ],
+    "answer": "átomo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "queso",
+      "miel",
+      "sopa",
+      "célula"
+    ],
+    "answer": "célula"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "leche",
+      "pastel",
+      "sal",
+      "energía"
+    ],
+    "answer": "energía"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "miel",
+      "sopa",
+      "manzana",
+      "luz"
+    ],
+    "answer": "luz"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pastel",
+      "sal",
+      "banana",
+      "sonido"
+    ],
+    "answer": "sonido"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sopa",
+      "manzana",
+      "naranja",
+      "calor"
+    ],
+    "answer": "calor"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sal",
+      "banana",
+      "limón",
+      "masa"
+    ],
+    "answer": "masa"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "manzana",
+      "limón",
+      "melón",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "banana",
+      "uva",
+      "fresa",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "naranja",
+      "pera",
+      "piña",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "limón",
+      "melón",
+      "cereza",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "uva",
+      "fresa",
+      "arroz",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pera",
+      "piña",
+      "frijol",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "melón",
+      "cereza",
+      "maíz",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "fresa",
+      "arroz",
+      "patata",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "piña",
+      "frijol",
+      "tomate",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cereza",
+      "maíz",
+      "zanahoria",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "arroz",
+      "patata",
+      "cebolla",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "frijol",
+      "tomate",
+      "lechuga",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "maíz",
+      "zanahoria",
+      "pan",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "patata",
+      "cebolla",
+      "queso",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "tomate",
+      "lechuga",
+      "leche",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "zanahoria",
+      "pan",
+      "miel",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "cebolla",
+      "queso",
+      "pastel",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "lechuga",
+      "leche",
+      "sopa",
+      "átomo"
+    ],
+    "answer": "átomo"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pan",
+      "miel",
+      "sal",
+      "célula"
+    ],
+    "answer": "célula"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "queso",
+      "pastel",
+      "manzana",
+      "energía"
+    ],
+    "answer": "energía"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "leche",
+      "sopa",
+      "banana",
+      "luz"
+    ],
+    "answer": "luz"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "miel",
+      "sal",
+      "naranja",
+      "sonido"
+    ],
+    "answer": "sonido"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "pastel",
+      "manzana",
+      "limón",
+      "calor"
+    ],
+    "answer": "calor"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sopa",
+      "banana",
+      "uva",
+      "masa"
+    ],
+    "answer": "masa"
+  },
+  {
+    "group": "comida",
+    "words": [
+      "sal",
+      "naranja",
+      "pera",
+      "fuerza"
+    ],
+    "answer": "fuerza"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "átomo",
+      "célula",
+      "energía",
+      "pantalla"
+    ],
+    "answer": "pantalla"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "célula",
+      "energía",
+      "luz",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "energía",
+      "luz",
+      "sonido",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "luz",
+      "sonido",
+      "calor",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "sonido",
+      "calor",
+      "masa",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "calor",
+      "masa",
+      "fuerza",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "masa",
+      "fuerza",
+      "metal",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "fuerza",
+      "metal",
+      "oxígeno",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "metal",
+      "oxígeno",
+      "agua",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "oxígeno",
+      "agua",
+      "imán",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "agua",
+      "imán",
+      "átomo",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "imán",
+      "átomo",
+      "célula",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "átomo",
+      "energía",
+      "sonido",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "célula",
+      "luz",
+      "calor",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "energía",
+      "sonido",
+      "masa",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "luz",
+      "calor",
+      "fuerza",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "sonido",
+      "masa",
+      "metal",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "calor",
+      "fuerza",
+      "oxígeno",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "masa",
+      "metal",
+      "agua",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "fuerza",
+      "oxígeno",
+      "imán",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "metal",
+      "agua",
+      "átomo",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "oxígeno",
+      "imán",
+      "célula",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "agua",
+      "átomo",
+      "energía",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "imán",
+      "célula",
+      "luz",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "átomo",
+      "luz",
+      "masa",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "célula",
+      "sonido",
+      "fuerza",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "energía",
+      "calor",
+      "metal",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "luz",
+      "masa",
+      "oxígeno",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "sonido",
+      "fuerza",
+      "agua",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "calor",
+      "metal",
+      "imán",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "masa",
+      "oxígeno",
+      "átomo",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "fuerza",
+      "agua",
+      "célula",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "metal",
+      "imán",
+      "energía",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "oxígeno",
+      "átomo",
+      "luz",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "agua",
+      "célula",
+      "sonido",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "ciencia",
+    "words": [
+      "imán",
+      "energía",
+      "calor",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "árbol",
+      "flor",
+      "hoja",
+      "pantalla"
+    ],
+    "answer": "pantalla"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "flor",
+      "hoja",
+      "raíz",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "hoja",
+      "raíz",
+      "semilla",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "raíz",
+      "semilla",
+      "río",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "semilla",
+      "río",
+      "lago",
+      "memoria"
+    ],
+    "answer": "memoria"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "río",
+      "lago",
+      "mar",
+      "robot"
+    ],
+    "answer": "robot"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "lago",
+      "mar",
+      "playa",
+      "contraseña"
+    ],
+    "answer": "contraseña"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "mar",
+      "playa",
+      "isla",
+      "píxel"
+    ],
+    "answer": "píxel"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "playa",
+      "isla",
+      "montaña",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "isla",
+      "montaña",
+      "valle",
+      "pelota"
+    ],
+    "answer": "pelota"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "montaña",
+      "valle",
+      "piedra",
+      "gol"
+    ],
+    "answer": "gol"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "valle",
+      "piedra",
+      "arena",
+      "red"
+    ],
+    "answer": "red"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "piedra",
+      "arena",
+      "viento",
+      "natación"
+    ],
+    "answer": "natación"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "arena",
+      "viento",
+      "lluvia",
+      "carrera"
+    ],
+    "answer": "carrera"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "viento",
+      "lluvia",
+      "nieve",
+      "tenis"
+    ],
+    "answer": "tenis"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "lluvia",
+      "nieve",
+      "nube",
+      "ajedrez"
+    ],
+    "answer": "ajedrez"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "nieve",
+      "nube",
+      "sol",
+      "ciclismo"
+    ],
+    "answer": "ciclismo"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "nube",
+      "sol",
+      "luna",
+      "medalla"
+    ],
+    "answer": "medalla"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "sol",
+      "luna",
+      "estrella",
+      "equipo"
+    ],
+    "answer": "equipo"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "luna",
+      "estrella",
+      "planeta",
+      "manzana"
+    ],
+    "answer": "manzana"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "estrella",
+      "planeta",
+      "bosque",
+      "banana"
+    ],
+    "answer": "banana"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "planeta",
+      "bosque",
+      "desierto",
+      "naranja"
+    ],
+    "answer": "naranja"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "bosque",
+      "desierto",
+      "océano",
+      "limón"
+    ],
+    "answer": "limón"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "desierto",
+      "océano",
+      "árbol",
+      "uva"
+    ],
+    "answer": "uva"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "océano",
+      "árbol",
+      "flor",
+      "pera"
+    ],
+    "answer": "pera"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "árbol",
+      "hoja",
+      "semilla",
+      "código"
+    ],
+    "answer": "código"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "flor",
+      "raíz",
+      "río",
+      "archivo"
+    ],
+    "answer": "archivo"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "hoja",
+      "semilla",
+      "lago",
+      "carpeta"
+    ],
+    "answer": "carpeta"
+  },
+  {
+    "group": "natureza",
+    "words": [
+      "raíz",
+      "río",
+      "mar",
+      "memoria"
+    ],
+    "answer": "memoria"
+  }
+]

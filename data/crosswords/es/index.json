@@ -1,0 +1,302 @@
+[
+  {
+    "file": "grade-001.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-002.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-003.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-004.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-005.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-006.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-007.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-008.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-009.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-010.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-011.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-012.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-013.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-014.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-015.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-016.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-017.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-018.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-019.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-020.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-021.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-022.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-023.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-024.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-025.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-026.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-027.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-028.json",
+    "daily": true,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-029.json",
+    "daily": true,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-030.json",
+    "daily": true,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-031.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-032.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-033.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-034.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-035.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-036.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-037.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-038.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-039.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-040.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-041.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-042.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-043.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-044.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-045.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-046.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-047.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-048.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-049.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-050.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-051.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-052.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-053.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-054.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-055.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-056.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-057.json",
+    "daily": false,
+    "difficulty": "hard"
+  },
+  {
+    "file": "grade-058.json",
+    "daily": false,
+    "difficulty": "easy"
+  },
+  {
+    "file": "grade-059.json",
+    "daily": false,
+    "difficulty": "medium"
+  },
+  {
+    "file": "grade-060.json",
+    "daily": false,
+    "difficulty": "hard"
+  }
+]

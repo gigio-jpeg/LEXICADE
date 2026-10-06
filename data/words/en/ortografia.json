@@ -1,0 +1,2002 @@
+[
+  {
+    "correct": "horse",
+    "wrong": "hosre",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "fish",
+    "wrong": "fihs",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "tiger",
+    "wrong": "tiegr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "lion",
+    "wrong": "lino",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "zebra",
+    "wrong": "zerba",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "giraffe",
+    "wrong": "girfafe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "elephant",
+    "wrong": "elepahnt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "bear",
+    "wrong": "bera",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wolf",
+    "wrong": "wofl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "rabbit",
+    "wrong": "rabibt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "toad",
+    "wrong": "toda",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "snake",
+    "wrong": "snkae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "eagle",
+    "wrong": "ealge",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "duck",
+    "wrong": "dukc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "butterfly",
+    "wrong": "buttrefly",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "dolphin",
+    "wrong": "dolhpin",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "whale",
+    "wrong": "whlae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "turtle",
+    "wrong": "turlte",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "apple",
+    "wrong": "aplpe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "banana",
+    "wrong": "bannaa",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "orange",
+    "wrong": "oragne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "lemon",
+    "wrong": "leomn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "grape",
+    "wrong": "grpae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "pear",
+    "wrong": "pera",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "melon",
+    "wrong": "meoln",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "strawberry",
+    "wrong": "strawebrry",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "pineapple",
+    "wrong": "pinepaple",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "rice",
+    "wrong": "riec",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "bean",
+    "wrong": "bena",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "corn",
+    "wrong": "conr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "potato",
+    "wrong": "pottao",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "tomato",
+    "wrong": "tomtao",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "carrot",
+    "wrong": "carort",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "onion",
+    "wrong": "onoin",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "lettuce",
+    "wrong": "letutce",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "bread",
+    "wrong": "braed",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "cheese",
+    "wrong": "chesee",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "milk",
+    "wrong": "mikl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "honey",
+    "wrong": "hoeny",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "cake",
+    "wrong": "caek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "soup",
+    "wrong": "sopu",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "salt",
+    "wrong": "satl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "flower",
+    "wrong": "floewr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "leaf",
+    "wrong": "lefa",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "root",
+    "wrong": "roto",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "seed",
+    "wrong": "sede",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "river",
+    "wrong": "rievr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "lake",
+    "wrong": "laek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "beach",
+    "wrong": "becah",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "island",
+    "wrong": "islnad",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mountain",
+    "wrong": "mounatin",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "valley",
+    "wrong": "valely",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "stone",
+    "wrong": "stnoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "sand",
+    "wrong": "sadn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wind",
+    "wrong": "widn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "rain",
+    "wrong": "rani",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "snow",
+    "wrong": "snwo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "cloud",
+    "wrong": "cluod",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "moon",
+    "wrong": "mono",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "star",
+    "wrong": "stra",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "planet",
+    "wrong": "plaent",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "forest",
+    "wrong": "forset",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "desert",
+    "wrong": "desret",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "ocean",
+    "wrong": "ocaen",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "table",
+    "wrong": "talbe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "chair",
+    "wrong": "chiar",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "door",
+    "wrong": "doro",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "window",
+    "wrong": "winodw",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "book",
+    "wrong": "boko",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "pencil",
+    "wrong": "penicl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "paper",
+    "wrong": "paepr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "clock",
+    "wrong": "clcok",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mirror",
+    "wrong": "mirorr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "bottle",
+    "wrong": "botlte",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "glass",
+    "wrong": "glsas",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "plate",
+    "wrong": "pltae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "fork",
+    "wrong": "fokr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "scissors",
+    "wrong": "scisosrs",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "backpack",
+    "wrong": "backapck",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "shoe",
+    "wrong": "sheo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "atom",
+    "wrong": "atmo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "energy",
+    "wrong": "enegry",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "light",
+    "wrong": "lihgt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "sound",
+    "wrong": "sonud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "heat",
+    "wrong": "heta",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "force",
+    "wrong": "focre",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "metal",
+    "wrong": "meatl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "oxygen",
+    "wrong": "oxyegn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "water",
+    "wrong": "waetr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "magnet",
+    "wrong": "magent",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "goal",
+    "wrong": "gola",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "swimming",
+    "wrong": "swimimng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "running",
+    "wrong": "runinng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "tennis",
+    "wrong": "tenins",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "chess",
+    "wrong": "chses",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "cycling",
+    "wrong": "cycilng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "medal",
+    "wrong": "meadl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "team",
+    "wrong": "tema",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "keyboard",
+    "wrong": "keybaord",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "code",
+    "wrong": "coed",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "file",
+    "wrong": "fiel",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "folder",
+    "wrong": "foledr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "memory",
+    "wrong": "memroy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "robot",
+    "wrong": "roobt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "password",
+    "wrong": "passowrd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "pixel",
+    "wrong": "piexl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "network",
+    "wrong": "netowrk",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "that",
+    "wrong": "thta",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "what",
+    "wrong": "whta",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "this",
+    "wrong": "thsi",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "have",
+    "wrong": "haev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "your",
+    "wrong": "yoru",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "know",
+    "wrong": "knwo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "with",
+    "wrong": "wiht",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "just",
+    "wrong": "juts",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "here",
+    "wrong": "heer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "they",
+    "wrong": "thye",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "like",
+    "wrong": "liek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "right",
+    "wrong": "rihgt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "about",
+    "wrong": "abuot",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "come",
+    "wrong": "coem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "yeah",
+    "wrong": "yeha",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "want",
+    "wrong": "watn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "think",
+    "wrong": "thnik",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "good",
+    "wrong": "godo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "from",
+    "wrong": "frmo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "when",
+    "wrong": "whne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "going",
+    "wrong": "gonig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "time",
+    "wrong": "tiem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "okay",
+    "wrong": "okya",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "back",
+    "wrong": "bakc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "look",
+    "wrong": "loko",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "would",
+    "wrong": "wolud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "them",
+    "wrong": "thme",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "where",
+    "wrong": "whree",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "were",
+    "wrong": "weer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "take",
+    "wrong": "taek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "then",
+    "wrong": "thne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "been",
+    "wrong": "bene",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "some",
+    "wrong": "soem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "could",
+    "wrong": "colud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "didn",
+    "wrong": "dind",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "need",
+    "wrong": "nede",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "something",
+    "wrong": "somehting",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "more",
+    "wrong": "moer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "down",
+    "wrong": "donw",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "make",
+    "wrong": "maek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "very",
+    "wrong": "veyr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "never",
+    "wrong": "neevr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "only",
+    "wrong": "onyl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "people",
+    "wrong": "peolpe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "over",
+    "wrong": "ovre",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "because",
+    "wrong": "becuase",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "little",
+    "wrong": "litlte",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "please",
+    "wrong": "plesae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "love",
+    "wrong": "loev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "should",
+    "wrong": "sholud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mean",
+    "wrong": "mena",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "said",
+    "wrong": "sadi",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "give",
+    "wrong": "giev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "thank",
+    "wrong": "thnak",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "even",
+    "wrong": "evne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "much",
+    "wrong": "muhc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "doing",
+    "wrong": "donig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "sure",
+    "wrong": "suer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "thing",
+    "wrong": "thnig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "these",
+    "wrong": "thsee",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "help",
+    "wrong": "hepl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "first",
+    "wrong": "fisrt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "into",
+    "wrong": "inot",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "anything",
+    "wrong": "anytihng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "still",
+    "wrong": "stlil",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "find",
+    "wrong": "fidn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "life",
+    "wrong": "lief",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "nothing",
+    "wrong": "notihng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "work",
+    "wrong": "wokr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "their",
+    "wrong": "thier",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "again",
+    "wrong": "agian",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "maybe",
+    "wrong": "mabye",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "must",
+    "wrong": "muts",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "before",
+    "wrong": "befroe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "other",
+    "wrong": "otehr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wait",
+    "wrong": "wati",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "stop",
+    "wrong": "stpo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "after",
+    "wrong": "afetr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "talk",
+    "wrong": "takl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "away",
+    "wrong": "awya",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "than",
+    "wrong": "thna",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "thought",
+    "wrong": "thoguht",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "home",
+    "wrong": "hoem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "night",
+    "wrong": "nihgt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "great",
+    "wrong": "graet",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "those",
+    "wrong": "thsoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "last",
+    "wrong": "lats",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "better",
+    "wrong": "betetr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "everything",
+    "wrong": "everyhting",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "told",
+    "wrong": "todl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "things",
+    "wrong": "thigns",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "always",
+    "wrong": "alwyas",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "keep",
+    "wrong": "kepe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "long",
+    "wrong": "logn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "years",
+    "wrong": "yeras",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "leave",
+    "wrong": "levae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "does",
+    "wrong": "dose",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "money",
+    "wrong": "moeny",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "around",
+    "wrong": "aronud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "doesn",
+    "wrong": "dosen",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "name",
+    "wrong": "naem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "place",
+    "wrong": "plcae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "ever",
+    "wrong": "evre",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "feel",
+    "wrong": "fele",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "guys",
+    "wrong": "gusy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "father",
+    "wrong": "fatehr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "made",
+    "wrong": "maed",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "which",
+    "wrong": "whcih",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "done",
+    "wrong": "doen",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "nice",
+    "wrong": "niec",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "believe",
+    "wrong": "beleive",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "girl",
+    "wrong": "gilr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "someone",
+    "wrong": "somoene",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "fine",
+    "wrong": "fien",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "thanks",
+    "wrong": "thakns",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wanted",
+    "wrong": "wanetd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "kind",
+    "wrong": "kidn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "coming",
+    "wrong": "comnig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "house",
+    "wrong": "hosue",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "every",
+    "wrong": "evrey",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "through",
+    "wrong": "thruogh",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "being",
+    "wrong": "benig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "course",
+    "wrong": "cousre",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "stay",
+    "wrong": "stya",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "left",
+    "wrong": "letf",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "enough",
+    "wrong": "enoguh",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "happened",
+    "wrong": "happneed",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "came",
+    "wrong": "caem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mother",
+    "wrong": "motehr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wrong",
+    "wrong": "wrnog",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "world",
+    "wrong": "wolrd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "might",
+    "wrong": "mihgt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "today",
+    "wrong": "toady",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "listen",
+    "wrong": "lisetn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "another",
+    "wrong": "anohter",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "understand",
+    "wrong": "undertsand",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hear",
+    "wrong": "hera",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "remember",
+    "wrong": "remebmer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "same",
+    "wrong": "saem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "show",
+    "wrong": "shwo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "else",
+    "wrong": "eles",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "talking",
+    "wrong": "talikng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "found",
+    "wrong": "fonud",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "next",
+    "wrong": "netx",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "getting",
+    "wrong": "getitng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "care",
+    "wrong": "caer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "looking",
+    "wrong": "looikng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "woman",
+    "wrong": "woamn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "went",
+    "wrong": "wetn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "many",
+    "wrong": "mayn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mind",
+    "wrong": "midn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wasn",
+    "wrong": "wans",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "friend",
+    "wrong": "frined",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "best",
+    "wrong": "bets",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "morning",
+    "wrong": "morinng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "trying",
+    "wrong": "trynig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "together",
+    "wrong": "togehter",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "yourself",
+    "wrong": "youreslf",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "family",
+    "wrong": "famliy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "real",
+    "wrong": "rela",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "without",
+    "wrong": "witohut",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "baby",
+    "wrong": "bayb",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "room",
+    "wrong": "romo",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wouldn",
+    "wrong": "woudln",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "already",
+    "wrong": "alraedy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "move",
+    "wrong": "moev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "most",
+    "wrong": "mots",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "seen",
+    "wrong": "sene",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "live",
+    "wrong": "liev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "actually",
+    "wrong": "actulaly",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "both",
+    "wrong": "boht",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "heard",
+    "wrong": "herad",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "once",
+    "wrong": "onec",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "ready",
+    "wrong": "reday",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "head",
+    "wrong": "heda",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "called",
+    "wrong": "caleld",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "used",
+    "wrong": "usde",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "idea",
+    "wrong": "idae",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "knew",
+    "wrong": "knwe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hold",
+    "wrong": "hodl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "such",
+    "wrong": "suhc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "brother",
+    "wrong": "brohter",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "also",
+    "wrong": "alos",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "took",
+    "wrong": "toko",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "haven",
+    "wrong": "haevn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "whole",
+    "wrong": "whloe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "start",
+    "wrong": "strat",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "while",
+    "wrong": "whlie",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "since",
+    "wrong": "sicne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wife",
+    "wrong": "wief",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "days",
+    "wrong": "dasy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "guess",
+    "wrong": "guses",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "matter",
+    "wrong": "matetr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "meet",
+    "wrong": "mete",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "bring",
+    "wrong": "brnig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "tonight",
+    "wrong": "tongiht",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "everyone",
+    "wrong": "everoyne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hard",
+    "wrong": "hadr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "alone",
+    "wrong": "alnoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "myself",
+    "wrong": "myslef",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "gone",
+    "wrong": "goen",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "saying",
+    "wrong": "saynig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "phone",
+    "wrong": "phnoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "play",
+    "wrong": "plya",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "looks",
+    "wrong": "lokos",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "couldn",
+    "wrong": "coudln",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "problem",
+    "wrong": "prolbem",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "friends",
+    "wrong": "frineds",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "open",
+    "wrong": "opne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "anyone",
+    "wrong": "anynoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hope",
+    "wrong": "hoep",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "face",
+    "wrong": "faec",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "until",
+    "wrong": "unitl",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "police",
+    "wrong": "polcie",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "excuse",
+    "wrong": "excsue",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "turn",
+    "wrong": "tunr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "business",
+    "wrong": "busienss",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "case",
+    "wrong": "caes",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "wants",
+    "wrong": "watns",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "says",
+    "wrong": "sasy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "true",
+    "wrong": "treu",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "heart",
+    "wrong": "herat",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "soon",
+    "wrong": "sono",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "each",
+    "wrong": "eahc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "later",
+    "wrong": "laetr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "year",
+    "wrong": "yera",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "watch",
+    "wrong": "wacth",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "music",
+    "wrong": "muisc",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "having",
+    "wrong": "havnig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "probably",
+    "wrong": "probbaly",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "beautiful",
+    "wrong": "beauitful",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "doctor",
+    "wrong": "docotr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "thinking",
+    "wrong": "thinikng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "young",
+    "wrong": "yonug",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "second",
+    "wrong": "secnod",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "working",
+    "wrong": "worikng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "person",
+    "wrong": "perosn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "part",
+    "wrong": "patr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "kids",
+    "wrong": "kisd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "late",
+    "wrong": "laet",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "stuff",
+    "wrong": "stfuf",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "exactly",
+    "wrong": "exatcly",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "under",
+    "wrong": "unedr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "minute",
+    "wrong": "mintue",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "crazy",
+    "wrong": "crzay",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "forget",
+    "wrong": "foregt",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "everybody",
+    "wrong": "everbyody",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "change",
+    "wrong": "chagne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "gave",
+    "wrong": "gaev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "happen",
+    "wrong": "hapepn",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "five",
+    "wrong": "fiev",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "drink",
+    "wrong": "drnik",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "knows",
+    "wrong": "knwos",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "whatever",
+    "wrong": "whatveer",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "eyes",
+    "wrong": "eyse",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "shut",
+    "wrong": "shtu",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "aren",
+    "wrong": "arne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "taking",
+    "wrong": "taknig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "easy",
+    "wrong": "eays",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "times",
+    "wrong": "tiems",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "check",
+    "wrong": "chcek",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hands",
+    "wrong": "hadns",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "minutes",
+    "wrong": "mintues",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "deal",
+    "wrong": "dela",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "different",
+    "wrong": "diffreent",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "means",
+    "wrong": "menas",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "point",
+    "wrong": "ponit",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "inside",
+    "wrong": "insdie",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "makes",
+    "wrong": "maeks",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "asked",
+    "wrong": "asekd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "somebody",
+    "wrong": "someobdy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "mine",
+    "wrong": "mien",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "making",
+    "wrong": "maknig",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "body",
+    "wrong": "boyd",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "afraid",
+    "wrong": "afriad",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "chance",
+    "wrong": "chacne",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "dear",
+    "wrong": "dera",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "quite",
+    "wrong": "qutie",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "four",
+    "wrong": "foru",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "anyway",
+    "wrong": "anyawy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "close",
+    "wrong": "clsoe",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "party",
+    "wrong": "patry",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "against",
+    "wrong": "aganist",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "word",
+    "wrong": "wodr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "comes",
+    "wrong": "coems",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "important",
+    "wrong": "impotrant",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "shall",
+    "wrong": "shlal",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "story",
+    "wrong": "stroy",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "number",
+    "wrong": "numebr",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "daughter",
+    "wrong": "daugther",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "least",
+    "wrong": "lesat",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "waiting",
+    "wrong": "waiitng",
+    "explanation": "The two middle letters were swapped."
+  },
+  {
+    "correct": "hurt",
+    "wrong": "hutr",
+    "explanation": "The two middle letters were swapped."
+  }
+]

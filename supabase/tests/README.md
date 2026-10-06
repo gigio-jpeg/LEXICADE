@@ -1,0 +1,19 @@
+# Testes PostgreSQL
+
+`security.sql` e `economy.sql` foram executados em PostgreSQL local isolado por PGlite 0.3.14, com esquema mínimo de Auth. Não acessam um servidor remoto. Para repetir opcionalmente no Windows:
+
+```powershell
+npm install --no-save --package-lock=false @electric-sql/pglite@0.3.14
+```
+
+```powershell
+node supabase/tests/run-local.mjs
+```
+
+Essa dependência só é necessária para testes de banco locais, não para rodar o site nem `npm test`. O teste cria uma base em memória, aplica as migrações e seed e executa os dois arquivos de segurança. Não use senhas, URLs ou chaves na execução local.
+
+Para verificar **seu Supabase real**, após aplicar migrações e seed, você pode executar cada arquivo SQL pelo painel. Ambos usam uma transação, usuários fictícios `example.invalid` e `rollback` ao final. Se houver erro antes do rollback, execute `rollback;` e investigue. O agente não executou esses arquivos no seu projeto.
+
+Cobertura: privilégios/RLS, privacidade de perfis, isolamento entre usuários, escrita direta bloqueada, score impossível, rate limit, pistas com repetidas, limite de seis tentativas, segredo diário até o fim, importação com teto/sem ranking, compras idempotentes, equipar somente itens próprios, exportar dados e exclusão em cascata.
+
+O mock não reproduz envio de e-mail, OAuth, políticas da infraestrutura ou toda a estrutura de `auth.users`. Teste essas partes no serviço real antes de publicar.

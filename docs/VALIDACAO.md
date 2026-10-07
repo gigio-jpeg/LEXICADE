@@ -83,3 +83,9 @@ O cabeçalho usa botões Ver a sala e Menu com SVGs locais. Progresso, ranking e
 Playlist de seis composições sintetizadas localmente: synth, funk sincopado, jazz com swing, arcade rápido, valsa em três tempos e breakbeat. Cada faixa tem melodia, harmonia, percussão e pausas próprias, em vez de alterar somente BPM. O Chromium conferiu áudio real nas seis, pausa, avanço em pausa, navegação Ajustes/voltar e cabeçalho/player em 320, 390, 768 e 1.440 px sem overflow. Os 30 testes Node passaram, incluindo avanço automático e build público. Sem alteração SQL.
 
 Menu/player também abriu e fechou durante Frase Rush em 320 px, permitindo controlar música e retornar à partida. Zero erros JavaScript na execução completa.
+
+## Revisão 2.2.1 — restaurar padrão e novos acabamentos
+
+Original continua o valor inicial, sem requisito de partidas. O botão Restaurar padrão salva original/nome vazio/sem adesivo diretamente, sem apagar dados de progresso. Menta (5), Cobre solar (8), Rosa retrô (15), Pérola (40) e Aurora (50) ampliam a coleção. Aurora alterna cores por gabinete; detalhes gráficos e LEDs próprios de cada jogo evitam uniformizar toda a sala. A migração 006 amplia apenas a validação dos acabamentos no servidor, preservando estilos antigos e RLS.
+
+Validação: 30 testes Node aprovados. Migrações incrementais e instalador completo passaram nas suítes PostgreSQL de segurança/economia/social, incluindo bloqueio de cada novo acabamento e restauração livre. Chromium/WebGL confirmou Original no início, Aurora renderizada, reset persistido sem alterar partidas, zero partidas com reset disponível e opções bloqueadas, e painel acessível em 320 px; zero erros JavaScript.

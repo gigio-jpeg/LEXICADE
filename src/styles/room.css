@@ -970,3 +970,6 @@ body.room-mode.crt .screen-game { text-shadow:0 0 5px #65f5c455; }
  .room-overview { font-size:9px;padding:8px 6px;gap:4px; }
  .room-logo { letter-spacing:.1em; }
 }
+.room-custom-actions { display:flex;flex-wrap:wrap;gap:12px;margin-top:18px; }
+.feature-custom .room-custom-actions .button { margin-top:0; }
+.room-restore-default { background:transparent;color:var(--text);border:1px solid var(--line); }

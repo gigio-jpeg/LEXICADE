@@ -400,7 +400,7 @@
     "sticker_none": "No sticker",
     "sticker_star": "Star",
     "sticker_crown": "Crown",
-    "databaseError": "Apply Supabase update 005 and check your connection/account.",
+    "databaseError": "Check your connection/account and apply migrations 005 and 006 in Supabase.",
     "inviteLink": "Invite link",
     "copy": "Copy",
     "copied": "Invite copied!",
@@ -417,6 +417,13 @@
     "tie": "Tie!",
     "duelReward": "Duel result saved. XP is granted once when both players score.",
     "recordCelebration": "NEW RECORD!",
-    "comboCelebration": "COMBO ×{count}"
+    "comboCelebration": "COMBO ×{count}",
+    "restoreDefault": "Restore defaults",
+    "defaultRestored": "Original look restored.",
+    "finish_mint": "Mint",
+    "finish_ember": "Solar copper",
+    "finish_rose": "Retro rose",
+    "finish_pearl": "Pearl",
+    "finish_aurora": "Aurora · a color per machine"
   }
 }

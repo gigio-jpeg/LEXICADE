@@ -12,7 +12,7 @@ create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb,
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid; $$;
 grant execute on function auth.uid() to anon,authenticated;
 `);
-for(const file of ['migrations/001_schema.sql','migrations/002_rpcs.sql','migrations/003_queries.sql','seed.sql','migrations/004_arcade_focus.sql','migrations/005_arcade_social.sql','tests/security.sql','tests/social.sql']){
+for(const file of ['migrations/001_schema.sql','migrations/002_rpcs.sql','migrations/003_queries.sql','seed.sql','migrations/004_arcade_focus.sql','migrations/005_arcade_social.sql','migrations/006_cabinet_finishes.sql','tests/security.sql','tests/social.sql']){
   const sql=await readFile(new URL('../'+file,import.meta.url),'utf8');
   try{await db.exec(sql);console.log('PASS',file)}catch(error){console.error('FAIL',file,error.message,'position',error.position,'internal',error.internalPosition,error.internalQuery,'context',error.where);await db.close();process.exit(1)}
 }

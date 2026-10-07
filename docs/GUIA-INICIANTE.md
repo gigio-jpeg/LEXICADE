@@ -9,7 +9,7 @@ Vamos fazer uma etapa por vez. Você já confirmou Node.js `v25.1.0`, npm `10.8.
 3. No Explorador de Arquivos, clique com o botão direito no novo ZIP e escolha **Extrair Tudo**. Extraia em uma pasta nova, por exemplo `Documentos\LEXICADE-3D`, para preservar a cópia anterior.
 4. Entre na pasta extraída até encontrar `package.json`, `index.html`, `src`, `data` e `supabase`. Pode haver uma pasta `LEXICADE-main` dentro de outra: a pasta correta é a que contém esses arquivos.
 
-**Confirmação:** `package.json` mostra versão `2.2.0`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
+**Confirmação:** `package.json` mostra versão `2.2.1`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
 
 ## 2. Abrir a pasta no PowerShell
 
@@ -139,3 +139,7 @@ Antes de abrir contas ao público: revisar termos, consentimentos para menores, 
 ## Referências
 
 Guias oficiais: Node.js LTS, VS Code Windows, Git for Windows, políticas de execução PowerShell, Supabase Auth/URLs/RLS e Cloudflare Pages, listados também em `SETUP-SUPABASE.md` e `DEPLOY.md`. A primeira entrega consultou fontes oficiais; nomes de botões podem mudar. Não foi feita instalação no seu computador pela máquina da nuvem.
+
+## Restaurar o visual original
+
+Abra Menu → Extras → Restaurar padrão. A ação restaura cores originais, nome LEXICADE e nenhum adesivo, sem mexer nas partidas/desbloqueios. Não precisa jogar mais para voltar ao padrão. Para salvar os novos acabamentos com conta, aplique 006 depois de 005 conforme DEPLOY-VERCEL.

@@ -10,7 +10,7 @@ Se sua pasta veio de `git clone`, abra o PowerShell nela e execute:
 git pull origin main
 ```
 
-Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.2.0**, e `vercel.json`.
+Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.2.1**, e `vercel.json`.
 
 Para testar no computador, execute `npm start` e abra o endereço que o terminal mostrar. Para verificar o pacote de produção: `npm test` e depois `npm run build`. O build cria `dist`, só com os arquivos públicos do site.
 
@@ -18,7 +18,7 @@ Para testar no computador, execute `npm start` e abra o endereço que o terminal
 
 Entre em https://supabase.com/dashboard e abra seu projeto. Abra **SQL Editor → New query**.
 
-**Se as contas e o ranking já funcionavam na versão 2.0:** aplique somente `supabase/migrations/005_arcade_social.sql`. Na pasta do projeto, o PowerShell copia o arquivo inteiro:
+**Se as contas e o ranking já funcionavam na versão 2.0:** aplique `supabase/migrations/005_arcade_social.sql` e depois `supabase/migrations/006_cabinet_finishes.sql`. Na pasta do projeto, o PowerShell copia o arquivo inteiro:
 
 ```powershell
 Get-Content -Raw -Encoding UTF8 .\supabase\migrations\005_arcade_social.sql | Set-Clipboard
@@ -113,3 +113,7 @@ Revise os arquivos alterados antes de `git add .` se você fez outras mudanças 
 **Build falhou:** confira raiz, versão Node e os quatro campos da tabela. Abra os logs da Vercel; o primeiro erro é o mais útil.
 
 A publicação e a execução do SQL remoto dependem da sua conta nos painéis. Os testes locais usam PostgreSQL compatível e autenticação simulada; o teste final no seu domínio confirma Auth, e-mail e Realtime do projeto hospedado.
+
+## Atualização de acabamentos 2.2.1
+
+Com 005 já aplicada, copie somente `supabase/migrations/006_cabinet_finishes.sql` e execute no SQL Editor. Ela libera os novos nomes de acabamento na validação do servidor e mantém os desbloqueios. Não reaplique INSTALAR-TUDO em banco existente. Restaurar padrão já funciona com 005: abra Menu → Extras → Restaurar padrão; remove nome/adesivo/pintura personalizados e preserva progresso.

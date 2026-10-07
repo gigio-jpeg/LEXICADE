@@ -2,7 +2,7 @@ import { read, write } from "../core/storage.js";
 import { session } from "../core/auth.js";
 import { rpc } from "../core/api.js";
 import { guestProfile } from "../core/guest.js";
-export const FINISHES = Object.freeze({ original: { color: null, rounds: 0 }, sky: { color: '#65cfff', rounds: 3 }, violet: { color: '#bd97ff', rounds: 10 }, gold: { color: '#ffd078', rounds: 25 } });
+export const FINISHES = Object.freeze({ original: { color: null, rounds: 0 }, sky: { color: '#65cfff', rounds: 3 }, violet: { color: '#bd97ff', rounds: 10 }, gold: { color: '#ffd078', rounds: 25 }, mint: { color: '#7de2ba', rounds: 5 }, ember: { color: '#ff9468', rounds: 8 }, rose: { color: '#f59bbf', rounds: 15 }, pearl: { color: '#e0e8f6', rounds: 40 }, aurora: { color: '#a5dfde', colors: ['#7de2ba','#91b9ff','#f59bbf','#ba9bff'], rounds: 50 } });
 export const STICKERS = Object.freeze({ none: { glyph: '', rounds: 0 }, star: { glyph: '★', rounds: 5 }, crown: { glyph: '♛', rounds: 25 } });
 const key = () => `cabinet:${session()?.user.id ?? 'guest'}`;
 export const cabinetStyle = () => ({ title: '', finish: 'original', sticker: 'none', ...read(key(), {}) });

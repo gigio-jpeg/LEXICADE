@@ -20,8 +20,13 @@ export async function featuresPanel(onDuel) {
   for(const [id,item] of Object.entries(FINISHES))finish.append(el('option',{value:id,selected:id===(style.finish??'original'),disabled:rounds<item.rounds},t(`features.finish_${id}`)+(rounds<item.rounds?` · ${item.rounds} ${t('features.rounds')}`:'')));
   for(const [id,item] of Object.entries(STICKERS))sticker.append(el('option',{value:id,selected:id===(style.sticker??'none'),disabled:rounds<item.rounds},t(`features.sticker_${id}`)+(rounds<item.rounds?` · ${item.rounds} ${t('features.rounds')}`:'')));
   const save=button(t('settings.save'),async()=>{
-   if(!title.reportValidity())return;save.disabled=true;
-   try{await saveCabinetStyle({title:title.value.trim(),finish:finish.value,sticker:sticker.value},rounds);if(!closed)toast(t('settings.saved'))}catch{if(!closed)toast(t('features.databaseError'),true)}finally{if(!closed)save.disabled=false}
-  });custom.append(el('p',{},`${rounds} ${t('features.rounds')}`),field(t('features.name'),title),field(t('features.finish'),finish),field(t('features.sticker'),sticker),save);
+   if(!title.reportValidity())return;save.disabled=true;reset.disabled=true;
+   try{await saveCabinetStyle({title:title.value.trim(),finish:finish.value,sticker:sticker.value},rounds);if(!closed)toast(t('settings.saved'))}catch{if(!closed)toast(t('features.databaseError'),true)}finally{if(!closed){save.disabled=false;reset.disabled=false}}
+  });
+  const reset=button(t('features.restoreDefault'),async()=>{
+   reset.disabled=true;save.disabled=true;
+   try{await saveCabinetStyle({title:'',finish:'original',sticker:'none'},0);title.value='';finish.value='original';sticker.value='none';if(!closed)toast(t('features.defaultRestored'))}catch{if(!closed)toast(t('features.databaseError'),true)}finally{reset.disabled=false;save.disabled=false}
+  },'button room-restore-default');
+  custom.append(el('p',{},`${rounds} ${t('features.rounds')}`),field(t('features.name'),title),field(t('features.finish'),finish),field(t('features.sticker'),sticker),el('div',{class:'room-custom-actions'},save,reset));
  }catch{if(!closed)custom.append(el('p',{},t('features.databaseError')))}
 }

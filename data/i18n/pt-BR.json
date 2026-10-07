@@ -400,7 +400,7 @@
     "sticker_none": "Sem adesivo",
     "sticker_star": "Estrela",
     "sticker_crown": "Coroa",
-    "databaseError": "Aplique a atualização 005 no Supabase e confira sua conexão/conta.",
+    "databaseError": "Confira sua conexão/conta e aplique as migrações 005 e 006 no Supabase.",
     "inviteLink": "Link do convite",
     "copy": "Copiar",
     "copied": "Convite copiado!",
@@ -417,6 +417,13 @@
     "tie": "Empate!",
     "duelReward": "Resultado salvo no duelo. XP é concedido uma vez quando ambos pontuam.",
     "recordCelebration": "NOVO RECORDE!",
-    "comboCelebration": "COMBO ×{count}"
+    "comboCelebration": "COMBO ×{count}",
+    "restoreDefault": "Restaurar padrão",
+    "defaultRestored": "Visual original restaurado.",
+    "finish_mint": "Menta",
+    "finish_ember": "Cobre solar",
+    "finish_rose": "Rosa retrô",
+    "finish_pearl": "Pérola",
+    "finish_aurora": "Aurora · uma cor por máquina"
   }
 }

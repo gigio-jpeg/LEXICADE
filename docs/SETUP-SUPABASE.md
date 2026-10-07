@@ -84,3 +84,5 @@ Guias oficiais: [senha](https://supabase.com/docs/guides/auth/passwords), [redir
 ## Atualização 2.1 — duelo e personalização
 
 Se seu banco já tem as migrações 001–004, aplique somente `migrations/005_arcade_social.sql`; não reaplique INSTALAR-TUDO. Em banco vazio, o instalador atualizado inclui 005. [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md) reúne os passos e as URLs corretas de Auth para produção.
+
+Para acabamentos 2.2.1, aplique `migrations/006_cabinet_finishes.sql` depois da 005. O botão Restaurar padrão não exige a 006; as novas cores de conta exigem. O instalador de banco vazio já inclui ambas.

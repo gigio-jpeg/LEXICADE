@@ -169,17 +169,21 @@ export function cabinet(game, index) {
   const labelTexture = new THREE.CanvasTexture(labelCanvas); labelTexture.colorSpace = THREE.SRGBColorSpace;
   const nameplate = new THREE.Mesh(new THREE.PlaneGeometry(2.12, .36), new THREE.MeshBasicMaterial({ map: labelTexture, transparent: true, toneMapped: false }));
   nameplate.position.set(0, 1.48, 1.02); group.add(nameplate);
+  const fasciaCanvas=document.createElement('canvas');fasciaCanvas.width=512;fasciaCanvas.height=192;
+  const fasciaTexture=new THREE.CanvasTexture(fasciaCanvas);fasciaTexture.colorSpace=THREE.SRGBColorSpace;
+  const fascia=new THREE.Mesh(new THREE.PlaneGeometry(2.14,.75),new THREE.MeshBasicMaterial({map:fasciaTexture,transparent:true,toneMapped:false}));
+  fascia.position.set(0,.87,.863);group.add(fascia);
   let paintGain = .28, currentTheme;
   return { group, monitor, screen, stick, buttons, color, index,
     react(amount) { neon.emissiveIntensity = 1.15 + amount * .8; glow.intensity = 1.1 + amount; floorGlow.intensity = .7 + amount * 1.4; },
     personalize(style) {
-      const finish = FINISHES[style.finish]?.color;
+      const finish = FINISHES[style.finish]?.colors?.[index] ?? FINISHES[style.finish]?.color;
       paint.color.set(finish ?? COLORS[index]).multiplyScalar(finish ? .85 : paintGain);
       paint.emissive.set(finish ?? '#000000');paint.emissiveIntensity = finish ? .24 : 0;
-      shell.color.set(finish ?? currentTheme?.shell ?? '#253347');
+      shell.color.set(finish ?? currentTheme?.shell ?? '#253347');if(finish)shell.color.multiplyScalar(.6);
       shell.emissive.set(finish ?? '#000000');shell.emissiveIntensity = finish ? .2 : 0;
       shell.metalness = finish ? .2 : .6;
-      neon.color.set(finish ?? COLORS[index]);neon.emissive.copy(neon.color);
+      neon.color.set(COLORS[index]);neon.emissive.copy(neon.color);
       glow.color.copy(neon.color);floorGlow.color.copy(neon.color);
       const ctx = labelCanvas.getContext("2d");ctx.clearRect(0, 0, 512, 128);
       ctx.fillStyle = '#08111c';ctx.fillRect(0, 0, 512, 128);
@@ -187,6 +191,14 @@ export function cabinet(game, index) {
       ctx.textAlign = "center";ctx.fillStyle = finish ?? COLORS[index];ctx.font = "bold 46px monospace";
       ctx.fillText(`${STICKERS[style.sticker]?.glyph ?? ''} ${style.title || 'LEXICADE'}`, 256, 78, 490);
       labelTexture.needsUpdate = true;
+      const face=fasciaCanvas.getContext('2d');face.clearRect(0,0,512,192);
+      if(finish){
+        const gradient=face.createLinearGradient(0,0,512,192);gradient.addColorStop(0,finish);gradient.addColorStop(1,COLORS[index]);
+        face.strokeStyle=gradient;face.lineWidth=14;face.globalAlpha=.7;
+        for(let i=0;i<3;i++){face.beginPath();face.moveTo(300+i*48,192);face.lineTo(390+i*48,142);face.stroke();}
+        face.globalAlpha=1;face.fillStyle=finish;face.fillRect(12,168,225,5);
+      }
+      fasciaTexture.needsUpdate=true;
     },
     applyTheme(theme) {
       currentTheme = theme;

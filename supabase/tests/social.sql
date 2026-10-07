@@ -4,13 +4,18 @@ insert into auth.users(id,email,raw_user_meta_data,raw_app_meta_data) values
  ('44444444-4444-4444-8444-444444444444','duel-two@example.invalid','{"username":"DuelTwo","age_band":"adult","terms_accepted":true}','{"provider":"email"}'),
  ('55555555-5555-4555-8555-555555555555','duel-outsider@example.invalid','{"username":"DuelOutside","age_band":"adult","terms_accepted":true}','{"provider":"email"}');
 select set_config('request.jwt.claim.sub','33333333-3333-4333-8333-333333333333',true);
-do $$ declare m jsonb;id uuid;begin
+do $$ declare m jsonb;id uuid;finish_name text;begin
  execute 'set local role authenticated';
  m:=public.create_duel('pt');id:=(m->>'id')::uuid;perform set_config('test.duel',id::text,true);
  if m->>'status'<>'waiting' or jsonb_array_length(m->'phrases')<>30 then raise exception 'TEST FAILED: creation/content';end if;
  begin insert into public.duel_players(match_id,user_id) values(id,auth.uid());raise exception 'TEST FAILED: direct write';exception when insufficient_privilege then null;end;
  begin perform public.save_arcade_style('{"title":"MINHA MAQUINA","finish":"gold","sticker":"none"}');raise exception 'TEST FAILED: locked finish';exception when raise_exception then if sqlerrm<>'style_locked' then raise;end if;end;
  perform public.save_arcade_style('{"title":"MINHA MAQUINA","finish":"original","sticker":"none"}');
+ foreach finish_name in array array['mint','ember','rose','pearl','aurora'] loop
+  begin perform public.save_arcade_style(jsonb_build_object('title','','finish',finish_name,'sticker','none'));raise exception 'TEST FAILED: unlocked new finish';exception when raise_exception then if sqlerrm<>'style_locked' then raise;end if;end;
+ end loop;
+ perform public.save_arcade_style('{"title":"","finish":"original","sticker":"none"}');
+ if public.get_arcade_style()->'style'->>'finish'<>'original' then raise exception 'TEST FAILED: restore default';end if;
  execute 'reset role';
 end $$;
 select set_config('request.jwt.claim.sub','44444444-4444-4444-8444-444444444444',true);

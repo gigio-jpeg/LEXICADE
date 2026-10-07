@@ -33,3 +33,9 @@ Depois de instalar o service worker e conferir os 373 recursos em cache, o naveg
 Capturas reais da aplicação acompanham `docs/images/`. O 3D é modelado/renderizado pelo site, sem imagens de máquinas usadas para simular volume. A jogabilidade permanece DOM/Canvas para entrada de texto e controles, projetada sobre a tela da máquina 3D.
 
 Não foi medido desempenho em GPU física ou aparelho de entrada; não declarar meta de FPS cumprida. Testes Linux não comprovam execução em Windows, toque físico, Safari ou leitor de tela. A aprovação do banco hospedado e autenticação depende das ações do proprietário.
+
+## Correção 2.0.1 — notificações e música (7 de outubro de 2026)
+
+23 testes Node aprovados. Teste adicional em Chromium com WebGL, AudioContext real e analisadores de sinal: o botão musical iniciou áudio não nulo; desligá-lo silenciou o sinal; música funcionou com efeitos desligados, continuou após fechar Ajustes e foi restaurada após recarregar/interagir. Notificações de erro do login foram verificadas acima do backdrop desfocado, como popover na camada superior e descendente do diálogo ativo. A resposta de credenciais inválidas foi simulada no navegador; nenhuma requisição alcançou o Supabase. Zero erros JavaScript.
+
+A trilha é sintetizada localmente e precisa de uma interação para respeitar a política de áudio do navegador. A atualização do service worker é `lexicade-v2.0.1`. Nenhuma alteração de banco foi necessária.

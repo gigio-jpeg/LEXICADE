@@ -70,4 +70,4 @@ Ao alterar arquivos de uma versão publicada, atualize a constante `VERSION` em 
 
 ## Sala 3D da revisão 2
 
-Publique também `vendor/three/` e todos os seus addons; sem eles a sala não renderiza em 3D. Não há build obrigatório. O service worker usa `lexicade-v2.0.0`; feche abas antigas para ativar a atualização. URLs antigas de login/recuperação/perfil continuam válidas e encaminham para painéis na sala preservando parâmetros de autenticação.
+Publique também `vendor/three/` e todos os seus addons; sem eles a sala não renderiza em 3D. Não há build obrigatório. O service worker usa `lexicade-v2.0.1`; feche abas antigas para ativar a atualização. URLs antigas de login/recuperação/perfil continuam válidas e encaminham para painéis na sala preservando parâmetros de autenticação.

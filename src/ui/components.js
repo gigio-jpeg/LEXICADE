@@ -19,18 +19,27 @@ export const button = (text, onclick, className = "button", attributes = {}) =>
     text,
   );
 export function toast(message, error = false) {
+  const parent = [...document.querySelectorAll("dialog[open]")].at(-1) ?? document.body;
   const host =
     document.getElementById("toasts") ??
     document.body.appendChild(
-      el("div", { id: "toasts", class: "toasts", "aria-live": "polite" }),
+      el("div", { id: "toasts", class: "toasts", popover: "manual", "aria-live": "polite" }),
     );
+  if (host.parentNode !== parent) {
+    host.hidePopover?.();
+    parent.append(host);
+  }
   const node = el(
     "div",
     { class: `toast ${error ? "error" : ""}`, role: "status" },
     message,
   );
   host.append(node);
-  setTimeout(() => node.remove(), 5500);
+  host.showPopover?.();
+  setTimeout(() => {
+    node.remove();
+    if (!host.childElementCount && host.isConnected) host.hidePopover?.();
+  }, 5500);
 }
 export function field(label, input) {
   return el("label", { class: "field" }, el("span", {}, label), input);

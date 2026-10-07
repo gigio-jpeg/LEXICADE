@@ -4,7 +4,9 @@ import { config, path } from "../core/config.js";
 import { settings, saveSettings } from "../core/storage.js";
 import { session } from "../core/auth.js";
 import { COLORS } from "./navigation.js";
+import { music } from "../core/audio.js";
 export function roomUI(root, games, actions) {
+  const abort = new AbortController();
   const logo = el(
     "a",
     { class: "room-logo", href: path(), "aria-label": config.name },
@@ -27,15 +29,27 @@ export function roomUI(root, games, actions) {
     ),
   );
   const mute = button(
-    settings().sound ? "♪" : "♫",
+    settings().sound && settings().music ? "♪" : "♫",
     () => {
-      const s = saveSettings({ sound: !settings().sound });
-      mute.textContent = s.sound ? "♪" : "♫";
-      mute.setAttribute("aria-pressed", s.sound);
+      const enabled = !(settings().sound && settings().music);
+      saveSettings({ sound: enabled, music: enabled });
     },
     "room-icon",
-    { "aria-label": t("room.sound"), "aria-pressed": settings().sound },
+    { "aria-label": t("room.sound"), "aria-pressed": settings().sound && settings().music, title: t("room.sound") },
   );
+  function syncAudio() {
+    const s = settings(), enabled = s.sound && s.music;
+    mute.textContent = enabled ? "♪" : "♫";
+    mute.setAttribute("aria-pressed", enabled);
+    music(s.music && !document.hidden);
+  }
+  document.addEventListener("settings", syncAudio, { signal: abort.signal });
+  document.addEventListener("visibilitychange", syncAudio, { signal: abort.signal });
+  for (const event of ["pointerdown", "keydown"])
+    document.addEventListener(event, () => {
+      if (settings().music && !document.hidden) music(true);
+    }, { signal: abort.signal });
+  syncAudio();
   const overview = button(
     "⌑ " + t("room.room"),
     actions.overview,
@@ -155,6 +169,8 @@ export function roomUI(root, games, actions) {
       root.dataset.ready = "true";
     },
     dispose() {
+      abort.abort();
+      music(false);
       header.remove();
       intro.remove();
       nav.remove();

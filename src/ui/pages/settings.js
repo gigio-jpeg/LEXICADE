@@ -5,7 +5,6 @@ import { settings, saveSettings, clearLocal } from "../../core/storage.js";
 import { guestProfile } from "../../core/guest.js";
 import { session, signOut } from "../../core/auth.js";
 import { exportAccount, deleteAccount } from "../../core/api.js";
-import { music } from "../../core/audio.js";
 import { themeChoices } from "../../core/cosmetics.js";
 import { page, downloadJSON } from "../page-utils.js";
 export function settingsPage(main) {
@@ -57,7 +56,6 @@ export function settingsPage(main) {
       checked: s[key],
       onchange: (e) => {
         saveSettings({ [key]: e.target.checked });
-        if (key === "music") music(e.target.checked);
       },
     });
     parent.append(el("label", { class: "toggle" }, input, t(label)));
@@ -199,5 +197,5 @@ export function settingsPage(main) {
         ),
       ),
     );
-  return () => music(false);
+  return () => {};
 }

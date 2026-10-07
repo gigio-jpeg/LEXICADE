@@ -193,6 +193,16 @@
   right: 20px;
   z-index: 200;
   max-width: min(420px, calc(100vw - 40px));
+  inset: auto 20px 20px auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  pointer-events: none;
+}
+.toasts::backdrop {
+  background: transparent;
 }
 .toast {
   background: var(--surface-raised);

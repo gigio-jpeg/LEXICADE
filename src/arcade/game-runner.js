@@ -234,7 +234,8 @@ export async function runGame(screen, game, options = {}) {
   function prepare() {
     controller = module.create(ctx);
     controller.start?.();
-    controls.querySelector("input")?.focus();
+    if (!matchMedia("(max-width: 700px)").matches)
+      controls.querySelector("input")?.focus({ preventScroll: true });
   }
   function restart() {
     controller?.destroy?.();

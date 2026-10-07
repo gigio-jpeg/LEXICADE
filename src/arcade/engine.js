@@ -131,6 +131,19 @@ export function createEngine(host, games, onChange, onFail) {
     }
   }
   function resize() {
+    const touchScreen = host.clientWidth <= 700;
+    screenElement.classList.toggle("mobile-screen", touchScreen);
+    if (touchScreen && cssScreen.parent) {
+      cssScene.remove(cssScreen);
+      host.append(screenElement);
+      screenElement.style.transform = "none";
+    } else if (!touchScreen && !cssScreen.parent) {
+      cssScene.add(cssScreen);
+    }
+    if (touchScreen) screenElement.style.display = state === "play" ? "block" : "none";
+    const viewport = window.visualViewport;
+    host.style.setProperty("--visible-height", `${viewport?.height ?? innerHeight}px`);
+    host.style.setProperty("--visible-top", `${viewport?.offsetTop ?? 0}px`);
     const width = host.clientWidth,
       height = host.clientHeight;
     if (width === lastWidth && height === lastHeight) return;
@@ -147,6 +160,8 @@ export function createEngine(host, games, onChange, onFail) {
     pose(true);
   }
   function announce() {
+    if (screenElement.classList.contains("mobile-screen"))
+      screenElement.style.display = state === "play" ? "block" : "none";
     onChange(index, state);
     host.dataset.machine = games[index].id;
     const url = new URL(location.href);
@@ -270,6 +285,9 @@ export function createEngine(host, games, onChange, onFail) {
     resizeFrame = requestAnimationFrame(resize);
   });
   observer.observe(host);
+  window.addEventListener("resize", resize, { signal });
+  window.visualViewport?.addEventListener("resize", resize, { signal });
+  window.visualViewport?.addEventListener("scroll", resize, { signal });
   resize();
   basePosition.copy(goalPosition);
   target.copy(goalTarget);

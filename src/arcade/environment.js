@@ -95,6 +95,7 @@ export function environment(scene, lowPower = false) {
   return {
     floor,
     dust,
+    react(amount) { teal.intensity = 12 + amount * 9; pink.intensity = 17 + amount * 8; dust.material.opacity = .3 + amount * .15; },
     applyTheme(theme) {
       scene.background.set(theme.background);
       scene.fog.color.set(theme.background);

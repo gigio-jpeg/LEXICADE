@@ -1,3 +1,6 @@
+import { featuresPanel } from "./features-ui.js";
+import { validDuelId, rememberDuel, pendingDuel } from "./duel-link.js";
+import { session } from "../core/auth.js";
 import { el, button, getJSON } from "../ui/components.js";
 import { path } from "../core/config.js";
 import { t, lang } from "../core/i18n.js";
@@ -13,6 +16,10 @@ export async function arcadeRoom(main) {
     disposed = false,
     fallbackCleanup;
   const params = new URL(location.href).searchParams;
+  function playDuel(id) {
+    const url = new URL(location.href);url.searchParams.set("duel",id);history.replaceState(history.state,"",url);
+    engine.select(0);engine.play({duel:id});
+  }
   const ui = roomUI(root, games, {
     select: (i) => engine?.select(i),
     step: (d) => engine?.step(d),
@@ -20,6 +27,7 @@ export async function arcadeRoom(main) {
     overview: () => engine?.overview(),
     leave: () => engine?.leave(),
     account: accountPanel,
+    features: () => featuresPanel(playDuel),
   });
   function fallback() {
     if (disposed) return;
@@ -71,15 +79,16 @@ export async function arcadeRoom(main) {
         state = "overview";
         ui.update(index, state);
       },
-      async play(i = index) {
-        index = i;
+      async play(value = index) {
+        const options = typeof value === "object" ? value : {};
+        index = typeof value === "number" ? value : index;
         state = "play";
         ui.update(index, "play");
         screen.hidden = false;
         grid.hidden = true;
         fallbackCleanup?.();
         const current = ++generation;
-        const cleanup = await runGame(screen, games[index]);
+        const cleanup = await runGame(screen, games[index], options);
         if (disposed || current !== generation) cleanup();
         else fallbackCleanup = cleanup;
       },
@@ -110,7 +119,9 @@ export async function arcadeRoom(main) {
   if (!disposed) {
     const i = games.findIndex((g) => g.id === params.get("machine"));
     if (i >= 0) engine.select(i);
-    if (params.get("play") === "1") engine.play();
+    const duelId = validDuelId(params.get("duel")) ? params.get("duel") : session() ? pendingDuel() : null;
+    if (duelId) { rememberDuel(duelId);playDuel(duelId); }
+    else if (params.get("play") === "1") engine.play();
     if (
       [
         "login",

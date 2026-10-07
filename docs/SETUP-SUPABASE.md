@@ -80,3 +80,7 @@ Link mágico é oferecido para entrar em uma conta existente; não cria contas s
 ## Referências
 
 Guias oficiais: [senha](https://supabase.com/docs/guides/auth/passwords), [redirecionamentos](https://supabase.com/docs/guides/auth/redirect-urls), [Google](https://supabase.com/docs/guides/auth/social-login/auth-google), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security), [API keys](https://supabase.com/docs/guides/api/api-keys). Rótulos do painel podem mudar.
+
+## Atualização 2.1 — duelo e personalização
+
+Se seu banco já tem as migrações 001–004, aplique somente `migrations/005_arcade_social.sql`; não reaplique INSTALAR-TUDO. Em banco vazio, o instalador atualizado inclui 005. [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md) reúne os passos e as URLs corretas de Auth para produção.

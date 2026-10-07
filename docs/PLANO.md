@@ -213,3 +213,15 @@ A orientação do usuário substitui o catálogo de 16 jogos e os muitos ajustes
 Revisões anteriores permanecem como histórico. Para esta revisão, o critério é uma experiência 3D com quatro máquinas, sem retomar os ajustes e jogos que o usuário rejeitou.
 
 Evidências da revisão 2: 23 testes Node, quatro migrações e instalação SQL completa em instâncias locais isoladas; navegação/interação real WebGL nos quatro jogos, ciclos completos dos quatro controladores, cinco larguras, três idiomas, offline e fallback sem WebGL. Limites de Auth remoto, GPU física e Windows estão em `PENDENCIAS.md`. Node/npm/Git já foram confirmados pelo usuário no Windows.
+
+## Revisão 2.1 — recursos autorizados
+
+- [x] Fantasma do melhor percurso no Frase Rush, sequência compartilhada e comparação por tempo; armazenamento local por conta/idioma.
+- [x] Duelo por convite para duas contas, contagem regressiva, relógio/frases/validação no servidor, Realtime com polling e retomada.
+- [x] Recompensa de duelo única e isolamento RLS; terceiros sem acesso.
+- [x] Sala e gabinetes respondem a acertos, sequências e recordes, respeitando redução de movimento.
+- [x] Personalização com nome/acabamento/adesivo, desbloqueios por partidas e sincronização de contas via Supabase.
+- [x] Banco do Anagrama ampliado: 1.680 palavras PT, 1.689 EN e 1.687 ES; sorteio sem repetição imediata e respostas equivalentes.
+- [x] Build público em dist e configuração Vercel, sem SQL/documentação/testes no pacote.
+- [x] Guia de publicação e migração incremental 005, mantendo dados anteriores.
+- [ ] Proprietário aplicar SQL no Supabase e publicar pela conta Vercel; verificar Auth/e-mail/Realtime no domínio real.

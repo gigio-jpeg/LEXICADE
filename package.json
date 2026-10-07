@@ -1,6 +1,6 @@
 {
   "name": "lexicade",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "description": "Uma sala de fliperama 3D com quatro jogos de palavras.",
@@ -9,7 +9,8 @@
     "test": "node --test",
     "validate": "node tests/validate-content.mjs",
     "crosswords": "node tests/generate-crosswords.mjs",
-    "package": "node tests/package.mjs"
+    "package": "node tests/package.mjs",
+    "build": "node tools/build.mjs"
   },
   "engines": {
     "node": ">=22"

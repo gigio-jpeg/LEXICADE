@@ -1,5 +1,6 @@
 import * as THREE from "../../vendor/three/three.module.js";
 import { marquee, sideArt, preview } from "./textures.js";
+import { FINISHES, STICKERS } from "./personalization.js";
 import { COLORS, machineX } from "./navigation.js";
 function box(group, w, h, d, x, y, z, material) {
   const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -164,8 +165,23 @@ export function cabinet(game, index) {
   const floorGlow = new THREE.PointLight(color, 0.7, 4, 2);
   floorGlow.position.set(0, 0.23, 1.3);
   group.add(floorGlow);
+  const labelCanvas = document.createElement("canvas"); labelCanvas.width = 512; labelCanvas.height = 128;
+  const labelTexture = new THREE.CanvasTexture(labelCanvas); labelTexture.colorSpace = THREE.SRGBColorSpace;
+  const nameplate = new THREE.Mesh(new THREE.PlaneGeometry(1.55, .38), new THREE.MeshBasicMaterial({ map: labelTexture, transparent: true }));
+  nameplate.position.set(0, 1.13, .96); group.add(nameplate);
+  let paintGain = .28;
   return { group, monitor, screen, stick, buttons, color, index,
+    react(amount) { neon.emissiveIntensity = 1.15 + amount * .8; glow.intensity = 1.1 + amount; floorGlow.intensity = .7 + amount * 1.4; },
+    personalize(style) {
+      const finish = FINISHES[style.finish]?.color;
+      paint.color.set(finish ?? COLORS[index]).multiplyScalar(paintGain);
+      const ctx = labelCanvas.getContext("2d");ctx.clearRect(0, 0, 512, 128);
+      ctx.textAlign = "center";ctx.fillStyle = finish ?? COLORS[index];ctx.font = "bold 32px monospace";
+      ctx.fillText(`${STICKERS[style.sticker]?.glyph ?? ''} ${style.title || 'LEXICADE'}`, 256, 78, 490);
+      labelTexture.needsUpdate = true;
+    },
     applyTheme(theme) {
+      paintGain = theme.paintGain;
       shell.color.set(theme.shell);
       dark.color.set(theme.dark);
       paint.color.copy(color).multiplyScalar(theme.paintGain);

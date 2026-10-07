@@ -9,7 +9,7 @@ Vamos fazer uma etapa por vez. Você já confirmou Node.js `v25.1.0`, npm `10.8.
 3. No Explorador de Arquivos, clique com o botão direito no novo ZIP e escolha **Extrair Tudo**. Extraia em uma pasta nova, por exemplo `Documentos\LEXICADE-3D`, para preservar a cópia anterior.
 4. Entre na pasta extraída até encontrar `package.json`, `index.html`, `src`, `data` e `supabase`. Pode haver uma pasta `LEXICADE-main` dentro de outra: a pasta correta é a que contém esses arquivos.
 
-**Confirmação:** `package.json` mostra versão `2.0.3`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
+**Confirmação:** `package.json` mostra versão `2.1.0`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
 
 ## 2. Abrir a pasta no PowerShell
 
@@ -112,19 +112,7 @@ Para offline, primeiro carregue a sala com internet, aguarde a instalação do c
 
 ## 8. Publicar
 
-Use `DEPLOY.md`: Cloudflare Pages, repositório `gigio-jpeg/LEXICADE`, branch `main`, framework **None**, comando da hospedagem `exit 0`, saída `.`. Esse comando é preenchido no painel; não é uma instrução PowerShell.
-
-Depois de escolher o endereço público:
-
-```powershell
-node tests/configure-domain.mjs https://SEU-NOME.pages.dev
-```
-
-```powershell
-node tests/update-cache.mjs
-```
-
-Envie a alteração pelo GitHub e atualize as URLs Auth no Supabase. O ZIP não contém histórico Git: para guardar versões, use **GitHub Desktop → File → Clone repository** em uma pasta nova ou siga a alternativa Git de `DEPLOY.md`. Não faça `git pull` numa pasta extraída sem `.git`.
+Siga [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md). Ele explica como aplicar a migração 005 no Supabase, importar a branch `main` na Vercel, configurar as URLs de login e testar o duelo com duas contas. Não precisa instalar programas adicionais.
 
 Antes de abrir contas ao público: revisar termos, consentimentos para menores, contato do responsável e conteúdo. O site não foi publicado automaticamente nesta tarefa.
 

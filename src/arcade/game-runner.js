@@ -13,7 +13,8 @@ const modules = {
   wordman: () => import("../ui/controllers/wordman.js"),
   anagrama: () => import("./games/anagram.js"),
 };
-export async function runGame(screen, game) {
+export async function runGame(screen, game, options = {}) {
+  if (options.duel) return (await import("./duel.js")).runDuel(screen, options.duel);
   const abort = new AbortController(),
     signal = abort.signal,
     language = dataLang(lang());
@@ -111,7 +112,8 @@ export async function runGame(screen, game) {
         elapsed = 0;
       },
       begin: () => {},
-      sound: (kind) => sound(kind),
+      feedback: (detail) => screen.dispatchEvent(new CustomEvent("arcadefeedback", { bubbles: true, detail })),
+      sound: (kind) => { sound(kind); ctx.feedback({ kind }); },
       notice: (value) => {
         notice.textContent = value;
       },
@@ -204,6 +206,7 @@ export async function runGame(screen, game) {
       finish(points, metrics, extras = {}) {
         if (ended || disposed) return;
         ended = true;
+        ctx.feedback({ kind: "finish" });
         pause.hidden = true;
         controls.hidden = true;
         const answer = game.id === "decifra" ? notice.textContent : "";

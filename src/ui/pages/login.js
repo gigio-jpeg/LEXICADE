@@ -1,3 +1,4 @@
+import { pendingDuel } from "../../arcade/duel-link.js";
 import { el, button, field, toast, modal } from "../components.js";
 import { t, lang } from "../../core/i18n.js";
 import { config, path, dataLang } from "../../core/config.js";
@@ -295,6 +296,7 @@ export async function loginPage(main, kind = "login") {
       );
   }
   async function afterLogin() {
+    const destination = () => pendingDuel() ? path(`?duel=${pendingDuel()}`) : path("pages/perfil.html");
     const profile = await ownProfile();
     if (profile?.onboarding_required) {
       location.href = path("pages/escolher-nome.html");
@@ -313,7 +315,7 @@ export async function loginPage(main, kind = "login") {
               await importGuest(local);
               write(importKey, true);
               dialog.close();
-              location.href = path("pages/perfil.html");
+              location.href = destination();
             } catch {
               toast(t("common.error"), true);
             }
@@ -322,13 +324,13 @@ export async function loginPage(main, kind = "login") {
             t("common.skip"),
             () => {
               dialog.close();
-              location.href = path("pages/perfil.html");
+              location.href = destination();
             },
             "button ghost",
           ),
         ),
       );
-    } else location.href = path("pages/perfil.html");
+    } else location.href = destination();
   }
   if (mode === "onboard" && !session()) {
     location.href = path("pages/login.html");

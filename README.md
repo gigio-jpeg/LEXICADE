@@ -81,7 +81,7 @@ Testes PostgreSQL opcionais: [supabase/tests/README.md](supabase/tests/README.md
 
 ## Publicar
 
-Cloudflare Pages: branch `main`, framework `None`, comando da hospedagem `exit 0`, saída `.`. Nenhum build de aplicação. Antes de lançar, configurar domínio, Auth e revisar termos/conteúdo. [DEPLOY](docs/DEPLOY.md) explica o processo.
+Vercel: importe a branch `main`, framework **Other**, build `npm run build` e saída `dist`. [Publicar com Supabase](docs/DEPLOY-VERCEL.md) explica SQL, Auth, domínio e teste com duas contas. A alternativa Cloudflare permanece em [DEPLOY](docs/DEPLOY.md).
 
 ## Alterar ou ampliar
 
@@ -90,3 +90,13 @@ Cada máquina é descrita em `data/games.json`; posição/câmera em `src/arcade
 Idiomas: traduções completas em `data/i18n/`, conteúdo em `data/words/` e frases em `data/arcade/phrases.json`. Interface `pt-BR` corresponde a `pt` no conteúdo/banco. Novos idiomas exigem atualizar configuração e constraints SQL.
 
 Fontes e licenças: [LICENCAS](docs/LICENCAS.md). O salvamento no GitHub não publica o site.
+
+## Novidades da versão 2.1
+
+- Fantasma do melhor percurso no Frase Rush, salvo por navegador, conta e idioma.
+- Duelo por convite para duas contas, frases e relógio do servidor, reconexão e recompensa única.
+- Sala e LEDs reagem aos acertos e recordes; redução de movimento desativa os pulsos.
+- Extras: nome, pintura e adesivo nas máquinas, desbloqueados por rodadas; contas sincronizam o estilo no Supabase.
+- Anagrama: sorteio sem repetição imediata de 1.680 palavras portuguesas de 4 a 8 letras, aceitando alternativas válidas com as mesmas letras. Inglês e espanhol também receberam o banco ampliado.
+
+Bancos usam palavras existentes do conteúdo licenciado, filtradas e embaralhadas aleatoriamente; não inventam palavras.

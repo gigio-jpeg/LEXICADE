@@ -1,3 +1,4 @@
+import { cabinetStyle, loadCabinetStyle } from "./personalization.js";
 import * as THREE from "../../vendor/three/three.module.js";
 import {
   CSS3DRenderer,
@@ -66,7 +67,7 @@ export function createEngine(host, games, onChange, onFail) {
   function applyTheme(event) {
     const theme = roomTheme(event?.detail?.theme ?? settings().theme);
     world.applyTheme(theme);
-    cabinets.forEach((c) => c.applyTheme(theme));
+    cabinets.forEach((c) => { c.applyTheme(theme); c.personalize(cabinetStyle()); });
     renderer.toneMappingExposure = theme.exposure;
     bloom.strength = theme.bloom;
     renderer.shadowMap.needsUpdate = true;
@@ -75,10 +76,19 @@ export function createEngine(host, games, onChange, onFail) {
   document.addEventListener("settings", applyTheme, { signal });
   document.addEventListener("settingspreview", applyTheme, { signal });
   applyTheme();
+  document.addEventListener("cabinetstyle", () => cabinets.forEach((c) => c.personalize(cabinetStyle())), { signal });
+  loadCabinetStyle().catch(() => {});
   let resizeFrame = 0, lastWidth = 0, lastHeight = 0;
   let crt = settings().crt;
   document.addEventListener("settings", (event) => { crt = event.detail.crt; }, { signal });
   document.addEventListener("settingspreview", (event) => { crt = event.detail.crt; }, { signal });
+  let pulse = 0;
+  host.addEventListener("arcadefeedback", (event) => {
+    if (["correct", "combo", "record", "finish", "level"].includes(event.detail?.kind)) {
+      pulse = Math.max(pulse, event.detail.kind === "record" ? 1.5 : event.detail.kind === "combo" ? Math.min(1.3, .5 + (event.detail.combo ?? 0) * .08) : .6);
+      host.dataset.reaction = event.detail.kind;
+    }
+  }, { signal });
   let lastDraw = 0;
   let index = 0,
     state = "browse",
@@ -166,7 +176,7 @@ export function createEngine(host, games, onChange, onFail) {
     announce();
     host.querySelector(".room-primary")?.focus();
   }
-  async function play() {
+  async function play(options = {}) {
     if (state === "play" || disposed) return;
     state = "play";
     const current = ++generation;
@@ -185,7 +195,7 @@ export function createEngine(host, games, onChange, onFail) {
     cssScreen.visible = true;
     cabinets[index].monitor.visible = false;
     try {
-      const cleanup = await runGame(screenElement, games[index]);
+      const cleanup = await runGame(screenElement, games[index], options);
       if (disposed || current !== generation) cleanup();
       else stopGame = cleanup;
     } catch {
@@ -264,7 +274,7 @@ export function createEngine(host, games, onChange, onFail) {
   function animate(now) {
     if (disposed) return;
     frame = requestAnimationFrame(animate);
-    if (!transition && now - lastDraw < (state === "play" ? 250 : 33)) return;
+    if (!transition && now - lastDraw < (state === "play" && pulse === 0 ? 250 : 33)) return;
     lastDraw = now;
     const time = now / 1000,
       dt = Math.min(0.05, (now - last) / 1000);
@@ -288,7 +298,11 @@ export function createEngine(host, games, onChange, onFail) {
       if (c.monitor.visible && c.screen.draw(time + c.index * 3, crt))
         c.screen.texture.needsUpdate = true;
     });
-    world.dust.rotation.y += dt * 0.008;
+    pulse = Math.max(0, pulse - dt * .8);
+    const energy = reduced() ? 0 : pulse;
+    world.react(energy);
+    cabinets.forEach((c, i) => c.react(i === index ? energy : 0));
+    world.dust.rotation.y += reduced() ? 0 : dt * 0.008;
     composer.render();
     cssRenderer.render(cssScene, camera);
   }

@@ -12,7 +12,7 @@ create table auth.users(id uuid primary key,email text,raw_user_meta_data jsonb,
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid; $$;
 grant execute on function auth.uid() to anon,authenticated;
 `);
-for(const file of ['migrations/001_schema.sql','migrations/002_rpcs.sql','migrations/003_queries.sql','seed.sql','migrations/004_arcade_focus.sql','tests/security.sql']){
+for(const file of ['migrations/001_schema.sql','migrations/002_rpcs.sql','migrations/003_queries.sql','seed.sql','migrations/004_arcade_focus.sql','migrations/005_arcade_social.sql','tests/security.sql','tests/social.sql']){
   const sql=await readFile(new URL('../'+file,import.meta.url),'utf8');
   try{await db.exec(sql);console.log('PASS',file)}catch(error){console.error('FAIL',file,error.message,'position',error.position,'internal',error.internalPosition,error.internalQuery,'context',error.where);await db.close();process.exit(1)}
 }
@@ -34,6 +34,7 @@ try{
   if(test.rows[0].games!==4)throw new Error('Conquistas não correspondem às quatro máquinas');
   await bundled.exec(await readFile(new URL('security.sql',import.meta.url),'utf8'));
   await bundled.exec(await readFile(new URL('economy.sql',import.meta.url),'utf8'));
-  console.log('PASS INSTALAR-TUDO.sql / segurança / economia');
+  await bundled.exec(await readFile(new URL('social.sql',import.meta.url),'utf8'));
+  console.log('PASS INSTALAR-TUDO.sql / segurança / economia / social');
 }catch(error){console.error('FAIL INSTALAR-TUDO.sql',error.message);await bundled.close();process.exit(1)}
 await bundled.close();

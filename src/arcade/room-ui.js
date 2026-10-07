@@ -130,10 +130,11 @@ export function roomUI(root, games, actions) {
       ),
     ),
   );
+  const extras = button(t("features.title"), actions.features, "room-extras");
   const footer = el(
     "footer",
     { class: "room-footer" },
-    el("span", { class: "room-control-guide" }, t("room.guide")),
+    el("div", { class: "room-footer-extra" }, extras, el("span", { class: "room-control-guide" }, t("room.guide"))),
     dots,
     el("span", { class: "room-coordinate" }, "EST. 2026 / ONLINE ARCADE"),
   );

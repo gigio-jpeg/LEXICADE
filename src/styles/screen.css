@@ -523,3 +523,15 @@ html[data-colorblind="true"] .room-screen .letter {
     font-size: 19px;
   }
 }
+.ghost-race { font-size:10px;color:#a6cfc5;display:grid;gap:4px;flex:0 0 auto;padding-top:4px; }
+.ghost-lane { height:5px;overflow:hidden;background:#294038;border-radius:4px; }
+.ghost-lane i { display:block;height:100%;background:#65f5c4;max-width:100%;transition:width .2s; }
+.ghost-lane .ghost-record { background:#c8a3ff; }
+.duel-rivals { display:grid;gap:9px;font-size:11px; }
+.duel-player .ghost-lane { margin-top:4px; }
+.duel-player:not(.is-you) i { background:#c8a3ff; }
+.duel-share { display:flex;gap:8px; }
+.duel-share input { min-width:0;font-size:10px; }
+.duel-share button { font-size:10px;flex-shrink:0; }
+.screen-duel .screen-game-area { min-height:100px; }
+.screen-duel .screen-notice { min-height:20px; }

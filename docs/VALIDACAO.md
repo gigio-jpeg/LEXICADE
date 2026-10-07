@@ -57,3 +57,15 @@ No Chromium com WebGL, a navegação pelos quatro jogos e painéis não reproduz
 Teste funcional posterior: monitor retrô mostra linhas de varredura, máscara RGB, brilho e vinheta; desligar remove o efeito. A prévia em Ajustes funciona e a escolha salva persiste após recarregar. As telas de demonstração dos quatro gabinetes também respeitam a preferência. Sem efeito global sobre controles e formulários, sem animação de cintilação.
 
 Eventos de layout conhecidos foram simulados e não geraram popup. Três erros reais simulados mantiveram registro no Console e exibiram uma única notificação, inclusive acima de um painel aberto. Nenhum erro real foi suprimido pelo classificador. Sem acesso ao Supabase remoto. Cache atualizado para 375 recursos e versão 2.0.3.
+
+## Revisão 2.1 — fantasma, duelo, sala e personalização
+
+30 testes Node passaram, incluindo banco aleatório sem repetição, persistência do fantasma, validação dos convites e build de produção com todos os 381 recursos offline e sem arquivos internos. `npm run validate` terminou sem erro estrutural; continuam os avisos de metas editoriais antigas documentadas em PENDENCIAS.
+
+PostgreSQL local via PGlite: migrações incrementais e instalador completo passaram em segurança, economia e social. A suíte social valida participantes, bloqueio de terceiros, frases do servidor, recompensa idempotente e desbloqueio de estilo.
+
+Chromium com duas sessões simuladas, RPCs executadas no PostgreSQL local real e Realtime indisponível para exercitar polling: convite, mesmas frases, placar remoto, perda de rede/retomada, resultado comum e XP concedido uma vez passaram; zero erros JavaScript. Não houve autenticação ou execução SQL no Supabase hospedado. Realtime hospedado, e-mails e URLs de produção precisam do teste final do proprietário.
+
+Rodadas dos quatro jogos passaram novamente. O fantasma gravou o recorde e repetiu a sequência na rodada seguinte. Anagrama resolveu três sorteios do banco ampliado e persistiu resultado. Na sala WebGL real: nome, acabamento dourado e coroa salvaram, acerto disparou reação e Extras funcionou em 320, 390, 768 e 1.440 px sem overflow; zero erros JavaScript. Fantasma é local ao navegador; estilo de conta usa RPC.
+
+O pacote `dist` foi servido separadamente e abriu a sala WebGL e Extras sem erros JavaScript. Isso verifica os arquivos de produção, mas não representa um deploy na Vercel.

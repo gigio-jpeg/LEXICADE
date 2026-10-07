@@ -5,6 +5,7 @@ const files = [
   "migrations/003_queries.sql",
   "seed.sql",
   "migrations/004_arcade_focus.sql",
+  "migrations/005_arcade_social.sql",
 ];
 const chunks = [
   "-- LEXICADE 2: somente para projeto Supabase vazio.",

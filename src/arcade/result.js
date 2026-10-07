@@ -49,6 +49,8 @@ export async function resultScreen(host, result, restart, alive) {
     ),
   );
   sound(local.novo_recorde ? "record" : "end");
+  host.dispatchEvent(new CustomEvent("arcadefeedback", { bubbles: true, detail: { kind: local.novo_recorde ? "record" : "finish" } }));
+  if (result.ghostWon) host.querySelector(".screen-result-label").textContent += ` · ${t("features.ghostWon")}`;
   if (session())
     try {
       reward = await submitScore(result);
@@ -63,7 +65,7 @@ export async function resultScreen(host, result, restart, alive) {
     /* Result remains usable offline. */
   }
   if (!alive()) return;
-  badge.textContent = t(reward.novo_recorde ? "room.record" : "room.finish");
+  badge.textContent = t(reward.novo_recorde ? "room.record" : "room.finish") + (result.ghostWon ? ` · ${t("features.ghostWon")}` : "");
   extras.textContent = `+${reward.xp_ganho ?? 0} XP · +${reward.moedas_ganhas ?? 0} ◈`;
   status.textContent = notice;
   host.querySelector("button")?.focus();

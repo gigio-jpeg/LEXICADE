@@ -1,3 +1,6 @@
+import { anagramPool, wordDeck } from "../word-deck.js";
+import { read, write } from "../../core/storage.js";
+import { canBuild } from "../../games/anagrama.js";
 import { el } from "../../ui/components.js";
 import { scramble, anagramScore } from "../../games/anagrama.js";
 export function create(c) {
@@ -10,12 +13,14 @@ export function create(c) {
     words = 0,
     largest = 0,
     remaining = 60;
-  const pool = c.shuffle(
-    c.data.curated.filter((w) => w.length >= 4 && w.length <= 8),
-  );
-  let index = 0;
+  const pool = anagramPool(c.data.curated, c.data.common);
+  const valid = new Set(pool.map(c.normalize));
+  const recentKey = `anagram-recent:${c.lang}`;
+  const recent = read(recentKey, []);
+  const draw = wordDeck(pool, c.random, Array.isArray(recent) ? recent : []);
+  let drawn = [];
   const input = c.input((value) => {
-    if (c.normalize(value) !== c.normalize(answer)) {
+    if (!valid.has(c.normalize(value)) || c.normalize(value).length !== c.normalize(answer).length || !canBuild(value, answer)) {
       c.notice(c.t("room.wrong"));
       c.sound("error");
       return;
@@ -28,8 +33,9 @@ export function create(c) {
   });
   function next() {
     const max = Math.min(8, 5 + Math.floor(words / 3));
-    let candidates = pool.filter((w) => w.length <= max);
-    answer = candidates[index++ % candidates.length];
+    answer = draw(max);
+    drawn.unshift(answer);
+    write(recentKey, [...drawn, ...(Array.isArray(recent) ? recent : [])].slice(0, 80));
     const mixed = scramble(c.normalize(answer), c.random);
     letters.replaceChildren(
       ...[...mixed].map((l) => el("span", {}, l.toUpperCase())),

@@ -1,3 +1,4 @@
+import { loadGhost, ghostValue, saveGhost } from "../ghost.js";
 import { el } from "../../ui/components.js";
 import { typingMetrics, compareText } from "../../games/typerush.js";
 import { points } from "../../core/scoring.js";
@@ -23,9 +24,15 @@ export function create(c) {
     previous = "",
     sample = 0,
     history = [];
-  const phrases = c.shuffle(
-    c.data.phrases.phrases.filter((s) => s.length <= 120),
-  );
+  const pool = c.data.phrases.phrases.filter((s) => s.length <= 120);
+  const ghost = loadGhost(c.lang, pool);
+  const phrases = ghost?.phrases ?? c.shuffle(pool);
+  const raceLabel = el("span", {}, c.t(ghost ? "features.ghost" : "features.ghostFirst"));
+  const youBar = el("i", { class: "ghost-you" }), ghostBar = el("i", { class: "ghost-record" });
+  const race = el("div", { class: "ghost-race", "aria-label": c.t("features.ghost") }, raceLabel,
+    el("div", { class: "ghost-lane" }, youBar), el("div", { class: "ghost-lane" }, ghostBar));
+  c.area.append(race);
+  let samples = [{ ms: 0, value: 0 }], peak = 0, saved = false;
   let index = 0;
   const input = c.input(() => {});
   input.placeholder = c.t("room.typeHere");
@@ -78,6 +85,7 @@ export function create(c) {
         completed++;
         score += points(target.length, completed, 1);
         c.sound("correct");
+        c.feedback?.({ kind: "combo", combo: completed });
         next();
       }
     },
@@ -96,12 +104,24 @@ export function create(c) {
         );
       const nextStats = `${metrics.ppm} ${c.t("room.wpm")}  ·  ${metrics.precisao}% ${c.t("room.accuracy")}  ·  ${completed} ${c.t("room.played")}`;
       if(stats.textContent !== nextStats)stats.textContent=nextStats;
+      peak = Math.max(peak, correct + current.correct);
+      const opponent = ghost && started ? ghostValue(ghost.samples, c.elapsed() * 1000) : 0;
+      const maximum = Math.max(1, ghost?.samples.at(-1)?.value ?? 300, peak);
+      youBar.style.width = `${Math.min(100, peak / maximum * 100)}%`;
+      ghostBar.style.width = `${Math.min(100, opponent / maximum * 100)}%`;
+      if (ghost) raceLabel.textContent = `${c.t("features.ghost")} · ${Math.round(peak - opponent) >= 0 ? "+" : ""}${Math.round(peak - opponent)}`;
       c.status({ score, remaining });
       if (started && c.elapsed() - sample >= 1) {
         sample = c.elapsed();
         history.push(metrics.ppm);
+        samples.push({ ms: Math.min(60000, Math.round(c.elapsed() * 1000)), value: peak });
       }
-      if (remaining <= 0) c.finish(score, metrics, { speedHistory: history });
+      if (remaining <= 0 && !saved) {
+        saved = true;
+        samples.push({ ms: 60000, value: peak });
+        saveGhost(c.lang, { phrases, samples, score }, ghost);
+        c.finish(score, metrics, { speedHistory: history, ghostWon: !!ghost && score > ghost.score });
+      }
     },
   };
 }

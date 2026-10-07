@@ -7,6 +7,7 @@ const files = [
   "migrations/004_arcade_focus.sql",
   "migrations/005_arcade_social.sql",
   "migrations/006_cabinet_finishes.sql",
+  "migrations/007_cabinet_models.sql",
 ];
 const chunks = [
   "-- LEXICADE 2: somente para projeto Supabase vazio.",

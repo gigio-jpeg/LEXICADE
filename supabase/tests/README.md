@@ -25,3 +25,7 @@ O harness também aplica `004_arcade_focus.sql` e valida limiares de 1, 2, 3 e 4
 ## Revisão 2.1
 
 O harness aplica também `005_arcade_social.sql`. `social.sql` verifica duelo com dois participantes, rejeição de terceiros, RLS, validação da frase no servidor, bloqueio de escrita direta, recompensa única e personalização com desbloqueios validados no servidor. O instalador único recebe as mesmas verificações. Para um banco existente com 004 aplicada, aplique somente 005.
+
+## Modelos 2.3
+
+A migração 007 mantém estilos sem model como Original, valida limites 5/15/30 e aceita classic livre. A suíte social verifica rejeição dos três modelos sem partidas, restauração livre e persistência dos três após 30 partidas criadas por fixture privilegiada. Os clientes continuam sem poder escrever diretamente em scores ou profiles.

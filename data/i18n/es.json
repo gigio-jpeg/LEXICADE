@@ -400,7 +400,7 @@
     "sticker_none": "Sin pegatina",
     "sticker_star": "Estrella",
     "sticker_crown": "Corona",
-    "databaseError": "Comprueba tu conexión/cuenta y aplica las migraciones 005 y 006 en Supabase.",
+    "databaseError": "Comprueba tu conexión/cuenta y aplica las migraciones 005, 006 y 007 en Supabase.",
     "inviteLink": "Enlace de invitación",
     "copy": "Copiar",
     "copied": "¡Invitación copiada!",
@@ -424,6 +424,19 @@
     "finish_ember": "Cobre solar",
     "finish_rose": "Rosa retro",
     "finish_pearl": "Perla",
-    "finish_aurora": "Aurora · un color por máquina"
+    "finish_aurora": "Aurora · un color por máquina",
+    "model": "Modelo del gabinete",
+    "model_classic": "Original",
+    "model_classic_description": "Neón clásico con la identidad de cada juego.",
+    "model_wood": "Madera retro",
+    "model_wood_description": "Vetas, marcos de latón y rejilla vintage.",
+    "model_circuit": "Circuito cristal",
+    "model_circuit_description": "Laterales translúcidos, placas y chips visibles.",
+    "model_chrome": "Cromado orbital",
+    "model_chrome_description": "Metal cepillado, reflejos, columnas y antenas luminosas.",
+    "rotateModel": "Arrastra la vista para girar.",
+    "available": "Disponible",
+    "previewLocked": "Vista previa: se desbloquea con {count} partidas.",
+    "previewUnavailable": "Vista 3D no disponible en este navegador."
   }
 }

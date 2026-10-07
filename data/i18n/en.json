@@ -400,7 +400,7 @@
     "sticker_none": "No sticker",
     "sticker_star": "Star",
     "sticker_crown": "Crown",
-    "databaseError": "Check your connection/account and apply migrations 005 and 006 in Supabase.",
+    "databaseError": "Check your connection/account and apply migrations 005, 006 and 007 in Supabase.",
     "inviteLink": "Invite link",
     "copy": "Copy",
     "copied": "Invite copied!",
@@ -424,6 +424,19 @@
     "finish_ember": "Solar copper",
     "finish_rose": "Retro rose",
     "finish_pearl": "Pearl",
-    "finish_aurora": "Aurora · a color per machine"
+    "finish_aurora": "Aurora · a color per machine",
+    "model": "Cabinet model",
+    "model_classic": "Original",
+    "model_classic_description": "Classic neon with each game’s identity.",
+    "model_wood": "Retro wood",
+    "model_wood_description": "Wood grain, brass framing and vintage grille.",
+    "model_circuit": "Crystal circuit",
+    "model_circuit_description": "Translucent sides, visible circuit boards and chips.",
+    "model_chrome": "Orbital chrome",
+    "model_chrome_description": "Brushed metal, reflections, wide pillars and glowing antennas.",
+    "rotateModel": "Drag the preview to rotate.",
+    "available": "Available",
+    "previewLocked": "Preview: unlocks at {count} rounds.",
+    "previewUnavailable": "3D preview unavailable in this browser."
   }
 }

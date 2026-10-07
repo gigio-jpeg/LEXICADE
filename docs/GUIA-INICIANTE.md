@@ -9,7 +9,7 @@ Vamos fazer uma etapa por vez. Você já confirmou Node.js `v25.1.0`, npm `10.8.
 3. No Explorador de Arquivos, clique com o botão direito no novo ZIP e escolha **Extrair Tudo**. Extraia em uma pasta nova, por exemplo `Documentos\LEXICADE-3D`, para preservar a cópia anterior.
 4. Entre na pasta extraída até encontrar `package.json`, `index.html`, `src`, `data` e `supabase`. Pode haver uma pasta `LEXICADE-main` dentro de outra: a pasta correta é a que contém esses arquivos.
 
-**Confirmação:** `package.json` mostra versão `2.2.1`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
+**Confirmação:** `package.json` mostra versão `2.3.0`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
 
 ## 2. Abrir a pasta no PowerShell
 
@@ -143,3 +143,7 @@ Guias oficiais: Node.js LTS, VS Code Windows, Git for Windows, políticas de exe
 ## Restaurar o visual original
 
 Abra Menu → Extras → Restaurar padrão. A ação restaura cores originais, nome LEXICADE e nenhum adesivo, sem mexer nas partidas/desbloqueios. Não precisa jogar mais para voltar ao padrão. Para salvar os novos acabamentos com conta, aplique 006 depois de 005 conforme DEPLOY-VERCEL.
+
+## Gabinetes com identidade própria
+
+Em Menu → Extras, escolha um cartão de modelo e arraste a prévia 3D para girar. Madeira retrô libera com 5 partidas; Circuito cristal com 15; Cromado orbital com 30. Pode conferir a prévia antes de desbloquear. Clique Salvar alterações para aplicar; feche sem salvar para manter o modelo atual. Pintura, nome e adesivo continuam disponíveis; em modelos especiais a pintura aparece nos detalhes para preservar o material. Restaurar padrão permanece livre. Contas exigem a migração 007 no Supabase após 005 e 006.

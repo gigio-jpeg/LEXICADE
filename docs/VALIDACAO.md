@@ -89,3 +89,11 @@ Menu/player também abriu e fechou durante Frase Rush em 320 px, permitindo cont
 Original continua o valor inicial, sem requisito de partidas. O botão Restaurar padrão salva original/nome vazio/sem adesivo diretamente, sem apagar dados de progresso. Menta (5), Cobre solar (8), Rosa retrô (15), Pérola (40) e Aurora (50) ampliam a coleção. Aurora alterna cores por gabinete; detalhes gráficos e LEDs próprios de cada jogo evitam uniformizar toda a sala. A migração 006 amplia apenas a validação dos acabamentos no servidor, preservando estilos antigos e RLS.
 
 Validação: 30 testes Node aprovados. Migrações incrementais e instalador completo passaram nas suítes PostgreSQL de segurança/economia/social, incluindo bloqueio de cada novo acabamento e restauração livre. Chromium/WebGL confirmou Original no início, Aurora renderizada, reset persistido sem alterar partidas, zero partidas com reset disponível e opções bloqueadas, e painel acessível em 320 px; zero erros JavaScript.
+
+## Revisão 2.3 — modelos 3D de gabinete
+
+Madeira: textura procedural de veios, peças de latão e grelha; Circuito: carcaça translúcida com placas, chips e trilhas internas; Cromado: textura escovada, reflexos por cubemap local, colunas e antenas. As geometrias são pré-alocadas por gabinete e alternadas, sem crescimento a cada troca. A prévia usa a mesma geometria/materiais da sala, renderiza somente por interação/redimensionamento e libera recursos ao fechar. Não usa imagens de gabinetes para fingir o 3D.
+
+Chromium/WebGL: os três modelos e Original salvaram e apareceram na sala; prévia bloqueada manteve Salvar desabilitado e Restaurar disponível; reset retornou a classic; cartões/prévia acessíveis em 320, 390 e 768 px; Frase Rush iniciou após as trocas; zero erros JavaScript. Capturas verificadas para madeira e circuito. Testes SQL nas migrações incrementais e no instalador completo passaram, incluindo modelos bloqueados com zero partidas e persistência dos três modelos após 30 partidas de fixture. Autenticação remota/SQL hospedado dependem do proprietário.
+
+30 testes Node aprovados no fechamento da revisão. Capturas reais dos três modelos estão em GABINETES.md. O giro e a reabertura da prévia foram exercitados para conferir a liberação dos recursos WebGL.

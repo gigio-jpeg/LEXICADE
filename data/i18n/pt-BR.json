@@ -400,7 +400,7 @@
     "sticker_none": "Sem adesivo",
     "sticker_star": "Estrela",
     "sticker_crown": "Coroa",
-    "databaseError": "Confira sua conexão/conta e aplique as migrações 005 e 006 no Supabase.",
+    "databaseError": "Confira sua conexão/conta e aplique as migrações 005, 006 e 007 no Supabase.",
     "inviteLink": "Link do convite",
     "copy": "Copiar",
     "copied": "Convite copiado!",
@@ -424,6 +424,19 @@
     "finish_ember": "Cobre solar",
     "finish_rose": "Rosa retrô",
     "finish_pearl": "Pérola",
-    "finish_aurora": "Aurora · uma cor por máquina"
+    "finish_aurora": "Aurora · uma cor por máquina",
+    "model": "Modelo do gabinete",
+    "model_classic": "Original",
+    "model_classic_description": "O neon clássico, com a identidade de cada jogo.",
+    "model_wood": "Madeira retrô",
+    "model_wood_description": "Madeira com veios, molduras de latão e grelha vintage.",
+    "model_circuit": "Circuito cristal",
+    "model_circuit_description": "Laterais translúcidas, placas eletrônicas e chips à vista.",
+    "model_chrome": "Cromado orbital",
+    "model_chrome_description": "Metal escovado, reflexos, colunas largas e antenas luminosas.",
+    "rotateModel": "Arraste a prévia para girar.",
+    "available": "Disponível",
+    "previewLocked": "Prévia: desbloqueia com {count} partidas.",
+    "previewUnavailable": "Prévia 3D indisponível neste navegador."
   }
 }

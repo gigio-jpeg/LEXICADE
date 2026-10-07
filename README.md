@@ -100,3 +100,7 @@ Fontes e licenças: [LICENCAS](docs/LICENCAS.md). O salvamento no GitHub não pu
 - Anagrama: sorteio sem repetição imediata de 1.680 palavras portuguesas de 4 a 8 letras, aceitando alternativas válidas com as mesmas letras. Inglês e espanhol também receberam o banco ampliado.
 
 Bancos usam palavras existentes do conteúdo licenciado, filtradas e embaralhadas aleatoriamente; não inventam palavras.
+
+## Modelos de gabinete — 2.3
+
+Menu → Extras oferece Original, Madeira retrô (5 partidas), Circuito cristal (15) e Cromado orbital (30), com prévia 3D giratória da própria geometria da sala. Modelos mudam materiais e peças físicas; podem combinar nome, adesivo e acabamentos. Contas usam a migração incremental [007](supabase/migrations/007_cabinet_models.sql); o botão Restaurar padrão mantém progresso e desbloqueios.

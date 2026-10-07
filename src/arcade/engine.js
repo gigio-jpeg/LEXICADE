@@ -321,6 +321,7 @@ export function createEngine(host, games, onChange, onFail) {
     cancelAnimationFrame(resizeFrame);
     cancelAnimationFrame(frame);
     fireworks.dispose();
+    cabinets.forEach(c=>c.disposeModel());
     world.dispose();
     const textures = new Set(),
       materials = new Set(),

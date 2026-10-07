@@ -1,3 +1,4 @@
+import { modelKit } from "./cabinet-models.js";
 import * as THREE from "../../vendor/three/three.module.js";
 import { marquee, sideArt, preview } from "./textures.js";
 import { FINISHES, STICKERS } from "./personalization.js";
@@ -62,6 +63,7 @@ export function cabinet(game, index) {
     bevelSegments: 2,
     steps: 1,
   });
+  const decals=[];
   for (const side of [-1, 1]) {
     const panel = new THREE.Mesh(sideGeometry, paint);
     panel.rotation.y = -Math.PI / 2;
@@ -86,7 +88,7 @@ export function cabinet(game, index) {
     );
     decal.rotation.y = (side * Math.PI) / 2;
     decal.position.set(side * 1.235, 2.2, -0.06);
-    group.add(decal);
+    group.add(decal);decals.push(decal);
   }
   box(group, 2.24, 4.38, 0.12, 0, 2.2, -0.78, shell);
   box(group, 2.28, 1.3, 1.56, 0, 0.7, 0, shell);
@@ -173,10 +175,14 @@ export function cabinet(game, index) {
   const fasciaTexture=new THREE.CanvasTexture(fasciaCanvas);fasciaTexture.colorSpace=THREE.SRGBColorSpace;
   const fascia=new THREE.Mesh(new THREE.PlaneGeometry(2.14,.75),new THREE.MeshBasicMaterial({map:fasciaTexture,transparent:true,toneMapped:false}));
   fascia.position.set(0,.87,.863);group.add(fascia);
+  const models=modelKit(group,{shell,paint,dark,metal,decals});
   let paintGain = .28, currentTheme;
   return { group, monitor, screen, stick, buttons, color, index,
+    disposeModel: () => models.dispose(),
     react(amount) { neon.emissiveIntensity = 1.15 + amount * .8; glow.intensity = 1.1 + amount; floorGlow.intensity = .7 + amount * 1.4; },
     personalize(style) {
+      models.reset();
+      dark.color.set(currentTheme?.dark ?? "#04090e");
       const finish = FINISHES[style.finish]?.colors?.[index] ?? FINISHES[style.finish]?.color;
       paint.color.set(finish ?? COLORS[index]).multiplyScalar(finish ? .85 : paintGain);
       paint.emissive.set(finish ?? '#000000');paint.emissiveIntensity = finish ? .24 : 0;
@@ -199,6 +205,8 @@ export function cabinet(game, index) {
         face.globalAlpha=1;face.fillStyle=finish;face.fillRect(12,168,225,5);
       }
       fasciaTexture.needsUpdate=true;
+      models.apply(style.model ?? "classic", finish ?? COLORS[index]);
+      group.userData.model = style.model ?? "classic";
     },
     applyTheme(theme) {
       currentTheme = theme;

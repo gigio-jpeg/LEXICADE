@@ -10,7 +10,7 @@ Se sua pasta veio de `git clone`, abra o PowerShell nela e execute:
 git pull origin main
 ```
 
-Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.2.1**, e `vercel.json`.
+Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.3.0**, e `vercel.json`.
 
 Para testar no computador, execute `npm start` e abra o endereço que o terminal mostrar. Para verificar o pacote de produção: `npm test` e depois `npm run build`. O build cria `dist`, só com os arquivos públicos do site.
 
@@ -114,6 +114,10 @@ Revise os arquivos alterados antes de `git add .` se você fez outras mudanças 
 
 A publicação e a execução do SQL remoto dependem da sua conta nos painéis. Os testes locais usam PostgreSQL compatível e autenticação simulada; o teste final no seu domínio confirma Auth, e-mail e Realtime do projeto hospedado.
 
-## Atualização de acabamentos 2.2.1
+## Atualização de acabamentos 2.3.0
 
 Com 005 já aplicada, copie somente `supabase/migrations/006_cabinet_finishes.sql` e execute no SQL Editor. Ela libera os novos nomes de acabamento na validação do servidor e mantém os desbloqueios. Não reaplique INSTALAR-TUDO em banco existente. Restaurar padrão já funciona com 005: abra Menu → Extras → Restaurar padrão; remove nome/adesivo/pintura personalizados e preserva progresso.
+
+## Modelos de gabinete 2.3
+
+Com 005 e 006 instaladas, aplique somente `supabase/migrations/007_cabinet_models.sql` no SQL Editor. Ela preserva estilos anteriores e valida classic (livre), wood (5 partidas), circuit (15) e chrome (30) no servidor. Não execute INSTALAR-TUDO no banco existente. Abra Menu → Extras: os cartões permitem prévia 3D, inclusive dos modelos bloqueados. Arraste para girar e clique Salvar alterações para aplicar um modelo desbloqueado. Restaurar padrão volta ao Original e mantém seu progresso. Modelos visitantes ficam neste navegador; modelos de conta sincronizam via RPC do Supabase.

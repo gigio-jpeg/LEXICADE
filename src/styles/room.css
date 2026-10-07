@@ -973,3 +973,16 @@ body.room-mode.crt .screen-game { text-shadow:0 0 5px #65f5c455; }
 .room-custom-actions { display:flex;flex-wrap:wrap;gap:12px;margin-top:18px; }
 .feature-custom .room-custom-actions .button { margin-top:0; }
 .room-restore-default { background:transparent;color:var(--text);border:1px solid var(--line); }
+.room-model-preview { width:100%;height:260px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#080e1a; }
+.room-model-preview canvas { display:block;width:100%;height:260px;touch-action:pan-y;cursor:grab; }
+.room-model-cards { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0; }
+.room-model-card { display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--text); }
+.room-model-card[aria-pressed=true] { border-color:var(--accent);box-shadow:0 0 0 1px var(--accent); }
+.room-model-card small { font-size:11px;line-height:1.5;color:var(--muted); }
+.room-model-card .room-model-lock { margin-top:auto;color:var(--accent); }
+.room-model-art { display:block;width:100%;height:65px;border-radius:7px;background:linear-gradient(135deg,#071c22,#0c5550);border:1px solid #65f5c455; }
+.model-wood { background:repeating-linear-gradient(92deg,#64321e 0 3px,#ab7144 4px 6px,#75412a 7px 12px);border-color:#d7af68; }
+.model-circuit { background:repeating-linear-gradient(90deg,#05343c 0 10px,#50d4b3 11px 12px,#07161e 13px 23px);border-color:#65cfff; }
+.model-chrome { background:linear-gradient(125deg,#284057 0%,#f3f9ff 35%,#94b5d0 45%,#17283b 55%,#d7e6f3 80%,#527594); }
+.room-model-hint { font-size:12px;color:var(--muted); }
+@media(max-width:700px) { .room-model-cards { grid-template-columns:repeat(2,minmax(0,1fr));gap:10px; }.room-model-card { padding:10px; } }

@@ -14,6 +14,10 @@ do $$ declare m jsonb;id uuid;finish_name text;begin
  foreach finish_name in array array['mint','ember','rose','pearl','aurora'] loop
   begin perform public.save_arcade_style(jsonb_build_object('title','','finish',finish_name,'sticker','none'));raise exception 'TEST FAILED: unlocked new finish';exception when raise_exception then if sqlerrm<>'style_locked' then raise;end if;end;
  end loop;
+ foreach finish_name in array array['wood','circuit','chrome'] loop
+  begin perform public.save_arcade_style(jsonb_build_object('title','','finish','original','sticker','none','model',finish_name));raise exception 'TEST FAILED: locked model allowed';exception when raise_exception then if sqlerrm<>'style_locked' then raise;end if;end;
+ end loop;
+ perform public.save_arcade_style('{"title":"","finish":"original","sticker":"none","model":"classic"}');
  perform public.save_arcade_style('{"title":"","finish":"original","sticker":"none"}');
  if public.get_arcade_style()->'style'->>'finish'<>'original' then raise exception 'TEST FAILED: restore default';end if;
  execute 'reset role';
@@ -57,5 +61,17 @@ do $$ begin
  begin perform public.create_duel('pt');raise exception 'TEST FAILED: anonymous duel';exception when insufficient_privilege then null;end;
  execute 'reset role';
 end $$;
+
+-- Privileged fixture creates 30 completed rounds; clients cannot insert scores.
+insert into public.scores(user_id,game,mode,lang,score,duration_ms)
+select '33333333-3333-4333-8333-333333333333','typerush','classic','pt',100,60000 from generate_series(1,30);
+select set_config('request.jwt.claim.sub','33333333-3333-4333-8333-333333333333',true);
+do $$ declare model_name text;begin
+ execute 'set local role authenticated';
+ foreach model_name in array array['wood','circuit','chrome'] loop
+  perform public.save_arcade_style(jsonb_build_object('model',model_name,'title','MODEL TEST','finish','original','sticker','none'));
+  if public.get_arcade_style()->'style'->>'model'<>model_name then raise exception 'TEST FAILED: unlocked model persistence';end if;
+ end loop;
+ execute 'reset role';end $$;
 select 'PASS social: private matches, no direct writes, server phrases, join, styles and rewards';
 rollback;

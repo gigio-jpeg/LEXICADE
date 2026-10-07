@@ -47,3 +47,13 @@ A trilha é sintetizada localmente e precisa de uma interação para respeitar a
 Login: distância de 14 px entre Entrar e Enviar link mágico; centros do X e navegação alinhados. Temas neon, soft, light, phosphor e minimal aplicaram a prévia na sala. O tema claro alterou pixels da cena efetivamente, além da interface. Salvar mostrou confirmação acima do painel e persistiu a escolha após recarregar. Fechar sem salvar restaurou o tema anterior. Player testado em 320, 390, 768 e 1.440 px; botão Salvar e X acessíveis ao rolar o painel no celular. Zero erros JavaScript; Supabase remoto não foi acessado.
 
 Padrões de áudio são atualizados uma vez nesta revisão para ligar som/música; depois escolhas de pausa são respeitadas. A playlist é sintetizada localmente e o navegador pode exigir o primeiro clique/toque para permitir reprodução. Cache atualizado para `lexicade-v2.0.2`, com 374 arquivos. Sem mudança de banco.
+
+## Revisão 2.0.3 — notificações e monitor retrô
+
+26 testes Node aprovados. Os testes novos distinguem avisos conhecidos de ResizeObserver de erros reais e verificam que exceções/rejeições continuam registradas e notificadas. O redimensionamento WebGL passou a ocorrer no próximo frame e apenas quando as dimensões mudam, evitando reescritas de layout dentro do callback do observador. Notificações iguais já visíveis não criam cópias adicionais.
+
+No Chromium com WebGL, a navegação pelos quatro jogos e painéis não reproduziu o relato de três notificações: zero eventos globais de erro/rejeição capturados. Portanto a causa específica no navegador do proprietário ainda depende do texto do Console solicitado no chat. Não atribuir o relato a ResizeObserver como causa comprovada.
+
+Teste funcional posterior: monitor retrô mostra linhas de varredura, máscara RGB, brilho e vinheta; desligar remove o efeito. A prévia em Ajustes funciona e a escolha salva persiste após recarregar. As telas de demonstração dos quatro gabinetes também respeitam a preferência. Sem efeito global sobre controles e formulários, sem animação de cintilação.
+
+Eventos de layout conhecidos foram simulados e não geraram popup. Três erros reais simulados mantiveram registro no Console e exibiram uma única notificação, inclusive acima de um painel aberto. Nenhum erro real foi suprimido pelo classificador. Sem acesso ao Supabase remoto. Cache atualizado para 375 recursos e versão 2.0.3.

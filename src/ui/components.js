@@ -29,6 +29,10 @@ export function toast(message, error = false) {
     host.hidePopover?.();
     parent.append(host);
   }
+  if ([...host.children].some((item) => item.textContent === String(message) && item.classList.contains("error") === error)) {
+    host.showPopover?.();
+    return;
+  }
   const node = el(
     "div",
     { class: `toast ${error ? "error" : ""}`, role: "status" },

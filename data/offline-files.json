@@ -288,6 +288,7 @@
   "src/core/auth.js",
   "src/core/config.js",
   "src/core/cosmetics.js",
+  "src/core/errors.js",
   "src/core/guest.js",
   "src/core/i18n.js",
   "src/core/input.js",

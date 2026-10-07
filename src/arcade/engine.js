@@ -75,6 +75,10 @@ export function createEngine(host, games, onChange, onFail) {
   document.addEventListener("settings", applyTheme, { signal });
   document.addEventListener("settingspreview", applyTheme, { signal });
   applyTheme();
+  let resizeFrame = 0, lastWidth = 0, lastHeight = 0;
+  let crt = settings().crt;
+  document.addEventListener("settings", (event) => { crt = event.detail.crt; }, { signal });
+  document.addEventListener("settingspreview", (event) => { crt = event.detail.crt; }, { signal });
   let lastDraw = 0;
   let index = 0,
     state = "browse",
@@ -116,6 +120,8 @@ export function createEngine(host, games, onChange, onFail) {
   function resize() {
     const width = host.clientWidth,
       height = host.clientHeight;
+    if (width === lastWidth && height === lastHeight) return;
+    lastWidth = width; lastHeight = height;
     renderer.setSize(width, height);
     cssRenderer.setSize(width, height);
     composer.setSize(width, height);
@@ -246,7 +252,10 @@ export function createEngine(host, games, onChange, onFail) {
     },
     { signal },
   );
-  const observer = new ResizeObserver(resize);
+  const observer = new ResizeObserver(() => {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(resize);
+  });
   observer.observe(host);
   resize();
   basePosition.copy(goalPosition);
@@ -276,7 +285,7 @@ export function createEngine(host, games, onChange, onFail) {
     }
     camera.lookAt(target);
     cabinets.forEach((c) => {
-      if (c.monitor.visible && c.screen.draw(time + c.index * 3))
+      if (c.monitor.visible && c.screen.draw(time + c.index * 3, crt))
         c.screen.texture.needsUpdate = true;
     });
     world.dust.rotation.y += dt * 0.008;
@@ -291,6 +300,7 @@ export function createEngine(host, games, onChange, onFail) {
     stopGame?.();
     abort.abort();
     observer.disconnect();
+    cancelAnimationFrame(resizeFrame);
     cancelAnimationFrame(frame);
     world.dispose();
     const textures = new Set(),

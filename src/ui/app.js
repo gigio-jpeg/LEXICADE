@@ -1,3 +1,4 @@
+import { installErrorReporter } from "../core/errors.js";
 import { loadLanguage, t } from "../core/i18n.js";
 import { initAuth, session } from "../core/auth.js";
 import { header, footer, applySettings } from "./header.js";
@@ -122,10 +123,7 @@ if ("serviceWorker" in navigator)
       connectivity();
     }
   });
-window.addEventListener("error", () => toast(t("common.error"), true));
-window.addEventListener("unhandledrejection", () =>
-  toast(t("common.error"), true),
-);
+installErrorReporter(window, () => toast(t("common.error"), true));
 window.addEventListener("pagehide", () => cleanup?.());
 if (!forwarding) {
   await loadLanguage();

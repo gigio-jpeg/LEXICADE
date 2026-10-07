@@ -70,9 +70,10 @@ export function sideArt(index) {
 export function preview(index) {
   const { canvas, ctx } = surface(720, 600),
     color = COLORS[index];
-  let last = -1;
-  const draw = (time) => {
-    if (Math.floor(time * 8) === last) return false;
+  let last = -1, lastCRT;
+  const draw = (time, crt = false) => {
+    if (Math.floor(time * 8) === last && crt === lastCRT) return false;
+    lastCRT = crt;
     last = Math.floor(time * 8);
     ctx.fillStyle = "#061216";
     ctx.fillRect(0, 0, 720, 600);
@@ -162,9 +163,16 @@ export function preview(index) {
     ctx.globalAlpha = 0.65 + 0.35 * Math.sin(time * 2);
     ctx.fillText(t("room.play").toUpperCase(), 360, 538);
     ctx.globalAlpha = 1;
-    for (let y = 0; y < 600; y += 4) {
-      ctx.fillStyle = "#00000022";
-      ctx.fillRect(0, y, 720, 1);
+    if (crt) {
+      for (let y = 0; y < 600; y += 4) {
+        ctx.fillStyle = "#00000066";
+        ctx.fillRect(0, y, 720, 2);
+      }
+      const vignette = ctx.createRadialGradient(360, 300, 160, 360, 300, 450);
+      vignette.addColorStop(0, "#00000000");
+      vignette.addColorStop(1, "#000000b0");
+      ctx.fillStyle = vignette;
+      ctx.fillRect(0, 0, 720, 600);
     }
     return true;
   };

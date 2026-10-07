@@ -9,7 +9,7 @@ Vamos fazer uma etapa por vez. Você já confirmou Node.js `v25.1.0`, npm `10.8.
 3. No Explorador de Arquivos, clique com o botão direito no novo ZIP e escolha **Extrair Tudo**. Extraia em uma pasta nova, por exemplo `Documentos\LEXICADE-3D`, para preservar a cópia anterior.
 4. Entre na pasta extraída até encontrar `package.json`, `index.html`, `src`, `data` e `supabase`. Pode haver uma pasta `LEXICADE-main` dentro de outra: a pasta correta é a que contém esses arquivos.
 
-**Confirmação:** `package.json` mostra versão `2.0.1`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
+**Confirmação:** `package.json` mostra versão `2.0.2`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
 
 ## 2. Abrir a pasta no PowerShell
 
@@ -37,7 +37,9 @@ Se aparecer a versão antiga, feche as abas do site, mantenha o servidor novo li
 
 Complete uma partida, veja pontos/XP e inicie outra. O progresso visitante fica neste navegador e computador. A página não precisa de login nem banco para jogar. **Entrar** abre um painel sobre a sala.
 
-Para ligar música e efeitos, clique no botão musical **♫** no topo da sala. Ele vira **♪** quando ambos estão ligados. A trilha original é sintetizada pelo site: não precisa baixar ou adicionar arquivos de áudio. O navegador exige uma interação para liberar a reprodução; a preferência é salva. Em **Ajustes**, música e efeitos podem ser ligados separadamente e o volume pode ser alterado. Fechar Ajustes não interrompe a música.
+Som e música começam habilitados nesta atualização. O navegador pode exigir o primeiro clique/toque para liberar o áudio. No topo há um player discreto: **Ⅱ** pausa, **▷** retoma e **›|** avança. No computador ele mostra o nome da faixa; no celular só os controles. A playlist original tem **Neon Drift**, **Pixel Sunset** e **Midnight Coins**, com avanço automático e repetição da lista. Não precisa adicionar arquivos de áudio. Sua escolha de pausar é preservada nas visitas seguintes.
+
+Em **Ajustes**, escolha o tema e confira a prévia da sala 3D. Clique em **Salvar alterações** para guardar tema, som, música, volume e demais escolhas; aparece a confirmação **Alterações salvas com sucesso**. Fechar o painel sem salvar descarta a prévia. O tema muda a sala, os gabinetes, a iluminação e os painéis.
 
 Os três idiomas ficam no seletor superior. Perfil, ranking e ajustes ficam nos painéis de conta; o ranking exige banco configurado e internet. Nos ajustes, você pode reduzir movimentos da câmera e alterar som/fonte. Isso não adiciona opções antes dos jogos.
 

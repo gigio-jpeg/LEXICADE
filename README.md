@@ -15,7 +15,7 @@ A revisão 2 substitui o catálogo e os menus da primeira versão por **quatro m
 | **LexiMaze** | Colete letras em ordem, escape das sombras e avance pelos labirintos. |
 | **Anagrama** | Desembaralhe palavras e acumule pontos em 60 segundos. |
 
-Sem escolha de duração, conteúdo, sobrevivência ou dificuldade antes de começar. Navegue com as setas da sala, os botões ou clique na própria máquina. Login, progresso e ajustes ficam em painéis sobre o ambiente 3D. O visitante joga e salva progresso localmente.
+Sem escolha de duração, conteúdo, sobrevivência ou dificuldade antes de começar. Navegue com as setas da sala, os botões ou clique na própria máquina. Login, progresso e ajustes ficam em painéis sobre o ambiente 3D. Os temas alteram a sala e os gabinetes; há prévia e botão Salvar alterações. Uma playlist original de três faixas acompanha a sala com pausa/avanço e controles compactos no celular. Som e música começam ligados, com reprodução liberada pela primeira interação se o navegador exigir. O visitante joga e salva progresso localmente.
 
 ## Rodar no Windows
 

@@ -37,9 +37,9 @@ export function clearLocal() {
 export const defaultSettings = {
   lang: "pt-BR",
   theme: "neon",
-  sound: false,
+  sound: true,
   volume: 0.15,
-  music: false,
+  music: true,
   crt: false,
   reducedMotion: false,
   colorblind: false,

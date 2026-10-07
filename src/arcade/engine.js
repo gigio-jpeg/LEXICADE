@@ -7,6 +7,7 @@ import { EffectComposer } from "../../vendor/three/addons/postprocessing/EffectC
 import { RenderPass } from "../../vendor/three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "../../vendor/three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "../../vendor/three/addons/postprocessing/OutputPass.js";
+import { roomTheme } from "./themes.js";
 import { cabinet } from "./cabinet.js";
 import { environment } from "./environment.js";
 import { cameraPose, wrapIndex, ease } from "./navigation.js";
@@ -62,6 +63,18 @@ export function createEngine(host, games, onChange, onFail) {
   composer.addPass(renderPass);
   composer.addPass(bloom);
   composer.addPass(output);
+  function applyTheme(event) {
+    const theme = roomTheme(event?.detail?.theme ?? settings().theme);
+    world.applyTheme(theme);
+    cabinets.forEach((c) => c.applyTheme(theme));
+    renderer.toneMappingExposure = theme.exposure;
+    bloom.strength = theme.bloom;
+    renderer.shadowMap.needsUpdate = true;
+    host.dataset.theme = event?.detail?.theme ?? settings().theme;
+  }
+  document.addEventListener("settings", applyTheme, { signal });
+  document.addEventListener("settingspreview", applyTheme, { signal });
+  applyTheme();
   let lastDraw = 0;
   let index = 0,
     state = "browse",

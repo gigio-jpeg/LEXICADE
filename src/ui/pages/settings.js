@@ -6,6 +6,7 @@ import { guestProfile } from "../../core/guest.js";
 import { session, signOut } from "../../core/auth.js";
 import { exportAccount, deleteAccount } from "../../core/api.js";
 import { themeChoices } from "../../core/cosmetics.js";
+import { applySettings } from "../header.js";
 import { page, downloadJSON } from "../page-utils.js";
 export function settingsPage(main) {
   const content = page(main, "settings.title"),
@@ -14,11 +15,19 @@ export function settingsPage(main) {
     play = el("section", { class: "panel" }, el("h2", {}, t("nav.play")));
   grid.append(visual, play);
   content.append(grid);
-  const s = settings();
+  const s = settings(), draft = {};
+  function change(key, value) {
+    draft[key] = value;
+    if (["theme", "fontSize", "crt", "colorblind", "reducedMotion", "focus"].includes(key)) {
+      const preview = { ...settings(), ...draft };
+      applySettings(preview);
+      document.dispatchEvent(new CustomEvent("settingspreview", { detail: preview }));
+    }
+  }
   function select(key, label, values, parent) {
     const node = el(
       "select",
-      { onchange: (e) => saveSettings({ [key]: e.target.value }) },
+      { "aria-label": t(label), onchange: (e) => change(key, e.target.value) },
       ...values.map(([value, text]) =>
         el("option", { value, selected: value === s[key] }, text),
       ),
@@ -47,7 +56,7 @@ export function settingsPage(main) {
     max: 22,
     value: s.fontSize,
     "aria-label": t("settings.font"),
-    oninput: (e) => saveSettings({ fontSize: Number(e.target.value) }),
+    oninput: (e) => change("fontSize", Number(e.target.value)),
   });
   visual.append(field(t("settings.font"), font));
   function toggle(key, label, parent) {
@@ -55,7 +64,7 @@ export function settingsPage(main) {
       type: "checkbox",
       checked: s[key],
       onchange: (e) => {
-        saveSettings({ [key]: e.target.checked });
+        change(key, e.target.checked);
       },
     });
     parent.append(el("label", { class: "toggle" }, input, t(label)));
@@ -80,9 +89,17 @@ export function settingsPage(main) {
     step: 0.01,
     value: s.volume,
     "aria-label": t("settings.volume"),
-    oninput: (e) => saveSettings({ volume: Number(e.target.value) }),
+    oninput: (e) => change("volume", Number(e.target.value)),
   });
   play.append(field(t("settings.volume"), volume));
+  content.append(el("div", { class: "settings-save-bar" },
+    el("p", {}, t("settings.saveHint")),
+    button(t("settings.save"), () => {
+      saveSettings(draft);
+      Object.keys(draft).forEach((key) => delete draft[key]);
+      toast(t("settings.saved"));
+    }, "button settings-save"),
+  ));
   const privacy = el(
     "section",
     { class: "panel", style: "margin-top:20px" },
@@ -197,5 +214,8 @@ export function settingsPage(main) {
         ),
       ),
     );
-  return () => {};
+  return () => {
+    applySettings();
+    document.dispatchEvent(new CustomEvent("settingspreview", { detail: settings() }));
+  };
 }

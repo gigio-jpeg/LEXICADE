@@ -95,6 +95,16 @@ export function environment(scene, lowPower = false) {
   return {
     floor,
     dust,
+    applyTheme(theme) {
+      scene.background.set(theme.background);
+      scene.fog.color.set(theme.background);
+      dark.color.set(theme.wall);
+      floor.material.uniforms.color.value.set(theme.floor);
+      ambient.color.set(theme.ambient);
+      ambient.groundColor.set(theme.ground);
+      ambient.intensity = theme.ambientIntensity;
+      key.intensity = theme.keyIntensity;
+    },
     dispose() {
       floor.getRenderTarget().dispose();
       floor.geometry.dispose();

@@ -268,7 +268,10 @@
     "deleteConfirm": "Type DELETE to confirm. This deletes your account and cloud progress.",
     "deleteWord": "DELETE",
     "clearConfirm": "Clear progress and settings in this browser only?",
-    "cursor": "Cursor style"
+    "cursor": "Cursor style",
+    "save": "Save changes",
+    "saved": "Changes saved successfully.",
+    "saveHint": "Preview your changes and save to keep your choices."
   },
   "theme": {
     "neon": "Neon Arcade",
@@ -367,6 +370,10 @@
     "wpm": "WPM",
     "back": "Back to the room",
     "keyboard": "Keyboard and touch",
-    "loadingGame": "Powering up the machine…"
+    "loadingGame": "Powering up the machine…",
+    "pauseMusic": "Pause music",
+    "playMusic": "Play music",
+    "nextTrack": "Next track",
+    "playlist": "Arcade playlist"
   }
 }

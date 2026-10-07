@@ -32,7 +32,7 @@ Cliente oficial `@supabase/supabase-js` **2.57.4**, licença **MIT**, empacotado
 
 ## Arte e áudio
 
-Logo SVG, ícones PNG, imagem Open Graph, tabuleiro decorativo e personagens/efeitos Canvas são originais. Sons e melodias são síntese própria via Web Audio; não há músicas/sons comerciais copiados. Não foram incorporados personagens, mapas ou imagens de jogos conhecidos.
+Logo SVG, ícones PNG, imagem Open Graph, tabuleiro decorativo e personagens/efeitos Canvas são originais. Sons e melodias são síntese própria via Web Audio; a playlist contém Neon Drift, Pixel Sunset e Midnight Coins, composições originais sintetizadas localmente, sem arquivos externos; não há músicas/sons comerciais copiados. Não foram incorporados personagens, mapas ou imagens de jogos conhecidos.
 
 As mecânicas seguem a especificação inspirada em gêneros clássicos; nomes e apresentação comercial devem passar pela revisão jurídica de marcas antes do lançamento. A licença de distribuição do código autoral do projeto deve ser definida por seu titular; este documento não presume uma transferência de direitos sobre o projeto.
 

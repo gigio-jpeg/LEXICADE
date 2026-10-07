@@ -2,7 +2,7 @@
 
 O checkout usado é `/workspace/LEXICADE`; esta tarefa já é isolada e não precisa de worktree. A construção do site foi autorizada pelo usuário, além da preparação do ambiente.
 
-Node.js 24.19.0 e npm disponíveis. Three.js e Supabase estão distribuídos localmente em `vendor/`. Não há dependências npm obrigatórias ou build; `npm start` inicia o servidor estático. O servidor foi iniciado/reiniciado e validado por HTTP e testes de navegador. `npm test` executou 23 testes; SQL foi testado isoladamente em PGlite instalado em uma pasta temporária fora do checkout. Evidências completas em `VALIDACAO.md`.
+Node.js 24.19.0 e npm disponíveis. Three.js e Supabase estão distribuídos localmente em `vendor/`. Não há dependências npm obrigatórias ou build; `npm start` inicia o servidor estático. O servidor foi iniciado/reiniciado e validado por HTTP e testes de navegador. `npm test` executou 24 testes; SQL foi testado isoladamente em PGlite instalado em uma pasta temporária fora do checkout. Evidências completas em `VALIDACAO.md`.
 
 Foram salvas as instruções reutilizáveis de inicialização no campo **start_skill** do rascunho do ambiente, usando a skill **cloud-environment-onboarding:setup**. Configurações de rede, segredos e repositórios foram preservadas. Não há script de instalação a adicionar para iniciar este projeto.
 

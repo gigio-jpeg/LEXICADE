@@ -268,7 +268,10 @@
     "deleteConfirm": "Digite EXCLUIR para confirmar. Esta ação apaga sua conta e seu progresso na nuvem.",
     "deleteWord": "EXCLUIR",
     "clearConfirm": "Apagar apenas o progresso e ajustes deste navegador?",
-    "cursor": "Estilo do cursor"
+    "cursor": "Estilo do cursor",
+    "save": "Salvar alterações",
+    "saved": "Alterações salvas com sucesso.",
+    "saveHint": "Confira a prévia e salve para manter suas escolhas."
   },
   "theme": {
     "neon": "Neon Arcade",
@@ -367,6 +370,10 @@
     "wpm": "PPM",
     "back": "Voltar à sala",
     "keyboard": "Teclado e toque",
-    "loadingGame": "Ligando a máquina…"
+    "loadingGame": "Ligando a máquina…",
+    "pauseMusic": "Pausar música",
+    "playMusic": "Tocar música",
+    "nextTrack": "Próxima música",
+    "playlist": "Playlist arcade"
   }
 }

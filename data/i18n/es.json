@@ -268,7 +268,10 @@
     "deleteConfirm": "Escribe ELIMINAR para confirmar. Esto elimina tu cuenta y progreso en la nube.",
     "deleteWord": "ELIMINAR",
     "clearConfirm": "¿Borrar progreso y ajustes solo de este navegador?",
-    "cursor": "Estilo del cursor"
+    "cursor": "Estilo del cursor",
+    "save": "Guardar cambios",
+    "saved": "Cambios guardados correctamente.",
+    "saveHint": "Revisa la vista previa y guarda tus preferencias."
   },
   "theme": {
     "neon": "Neon Arcade",
@@ -367,6 +370,10 @@
     "wpm": "PPM",
     "back": "Volver a la sala",
     "keyboard": "Teclado y táctil",
-    "loadingGame": "Encendiendo la máquina…"
+    "loadingGame": "Encendiendo la máquina…",
+    "pauseMusic": "Pausar música",
+    "playMusic": "Reproducir música",
+    "nextTrack": "Siguiente canción",
+    "playlist": "Playlist arcade"
   }
 }

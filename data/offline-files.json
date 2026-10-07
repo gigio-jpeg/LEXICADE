@@ -282,6 +282,7 @@
   "src/arcade/room-ui.js",
   "src/arcade/room.js",
   "src/arcade/textures.js",
+  "src/arcade/themes.js",
   "src/core/api.js",
   "src/core/audio.js",
   "src/core/auth.js",

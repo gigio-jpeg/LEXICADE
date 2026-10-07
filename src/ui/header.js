@@ -13,8 +13,8 @@ export function brand() {
     el("span", {}, config.name, el("span", { class: "brand-dot" }, ".")),
   );
 }
-export function applySettings() {
-  const s = settings();
+export function applySettings(value) {
+  const s = value?.theme ? value : settings();
   document.documentElement.dataset.theme = s.theme;
   document.documentElement.dataset.motion = s.reducedMotion ? "reduced" : "";
   document.documentElement.dataset.colorblind = s.colorblind;

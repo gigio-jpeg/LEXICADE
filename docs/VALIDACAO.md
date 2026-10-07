@@ -39,3 +39,11 @@ Não foi medido desempenho em GPU física ou aparelho de entrada; não declarar 
 23 testes Node aprovados. Teste adicional em Chromium com WebGL, AudioContext real e analisadores de sinal: o botão musical iniciou áudio não nulo; desligá-lo silenciou o sinal; música funcionou com efeitos desligados, continuou após fechar Ajustes e foi restaurada após recarregar/interagir. Notificações de erro do login foram verificadas acima do backdrop desfocado, como popover na camada superior e descendente do diálogo ativo. A resposta de credenciais inválidas foi simulada no navegador; nenhuma requisição alcançou o Supabase. Zero erros JavaScript.
 
 A trilha é sintetizada localmente e precisa de uma interação para respeitar a política de áudio do navegador. A atualização do service worker é `lexicade-v2.0.1`. Nenhuma alteração de banco foi necessária.
+
+## Revisão 2.0.2 — playlist, temas e painéis (7 de outubro de 2026)
+
+24 testes Node aprovados, incluindo regressão da playlist: avanço automático, lista circular e avanço em pausa sem reiniciar o áudio, com efeitos desligados. No Chromium com WebGL e AudioContext reais foram conferidos padrões de som/música ligados, áudio liberado pela primeira interação, três faixas distintas, pausa e avanço manual. A opção de pausa permaneceu após recarregar.
+
+Login: distância de 14 px entre Entrar e Enviar link mágico; centros do X e navegação alinhados. Temas neon, soft, light, phosphor e minimal aplicaram a prévia na sala. O tema claro alterou pixels da cena efetivamente, além da interface. Salvar mostrou confirmação acima do painel e persistiu a escolha após recarregar. Fechar sem salvar restaurou o tema anterior. Player testado em 320, 390, 768 e 1.440 px; botão Salvar e X acessíveis ao rolar o painel no celular. Zero erros JavaScript; Supabase remoto não foi acessado.
+
+Padrões de áudio são atualizados uma vez nesta revisão para ligar som/música; depois escolhas de pausa são respeitadas. A playlist é sintetizada localmente e o navegador pode exigir o primeiro clique/toque para permitir reprodução. Cache atualizado para `lexicade-v2.0.2`, com 374 arquivos. Sem mudança de banco.

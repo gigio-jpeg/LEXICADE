@@ -1,6 +1,6 @@
 {
   "name": "lexicade",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "type": "module",
   "description": "Uma sala de fliperama 3D com quatro jogos de palavras.",

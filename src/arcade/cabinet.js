@@ -164,5 +164,11 @@ export function cabinet(game, index) {
   const floorGlow = new THREE.PointLight(color, 0.7, 4, 2);
   floorGlow.position.set(0, 0.23, 1.3);
   group.add(floorGlow);
-  return { group, monitor, screen, stick, buttons, color, index };
+  return { group, monitor, screen, stick, buttons, color, index,
+    applyTheme(theme) {
+      shell.color.set(theme.shell);
+      dark.color.set(theme.dark);
+      paint.color.copy(color).multiplyScalar(theme.paintGain);
+    },
+  };
 }

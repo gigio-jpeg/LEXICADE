@@ -4,9 +4,11 @@ import { config, path } from "../core/config.js";
 import { settings, saveSettings } from "../core/storage.js";
 import { session } from "../core/auth.js";
 import { COLORS } from "./navigation.js";
-import { music } from "../core/audio.js";
+import { music, currentTrack, nextTrack } from "../core/audio.js";
 export function roomUI(root, games, actions) {
   const abort = new AbortController();
+  if (settings().audioDefaultsVersion !== 2)
+    saveSettings({ sound: true, music: true, audioDefaultsVersion: 2 });
   const logo = el(
     "a",
     { class: "room-logo", href: path(), "aria-label": config.name },
@@ -28,23 +30,24 @@ export function roomUI(root, games, actions) {
       ),
     ),
   );
-  const mute = button(
-    settings().sound && settings().music ? "♪" : "♫",
-    () => {
-      const enabled = !(settings().sound && settings().music);
-      saveSettings({ sound: enabled, music: enabled });
-    },
-    "room-icon",
-    { "aria-label": t("room.sound"), "aria-pressed": settings().sound && settings().music, title: t("room.sound") },
-  );
+  const trackName = el("span", { class: "room-track-name" }, currentTrack().name);
+  const playback = button("Ⅱ", () => saveSettings({ music: !settings().music }), "room-player-button");
+  const skip = button("›|", nextTrack, "room-player-button", { "aria-label": t("room.nextTrack"), title: t("room.nextTrack") });
+  const player = el("div", { class: "room-player", role: "group", "aria-label": t("room.playlist") },
+    el("div", { class: "room-track-copy" }, el("small", {}, "LEXICADE FM"), trackName), playback, skip);
   function syncAudio() {
-    const s = settings(), enabled = s.sound && s.music;
-    mute.textContent = enabled ? "♪" : "♫";
-    mute.setAttribute("aria-pressed", enabled);
+    const s = settings();
+    playback.textContent = s.music ? "Ⅱ" : "▷";
+    playback.setAttribute("aria-label", t(s.music ? "room.pauseMusic" : "room.playMusic"));
+    playback.title = t(s.music ? "room.pauseMusic" : "room.playMusic");
+    playback.setAttribute("aria-pressed", s.music);
+    trackName.textContent = currentTrack().name;
+    player.title = currentTrack().name;
     music(s.music && !document.hidden);
   }
   document.addEventListener("settings", syncAudio, { signal: abort.signal });
   document.addEventListener("visibilitychange", syncAudio, { signal: abort.signal });
+  document.addEventListener("musictrackchange", syncAudio, { signal: abort.signal });
   for (const event of ["pointerdown", "keydown"])
     document.addEventListener(event, () => {
       if (settings().music && !document.hidden) music(true);
@@ -71,7 +74,7 @@ export function roomUI(root, games, actions) {
       { class: "room-header-actions" },
       overview,
       language,
-      mute,
+      player,
       account,
       exit,
     ),
@@ -201,8 +204,7 @@ export async function accountPanel(route) {
   const dialog = el(
     "dialog",
     { class: "room-account-dialog" },
-    close,
-    ...(["reset", "onboard"].includes(route) ? [] : [navigation]),
+    el("div", { class: "room-dialog-header" }, ...(["reset", "onboard"].includes(route) ? [] : [navigation]), close),
     container,
   );
   document.body.append(dialog);

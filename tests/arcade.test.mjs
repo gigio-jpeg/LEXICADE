@@ -30,6 +30,17 @@ test("A câmera enquadra a tela e afasta proporcionalmente em retrato", () => {
       assert.ok([...pose.position, ...pose.target].every(Number.isFinite));
     }
 });
+test("O monitor 3D cabe no celular, na horizontal e com teclado aberto", () => {
+  for (const [width, height] of [[320, 568], [390, 744], [667, 375], [390, 400]]) {
+    const pose = cameraPose(1, "play", width / height, { width, height });
+    const distance = pose.position[2] - .906;
+    const pixelsPerUnit = height / (2 * distance * Math.tan(21 * Math.PI / 180));
+    const center = height / 2 + (pose.target[1] - 2.8) * pixelsPerUnit;
+    assert.ok(1.92 * pixelsPerUnit <= width * .88 + .01);
+    assert.ok(center - .8 * pixelsPerUnit >= 88);
+    assert.ok(center + .8 * pixelsPerUnit <= height - 12);
+  }
+});
 test("As frases novas têm trinta entradas originais completas por idioma", async () => {
   const phrases = JSON.parse(
     await readFile(

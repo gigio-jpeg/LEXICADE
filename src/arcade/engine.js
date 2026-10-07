@@ -110,7 +110,7 @@ export function createEngine(host, games, onChange, onFail) {
     fromPosition = new THREE.Vector3(),
     fromTarget = new THREE.Vector3();
   function pose(instant = false) {
-    const p = cameraPose(index, state, camera.aspect);
+    const p = cameraPose(index, state, camera.aspect, { width: host.clientWidth, height: host.clientHeight });
     goalPosition.fromArray(p.position);
     goalTarget.fromArray(p.target);
     fromPosition.copy(basePosition);
@@ -131,19 +131,9 @@ export function createEngine(host, games, onChange, onFail) {
     }
   }
   function resize() {
-    const touchScreen = host.clientWidth <= 700;
-    screenElement.classList.toggle("mobile-screen", touchScreen);
-    if (touchScreen && cssScreen.parent) {
-      cssScene.remove(cssScreen);
-      host.append(screenElement);
-      screenElement.style.transform = "none";
-    } else if (!touchScreen && !cssScreen.parent) {
-      cssScene.add(cssScreen);
-    }
-    if (touchScreen) screenElement.style.display = state === "play" ? "block" : "none";
     const viewport = window.visualViewport;
-    host.style.setProperty("--visible-height", `${viewport?.height ?? innerHeight}px`);
-    host.style.setProperty("--visible-top", `${viewport?.offsetTop ?? 0}px`);
+    const mobile = host.clientWidth <= 700;
+    host.style.setProperty("--visible-height", `${mobile ? viewport?.height ?? innerHeight : innerHeight}px`);
     const width = host.clientWidth,
       height = host.clientHeight;
     if (width === lastWidth && height === lastHeight) return;
@@ -160,8 +150,6 @@ export function createEngine(host, games, onChange, onFail) {
     pose(true);
   }
   function announce() {
-    if (screenElement.classList.contains("mobile-screen"))
-      screenElement.style.display = state === "play" ? "block" : "none";
     onChange(index, state);
     host.dataset.machine = games[index].id;
     const url = new URL(location.href);

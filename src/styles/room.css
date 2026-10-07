@@ -927,3 +927,9 @@ body.room-mode.crt .screen-game { text-shadow:0 0 5px #65f5c455; }
  .room-dot { padding:10px 12px 0; }
  .room-footer .room-coordinate { display:none; }
 }
+.room-celebration { position:absolute;inset:0;pointer-events:none;z-index:6;overflow:hidden; }
+.room-celebration-title { position:absolute;top:15%;left:50%;transform:translateX(-50%);padding:12px 22px;border:2px solid #65ffd5;border-radius:10px;background:#08111cee;color:#65ffd5;font:bold clamp(18px,3vw,34px) var(--mono);box-shadow:0 0 28px #65ffd544;white-space:nowrap; }
+.room-celebration[data-kind=record] .room-celebration-title { color:#ffcd65;border-color:#ffcd65;box-shadow:0 0 38px #ffcd6555; }
+.room-confetti { position:absolute;top:-30px;left:var(--x);width:9px;height:18px;background:var(--color);animation:room-confetti-fall 3.8s var(--delay) ease-out both; }
+@keyframes room-confetti-fall { from { transform:translateY(0) rotate(var(--spin)); } to { transform:translateY(110vh) rotate(calc(var(--spin) + 650deg)); } }
+@media(prefers-reduced-motion:reduce) { .room-confetti { display:none; } }

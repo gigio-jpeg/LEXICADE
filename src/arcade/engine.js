@@ -1,3 +1,4 @@
+import { celebration } from "./celebration.js";
 import { cabinetStyle, loadCabinetStyle } from "./personalization.js";
 import * as THREE from "../../vendor/three/three.module.js";
 import {
@@ -82,11 +83,13 @@ export function createEngine(host, games, onChange, onFail) {
   let crt = settings().crt;
   document.addEventListener("settings", (event) => { crt = event.detail.crt; }, { signal });
   document.addEventListener("settingspreview", (event) => { crt = event.detail.crt; }, { signal });
+  const fireworks = celebration(scene, host, reduced);
   let pulse = 0;
   host.addEventListener("arcadefeedback", (event) => {
     if (["correct", "combo", "record", "finish", "level"].includes(event.detail?.kind)) {
       pulse = Math.max(pulse, event.detail.kind === "record" ? 1.5 : event.detail.kind === "combo" ? Math.min(1.3, .5 + (event.detail.combo ?? 0) * .08) : .6);
       host.dataset.reaction = event.detail.kind;
+      fireworks.trigger(event.detail, cabinets[index].group.position.x);
     }
   }, { signal });
   let lastDraw = 0;
@@ -300,6 +303,7 @@ export function createEngine(host, games, onChange, onFail) {
     });
     pulse = Math.max(0, pulse - dt * .8);
     const energy = reduced() ? 0 : pulse;
+    fireworks.update(dt);
     world.react(energy);
     cabinets.forEach((c, i) => c.react(i === index ? energy : 0));
     world.dust.rotation.y += reduced() ? 0 : dt * 0.008;
@@ -316,6 +320,7 @@ export function createEngine(host, games, onChange, onFail) {
     observer.disconnect();
     cancelAnimationFrame(resizeFrame);
     cancelAnimationFrame(frame);
+    fireworks.dispose();
     world.dispose();
     const textures = new Set(),
       materials = new Set(),

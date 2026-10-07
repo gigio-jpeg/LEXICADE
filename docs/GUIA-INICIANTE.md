@@ -9,7 +9,7 @@ Vamos fazer uma etapa por vez. Você já confirmou Node.js `v25.1.0`, npm `10.8.
 3. No Explorador de Arquivos, clique com o botão direito no novo ZIP e escolha **Extrair Tudo**. Extraia em uma pasta nova, por exemplo `Documentos\LEXICADE-3D`, para preservar a cópia anterior.
 4. Entre na pasta extraída até encontrar `package.json`, `index.html`, `src`, `data` e `supabase`. Pode haver uma pasta `LEXICADE-main` dentro de outra: a pasta correta é a que contém esses arquivos.
 
-**Confirmação:** `package.json` mostra versão `2.1.0`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
+**Confirmação:** `package.json` mostra versão `2.1.1`; existe `src\arcade`. Não execute o projeto dentro do ZIP. No chat, diga quando extrair e só então passamos à próxima etapa.
 
 ## 2. Abrir a pasta no PowerShell
 

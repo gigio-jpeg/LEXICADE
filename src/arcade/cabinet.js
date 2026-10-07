@@ -167,20 +167,29 @@ export function cabinet(game, index) {
   group.add(floorGlow);
   const labelCanvas = document.createElement("canvas"); labelCanvas.width = 512; labelCanvas.height = 128;
   const labelTexture = new THREE.CanvasTexture(labelCanvas); labelTexture.colorSpace = THREE.SRGBColorSpace;
-  const nameplate = new THREE.Mesh(new THREE.PlaneGeometry(1.55, .38), new THREE.MeshBasicMaterial({ map: labelTexture, transparent: true }));
-  nameplate.position.set(0, 1.13, .96); group.add(nameplate);
-  let paintGain = .28;
+  const nameplate = new THREE.Mesh(new THREE.PlaneGeometry(2.12, .36), new THREE.MeshBasicMaterial({ map: labelTexture, transparent: true, toneMapped: false }));
+  nameplate.position.set(0, 1.48, 1.02); group.add(nameplate);
+  let paintGain = .28, currentTheme;
   return { group, monitor, screen, stick, buttons, color, index,
     react(amount) { neon.emissiveIntensity = 1.15 + amount * .8; glow.intensity = 1.1 + amount; floorGlow.intensity = .7 + amount * 1.4; },
     personalize(style) {
       const finish = FINISHES[style.finish]?.color;
-      paint.color.set(finish ?? COLORS[index]).multiplyScalar(paintGain);
+      paint.color.set(finish ?? COLORS[index]).multiplyScalar(finish ? .85 : paintGain);
+      paint.emissive.set(finish ?? '#000000');paint.emissiveIntensity = finish ? .24 : 0;
+      shell.color.set(finish ?? currentTheme?.shell ?? '#253347');
+      shell.emissive.set(finish ?? '#000000');shell.emissiveIntensity = finish ? .2 : 0;
+      shell.metalness = finish ? .2 : .6;
+      neon.color.set(finish ?? COLORS[index]);neon.emissive.copy(neon.color);
+      glow.color.copy(neon.color);floorGlow.color.copy(neon.color);
       const ctx = labelCanvas.getContext("2d");ctx.clearRect(0, 0, 512, 128);
-      ctx.textAlign = "center";ctx.fillStyle = finish ?? COLORS[index];ctx.font = "bold 32px monospace";
+      ctx.fillStyle = '#08111c';ctx.fillRect(0, 0, 512, 128);
+      ctx.strokeStyle = finish ?? COLORS[index];ctx.lineWidth=5;ctx.strokeRect(3,3,506,122);
+      ctx.textAlign = "center";ctx.fillStyle = finish ?? COLORS[index];ctx.font = "bold 46px monospace";
       ctx.fillText(`${STICKERS[style.sticker]?.glyph ?? ''} ${style.title || 'LEXICADE'}`, 256, 78, 490);
       labelTexture.needsUpdate = true;
     },
     applyTheme(theme) {
+      currentTheme = theme;
       paintGain = theme.paintGain;
       shell.color.set(theme.shell);
       dark.color.set(theme.dark);

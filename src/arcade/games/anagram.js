@@ -29,6 +29,7 @@ export function create(c) {
     words++;
     largest = Math.max(largest, c.normalize(answer).length);
     c.sound("correct");
+    c.feedback?.({ kind: "combo", combo: words });
     next();
   });
   function next() {

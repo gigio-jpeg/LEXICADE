@@ -69,3 +69,9 @@ Chromium com duas sessões simuladas, RPCs executadas no PostgreSQL local real e
 Rodadas dos quatro jogos passaram novamente. O fantasma gravou o recorde e repetiu a sequência na rodada seguinte. Anagrama resolveu três sorteios do banco ampliado e persistiu resultado. Na sala WebGL real: nome, acabamento dourado e coroa salvaram, acerto disparou reação e Extras funcionou em 320, 390, 768 e 1.440 px sem overflow; zero erros JavaScript. Fantasma é local ao navegador; estilo de conta usa RPC.
 
 O pacote `dist` foi servido separadamente e abriu a sala WebGL e Extras sem erros JavaScript. Isso verifica os arquivos de produção, mas não representa um deploy na Vercel.
+
+## Revisão 2.1.1 — personalização visível e comemorações
+
+A pintura agora altera também o corpo frontal e os LEDs, com emissão suave para continuar visível na sala escura. A placa de nome ganhou largura, fonte maior e moldura. Teste Chromium/WebGL salvou acabamento dourado, nome e coroa e capturou a mudança real da cena; Extras preservou escolhas em 320, 390, 768 e 1.440 px, sem erros JavaScript.
+
+Combos de Frase Rush e Anagrama disparam ondas no chão e partículas 3D ascendentes. Recordes acrescentam aviso grande e 40 confetes na camada visual sobre a sala. Teste funcional conferiu combo por acerto real, evento de recorde, confetes e redução de movimento: sem partículas animadas, mantendo confirmação textual. A rotina substitui a comemoração anterior e libera recursos ao fechar a sala. Nenhuma migração nova de banco. Cache: 382 arquivos.

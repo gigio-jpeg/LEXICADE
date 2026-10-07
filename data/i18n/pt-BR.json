@@ -412,6 +412,8 @@
     "win": "Você venceu!",
     "loss": "Seu amigo venceu!",
     "tie": "Empate!",
-    "duelReward": "Resultado salvo no duelo. XP é concedido uma vez quando ambos pontuam."
+    "duelReward": "Resultado salvo no duelo. XP é concedido uma vez quando ambos pontuam.",
+    "recordCelebration": "NOVO RECORDE!",
+    "comboCelebration": "COMBO ×{count}"
   }
 }

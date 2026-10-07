@@ -10,7 +10,7 @@ Se sua pasta veio de `git clone`, abra o PowerShell nela e execute:
 git pull origin main
 ```
 
-Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.1.0**, e `vercel.json`.
+Se veio de um ZIP, baixe **Code → Download ZIP** em https://github.com/gigio-jpeg/LEXICADE e extraia em uma pasta nova. Não execute `git pull` em uma pasta extraída sem `.git`. A pasta correta contém `package.json`, com versão **2.1.1**, e `vercel.json`.
 
 Para testar no computador, execute `npm start` e abra o endereço que o terminal mostrar. Para verificar o pacote de produção: `npm test` e depois `npm run build`. O build cria `dist`, só com os arquivos públicos do site.
 

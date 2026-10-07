@@ -412,6 +412,8 @@
     "win": "You won!",
     "loss": "Your friend won!",
     "tie": "Tie!",
-    "duelReward": "Duel result saved. XP is granted once when both players score."
+    "duelReward": "Duel result saved. XP is granted once when both players score.",
+    "recordCelebration": "NEW RECORD!",
+    "comboCelebration": "COMBO ×{count}"
   }
 }

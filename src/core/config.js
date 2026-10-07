@@ -1,6 +1,6 @@
 export const config = Object.freeze({
   name: "LEXICADE",
-  version: "2.1.0",
+  version: "2.1.1",
   supabaseUrl: "https://oxsyodnhnjpqffafvijv.supabase.co",
   supabaseKey: "sb_publishable_lbUuyBr4qGGe5ieTqdMozg_yZCkdp2s",
   // Ative somente após configurar o provedor no painel Supabase.

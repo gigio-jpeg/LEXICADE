@@ -272,6 +272,7 @@
   "pages/redefinir-senha.html",
   "pages/sobre.html",
   "src/arcade/cabinet.js",
+  "src/arcade/celebration.js",
   "src/arcade/duel-link.js",
   "src/arcade/duel.js",
   "src/arcade/engine.js",

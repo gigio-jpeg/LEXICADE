@@ -374,7 +374,10 @@
     "pauseMusic": "Pausar música",
     "playMusic": "Reproducir música",
     "nextTrack": "Siguiente canción",
-    "playlist": "Playlist arcade"
+    "playlist": "Playlist arcade",
+    "menu": "Menú",
+    "openMenu": "Abrir menú",
+    "backMenu": "Volver al menú"
   },
   "features": {
     "title": "Extras",

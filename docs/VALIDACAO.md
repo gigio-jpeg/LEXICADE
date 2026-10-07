@@ -75,3 +75,11 @@ O pacote `dist` foi servido separadamente e abriu a sala WebGL e Extras sem erro
 A pintura agora altera também o corpo frontal e os LEDs, com emissão suave para continuar visível na sala escura. A placa de nome ganhou largura, fonte maior e moldura. Teste Chromium/WebGL salvou acabamento dourado, nome e coroa e capturou a mudança real da cena; Extras preservou escolhas em 320, 390, 768 e 1.440 px, sem erros JavaScript.
 
 Combos de Frase Rush e Anagrama disparam ondas no chão e partículas 3D ascendentes. Recordes acrescentam aviso grande e 40 confetes na camada visual sobre a sala. Teste funcional conferiu combo por acerto real, evento de recorde, confetes e redução de movimento: sem partículas animadas, mantendo confirmação textual. A rotina substitui a comemoração anterior e libera recursos ao fechar a sala. Nenhuma migração nova de banco. Cache: 382 arquivos.
+
+## Revisão 2.2 — menu e playlist
+
+O cabeçalho usa botões Ver a sala e Menu com SVGs locais. Progresso, ranking e ajustes têm entradas próprias e botão para voltar; player e idioma ficam no menu, com nome da faixa também no celular. A navegação duplicada no cabeçalho dos painéis foi removida.
+
+Playlist de seis composições sintetizadas localmente: synth, funk sincopado, jazz com swing, arcade rápido, valsa em três tempos e breakbeat. Cada faixa tem melodia, harmonia, percussão e pausas próprias, em vez de alterar somente BPM. O Chromium conferiu áudio real nas seis, pausa, avanço em pausa, navegação Ajustes/voltar e cabeçalho/player em 320, 390, 768 e 1.440 px sem overflow. Os 30 testes Node passaram, incluindo avanço automático e build público. Sem alteração SQL.
+
+Menu/player também abriu e fechou durante Frase Rush em 320 px, permitindo controlar música e retornar à partida. Zero erros JavaScript na execução completa.

@@ -933,3 +933,40 @@ body.room-mode.crt .screen-game { text-shadow:0 0 5px #65f5c455; }
 .room-confetti { position:absolute;top:-30px;left:var(--x);width:9px;height:18px;background:var(--color);animation:room-confetti-fall 3.8s var(--delay) ease-out both; }
 @keyframes room-confetti-fall { from { transform:translateY(0) rotate(var(--spin)); } to { transform:translateY(110vh) rotate(calc(var(--spin) + 650deg)); } }
 @media(prefers-reduced-motion:reduce) { .room-confetti { display:none; } }
+.room-overview,.room-menu-button { display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);padding:8px 12px;font:12px var(--mono); }
+.room-overview svg,.room-menu-button svg,.room-menu-section svg { flex-shrink:0; }
+.room-menu-dialog { width:min(420px,calc(100vw - 24px));padding:24px; }
+.room-menu-dialog h2,.room-section-heading h2 { margin:0;font-size:22px; }
+.room-menu-sections { display:grid;gap:8px;margin:24px 0; }
+.room-menu-section { display:flex;align-items:center;gap:14px;text-align:left;border:1px solid var(--line);border-radius:10px;background:var(--surface-raised);color:var(--text);padding:14px;min-height:48px; }
+.room-menu-section:hover { border-color:var(--accent); }
+.room-menu-section:disabled { opacity:.45; }
+.room-menu-music { border-top:1px solid var(--line);padding-top:18px; }
+.room-menu-music h3 { margin:0 0 12px;font-size:13px;color:var(--muted); }
+.room-menu-music .room-player { justify-content:space-between;padding:8px;gap:8px; }
+.room-menu-music .room-track-copy { display:block;flex:1;min-width:0; }
+.room-menu-music .room-track-name { font-size:12px; }
+.room-menu-music .room-player-button { width:42px;min-height:42px; }
+.room-menu-language { display:flex;align-items:center;justify-content:space-between;margin-top:20px;font-size:13px; }
+.room-menu-language .room-language { width:auto;min-width:72px;min-height:40px; }
+.room-section-heading { display:flex;align-items:center;gap:12px;padding-right:42px; }
+.room-menu-back { background:var(--surface-raised);color:var(--text);border:1px solid var(--line);border-radius:8px;min-width:38px;min-height:38px; }
+@media(max-width:700px) {
+ .room-header { left:16px;right:16px; }
+ .room-header-actions { gap:8px; }
+ .room-overview,.room-menu-button { font-size:10px;padding:8px;gap:6px; }
+ .room-logo small { display:none; }
+ .room-logo { gap:6px;font-size:12px; }
+ .room-logo-symbol { width:25px; }
+ .room-menu-dialog { padding:20px; }
+ .is-playing .room-header-actions { gap:8px; }
+ .is-playing .room-menu-button span { display:none; }
+ .is-playing .room-exit { font-size:10px;padding:8px; }
+}
+.room-player-button { display:inline-flex;align-items:center;justify-content:center; }
+@media(max-width:380px) {
+ .room-menu-button span { display:none; }
+ .room-header { gap:8px; }
+ .room-overview { font-size:9px;padding:8px 6px;gap:4px; }
+ .room-logo { letter-spacing:.1em; }
+}

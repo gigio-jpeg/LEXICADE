@@ -26,7 +26,7 @@ export async function arcadeRoom(main) {
     play: () => engine?.play(),
     overview: () => engine?.overview(),
     leave: () => engine?.leave(),
-    account: accountPanel,
+    account: (route) => accountPanel(route, () => ui.openMenu()),
     features: () => featuresPanel(playDuel),
   });
   function fallback() {
@@ -135,7 +135,7 @@ export async function arcadeRoom(main) {
         "onboard",
       ].includes(params.get("panel"))
     )
-      accountPanel(params.get("panel"));
+      accountPanel(params.get("panel"), () => ui.openMenu());
   }
   const abort = new AbortController();
   document.addEventListener(

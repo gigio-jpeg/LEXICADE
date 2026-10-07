@@ -12,8 +12,8 @@ URL e publishable key recebidas já estão em `src/core/config.js`. Não coloque
 
 Confira primeiro se a tabela `profiles` já existe em **Table Editor**.
 
-- **Banco vazio:** aplique somente `supabase/INSTALAR-TUDO.sql`. Ele reúne as três migrações iniciais, o seed e a migração 004 em uma única transação.
-- **Banco da versão anterior já instalado:** aplique somente `supabase/migrations/004_arcade_focus.sql`. Ela ajusta as conquistas aos quatro jogos, preservando contas, histórico e saldo. Não reaplique a instalação completa.
+- **Banco vazio:** aplique somente `supabase/INSTALAR-TUDO.sql`. Ele reúne as migrações 001–007 e o seed em uma única transação.
+- **Banco já instalado:** aplique somente as migrações faltantes, na ordem. Se já aplicou 003, faltam 004–007; se já aplicou 006, falta somente 007. Confira a tabela atual no [README](../README.md#-conectar-o-supabase). Não reaplique a instalação completa.
 
 No PowerShell aberto na pasta do projeto, para copiar a instalação do banco vazio com acentos corretos:
 

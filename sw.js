@@ -1,4 +1,4 @@
-const VERSION = "lexicade-v2.3.2";
+const VERSION = "lexicade-v2.3.3";
 const base = new URL("./", self.location.href);
 self.addEventListener("install", (event) =>
   event.waitUntil(

@@ -381,6 +381,13 @@ body.room-mode .skip-link {
 }
 @media (max-width: 700px) {
   body.room-mode .arcade-room { min-height: 0; height: var(--visible-height, 100dvh); }
+  .room-screen.projected-monitor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform-origin: 0 0;
+  }
 }
 .room-screen::after {
   content: "";

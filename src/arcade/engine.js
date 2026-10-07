@@ -104,6 +104,7 @@ export function createEngine(host, games, onChange, onFail) {
     parallax = { x: 0, y: 0 },
     pointerDown;
   const target = new THREE.Vector3(),
+    monitorCorner = new THREE.Vector3(),
     goalPosition = new THREE.Vector3(),
     goalTarget = new THREE.Vector3(),
     basePosition = new THREE.Vector3(),
@@ -133,6 +134,14 @@ export function createEngine(host, games, onChange, onFail) {
   function resize() {
     const viewport = window.visualViewport;
     const mobile = host.clientWidth <= 700;
+    screenElement.classList.toggle("projected-monitor", mobile);
+    if (mobile && cssScreen.parent) {
+      cssScene.remove(cssScreen);
+      host.append(screenElement);
+    } else if (!mobile && !cssScreen.parent) {
+      cssScene.add(cssScreen);
+      screenElement.style.transformOrigin = "";
+    }
     host.style.setProperty("--visible-height", `${mobile ? viewport?.height ?? innerHeight : innerHeight}px`);
     const width = host.clientWidth,
       height = host.clientHeight;
@@ -143,13 +152,15 @@ export function createEngine(host, games, onChange, onFail) {
     composer.setSize(width, height);
     camera.aspect = width / Math.max(1, height);
     camera.updateProjectionMatrix();
-    const virtualWidth = width < 700 ? 480 : 720;
+    const virtualWidth = width <= 700 ? 480 : 720;
     screenElement.style.width = virtualWidth + "px";
     screenElement.style.height = virtualWidth / 1.2 + "px";
     cssScreen.scale.setScalar(1.92 / virtualWidth);
     pose(true);
   }
   function announce() {
+    if (screenElement.classList.contains("projected-monitor"))
+      screenElement.style.display = "none";
     onChange(index, state);
     host.dataset.machine = games[index].id;
     const url = new URL(location.href);
@@ -314,7 +325,22 @@ export function createEngine(host, games, onChange, onFail) {
     cabinets.forEach((c, i) => c.react(i === index ? energy : 0));
     world.dust.rotation.y += reduced() ? 0 : dt * 0.008;
     composer.render();
-    cssRenderer.render(cssScene, camera);
+    if (screenElement.classList.contains("projected-monitor")) {
+      // Project the real monitor into CSS pixels. Flat transforms avoid WebKit's
+      // nested CSS3D perspective offset while keeping the game on its cabinet.
+      screenElement.style.display = state === "play" && !transition ? "block" : "none";
+      if (state === "play" && !transition) {
+        const center = cssScreen.position;
+        monitorCorner.set(center.x - .96, center.y + .8, center.z).project(camera);
+        const left = (monitorCorner.x + 1) * lastWidth / 2;
+        const top = (1 - monitorCorner.y) * lastHeight / 2;
+        monitorCorner.set(center.x + .96, center.y - .8, center.z).project(camera);
+        const width = (monitorCorner.x + 1) * lastWidth / 2 - left;
+        const height = (1 - monitorCorner.y) * lastHeight / 2 - top;
+        const virtualWidth = parseFloat(screenElement.style.width);
+        screenElement.style.transform = `translate(${left}px, ${top}px) scale(${width / virtualWidth}, ${height / (virtualWidth / 1.2)})`;
+      }
+    } else cssRenderer.render(cssScene, camera);
   }
   frame = requestAnimationFrame(animate);
   function dispose() {
@@ -354,6 +380,7 @@ export function createEngine(host, games, onChange, onFail) {
     renderer.dispose();
     renderer.domElement.remove();
     cssRenderer.domElement.remove();
+    screenElement.remove();
   }
   return {
     select,
